@@ -49,6 +49,12 @@ img{
   max-height: 100%;
 }
 
+.flex{
+  display: flex;
+  &-item-1{
+    flex: 1;
+  }
+}
 
 /* 导航部分 */
 
@@ -79,6 +85,99 @@ img{
 }
 
 
+//  footter
+.footer{
+  font-size: 12px;
+  background-color: #3D3D3D;
+  color: #9FA0A0;
+  padding: 0 90px 62px;
+  .left,
+  .center,
+  .centerTwo,
+  .right{
+    margin-top: 62px;
+  }
+  .left{
+    .tit{
+      color: white;
+    }
+    .copyright{
+      padding-top: 40px;
+      p{
+        line-height: 20px;;
+      }
+    }
+    .num{
+      padding-top: 30px;
+    }
+  }
+  .center{
+    color: #9FA0A0;
+    .tit2{
+      padding-bottom: 24px;
+    }
+    .listWrap{
+      border-right: 1px solid rgba(102,102,102,1);
+      ;
+      .list-item{
+        justify-content: space-between;
+        .list_l{}
+        .lsit_r{
+  
+        }
+      }
+    }
+  }
+  .centerTwo{
+    .contact{
+      .colorOne{
+        color: white;
+      }
+      p{
+        line-height: 24px;
+      }
+      .qq{
+        padding-top: 30px;
+        padding-bottom: 40px;
+      }
+      .share{
+        
+        img{
+          vertical-align: middle;
+          width: 20px;
+          height: 20px;
+          margin-right: 6px;
+          margin-top: 5px;
+        }
+      }
+    }
+  }
+  .right{
+    text-align: center;
+    .qcode{
+      margin-bottom: 10px;
+      img{
+        max-width: 100%;
+      }
+    }
+  }
+}
+.backtop{
+  position: fixed;
+  right: 10px;
+  bottom: 20px;
+  display: none;
+  .icon{
+    cursor: pointer;
+    background-color: #3D3D3D;
+    border-radius: 50%;
+    img{
+      width: 40px;
+      height: 40px;
+      vertical-align: middle;
+    }
+  }
+}
 @media screen  and (max-width: 768px){
   .navbar{
     .navbar-nav{
