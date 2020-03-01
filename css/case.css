@@ -1,0 +1,24 @@
+@charset "utf-8";
+.menu {
+  width: 100%;
+  line-height: 20px;
+  padding-right: 121px;
+  margin-top: 184px;
+  font-size: 12px;
+}
+.menu .nav-item {
+  margin-left: 8px;
+}
+.menu .nav-item .nav-link {
+  color: #9fa0a0;
+  font-size: 12px;
+}
+.menu .nav-item .nav-link:hover {
+  color: #D3AB7E;
+}
+.menu .nav-item .active {
+  color: #D3AB7E;
+}
+div {
+  margin-top: 20px;
+}
