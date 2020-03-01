@@ -41,6 +41,12 @@ img {
   max-width: 100%;
   max-height: 100%;
 }
+.flex {
+  display: flex;
+}
+.flex-item-1 {
+  flex: 1;
+}
 /* 导航部分 */
 .navbar {
   width: 100%;
@@ -60,6 +66,84 @@ img {
   font-size: 12px;
   color: #9fa0a0;
   margin-left: 31px;
+}
+.footer {
+  font-size: 12px;
+  background-color: #3D3D3D;
+  color: #9FA0A0;
+  padding: 0 90px 62px;
+}
+.footer .left,
+.footer .center,
+.footer .centerTwo,
+.footer .right {
+  margin-top: 62px;
+}
+.footer .left .tit {
+  color: white;
+}
+.footer .left .copyright {
+  padding-top: 40px;
+}
+.footer .left .copyright p {
+  line-height: 20px;
+}
+.footer .left .num {
+  padding-top: 30px;
+}
+.footer .center {
+  color: #9FA0A0;
+}
+.footer .center .tit2 {
+  padding-bottom: 24px;
+}
+.footer .center .listWrap {
+  border-right: 1px solid #666666;
+}
+.footer .center .listWrap .list-item {
+  justify-content: space-between;
+}
+.footer .centerTwo .contact .colorOne {
+  color: white;
+}
+.footer .centerTwo .contact p {
+  line-height: 24px;
+}
+.footer .centerTwo .contact .qq {
+  padding-top: 30px;
+  padding-bottom: 40px;
+}
+.footer .centerTwo .contact .share img {
+  vertical-align: middle;
+  width: 20px;
+  height: 20px;
+  margin-right: 6px;
+  margin-top: 5px;
+}
+.footer .right {
+  text-align: center;
+}
+.footer .right .qcode {
+  margin-bottom: 10px;
+}
+.footer .right .qcode img {
+  max-width: 100%;
+}
+.backtop {
+  position: fixed;
+  right: 10px;
+  bottom: 20px;
+  display: none;
+}
+.backtop .icon {
+  cursor: pointer;
+  background-color: #3D3D3D;
+  border-radius: 50%;
+}
+.backtop .icon img {
+  width: 40px;
+  height: 40px;
+  vertical-align: middle;
 }
 @media screen and (max-width: 768px) {
   .navbar .navbar-nav a {
