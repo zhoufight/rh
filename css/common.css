@@ -1,5 +1,4 @@
 @charset "utf-8";
-body,
 ul,
 p,
 h1,
@@ -28,6 +27,9 @@ a {
 a:hover {
   text-decoration: underline;
 }
+body {
+  padding-top: 50px;
+}
 /* 清除浮动 */
 .clearfix::before,
 .clearfix::after {
@@ -50,7 +52,7 @@ img {
 /* 导航部分 */
 .navbar {
   width: 100%;
-  height: 50px;
+  background-color: #fff;
 }
 .navbar .navbar-brand {
   margin-left: 56px;
