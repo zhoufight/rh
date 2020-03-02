@@ -29,6 +29,7 @@ a:hover {
 }
 body {
   padding-top: 50px;
+  position: relative;
 }
 /* 清除浮动 */
 .clearfix::before,
