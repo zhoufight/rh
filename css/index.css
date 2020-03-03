@@ -140,15 +140,13 @@
 .newList .category ul li {
   align-items: center;
   font-size: 8px;
-  margin-bottom: 10px;
-  margin-right: 20px;
+  width: 30%;
+  margin-bottom: 1vw;
+  margin-right: 2vw;
 }
-.newList .category ul li .list-circle {
+.newList .category ul li .list-Icon {
   width: 6px;
-}
-.newList .category ul li .list-circle .listIcon {
-  width: 4px;
-  height: 4px;
+  height: 6px;
   background: #9fa0a0;
   border-radius: 50%;
 }
