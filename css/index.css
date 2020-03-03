@@ -14,7 +14,7 @@
   align-items: center;
 }
 .tips .tabWrap .tabMenu .item {
-  margin-left: 24px;
+  margin-left: 2vw;
 }
 .tips .tabWrap .tabMenu .item a {
   color: #9DA1A6;
@@ -26,7 +26,7 @@
 }
 .tips .tabWrap .icon {
   width: 15px;
-  margin-left: 18px;
+  margin-left: 2vw;
   cursor: pointer;
 }
 .tips .tabWrap .icon img {
