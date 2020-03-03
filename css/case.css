@@ -188,3 +188,12 @@
 .cooperative_client .container-fluid .row {
   line-height: 40px;
 }
+@media screen and (max-width: 768px) {
+  .images {
+    margin-left: 0px;
+  }
+  .cooperative_client {
+    border: 0;
+    margin: 0 auto;
+  }
+}
