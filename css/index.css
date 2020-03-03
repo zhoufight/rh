@@ -108,9 +108,9 @@
   margin-bottom: 1vw;
   margin-right: 2vw;
 }
-.newList .category ul li .listIcon {
-  width: 3px;
-  height: 3px;
+.newList .category ul li .list-Icon {
+  width: 6px;
+  height: 6px;
   background: #9fa0a0;
   border-radius: 50%;
 }
