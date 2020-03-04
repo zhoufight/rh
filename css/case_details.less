@@ -1,0 +1,55 @@
+@charset "utf-8";
+
+
+// 轮播图
+.carousel-indicators li {
+  box-sizing: content-box;
+  -ms-flex: 0 1 auto;
+  flex: 0 1 auto;
+  width: 30px;
+  height: 3px;
+  margin-right: 3px;
+  margin-left: 3px;
+  text-indent: -999px;
+  cursor: pointer;
+  background-color: black;
+  background-clip: padding-box;
+  border-top: 10px solid transparent;
+  border-bottom: 10px solid transparent;
+  opacity: .5;
+  transition: opacity .6s ease;
+}
+
+//内容区
+.wrap{
+  // 顶部
+  .top{
+    padding: 17px 145px 0 0;
+    // padding-right: 145px;
+  }
+
+  // 中间
+  .middle{
+    padding-top: 30px;
+    .media{
+      .logo{
+        padding-left: 530px;
+        padding-right: 100px;
+      }
+      .media-body{
+        .tit,mt-0{
+          font-size: 16px;
+          font-weight:600;
+          color:rgba(51,51,51,1);
+          line-height:30px;
+        }
+        .text{
+          width:600px;
+          span{
+            text-indent: 25px;
+          }
+        }
+      }
+    }
+  }
+}

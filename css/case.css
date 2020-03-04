@@ -18,8 +18,8 @@
 .menu .nav-item .active {
   color: #D3AB7E;
 }
-.images {
-  margin-left: 50px;
+.images .container-fluid {
+  margin-left: 36px;
 }
 .images .container-fluid .row .col-md-3 {
   margin-right: -25px;
@@ -189,7 +189,7 @@
   line-height: 40px;
 }
 @media screen and (max-width: 768px) {
-  .images {
+  .images .container-fluid {
     margin-left: 0px;
   }
   .cooperative_client {
