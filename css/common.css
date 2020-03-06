@@ -65,6 +65,51 @@ img {
   z-index: 999;
   font-size: 12px;
 }
+.navWrap .subTitleWrap {
+  position: fixed;
+  top: 5vw;
+  left: 0;
+  right: 0;
+  margin: auto;
+  width: 100%;
+  background-color: #fff;
+  padding-bottom: 20px;
+  display: none;
+}
+.navWrap .subTitleWrap .weCanDo {
+  justify-content: center;
+}
+.navWrap .subTitleWrap .weCanDo .itemMenu {
+  margin-left: 10vw;
+}
+.navWrap .subTitleWrap .weCanDo .itemMenu dl dt {
+  padding-bottom: 10px;
+  border-bottom: 1px solid #EEEEEE;
+}
+.navWrap .subTitleWrap .weCanDo .itemMenu dl dt .tit {
+  color: #BD9972;
+  font-size: 12px;
+}
+.navWrap .subTitleWrap .weCanDo .itemMenu dl dt .tit_sub {
+  font-size: 10px;
+  color: #9DA1A6;
+}
+.navWrap .subTitleWrap .weCanDo .itemMenu dl dd {
+  padding-top: 10px;
+}
+.navWrap .subTitleWrap .weCanDo .itemMenu dl dd a {
+  color: #000000;
+}
+.navWrap .subTitleWrap .weCanDo .itemMenu dl .active a {
+  color: #BD9972;
+  display: inline-block;
+  background-image: url('data:image/svg+xml,<svg class="bi bi-play-fill text-color" width="1em" height="1em" color="%23BD9972" viewBox="0 0 20 20" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><path d="M13.596 10.697l-6.363 3.692c-.54.313-1.233-.066-1.233-.697V6.308c0-.63.692-1.01 1.233-.696l6.363 3.692a.802.802 0 010 1.393z"/></svg>');
+  background-repeat: no-repeat;
+  padding-left: 14px;
+}
+.navWrap .subTitleWrap .weCanDo .itemMenu dl .active .color {
+  color: #BD9972;
+}
 .navWrap .navBarWrap {
   justify-content: space-between;
   align-items: center;
@@ -91,6 +136,9 @@ img {
 }
 .navWrap .navBarWrap .meun .menuList .active a {
   color: #000000;
+}
+.navWrap .navBarWrap .meun .menuList div.item:hover .subTitleWrap {
+  display: block;
 }
 .navWrap .navBarWrap .meun .meunIcon {
   margin-left: 2vw;
