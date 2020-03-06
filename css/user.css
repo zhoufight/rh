@@ -1,0 +1,163 @@
+@charset "utf-8";
+.user_box {}
+
+.user_box--header {
+    display: flex;
+    align-items: center;
+    padding: 0 40px;
+    box-sizing: border-box;
+}
+
+.user_box--header_tips {
+    width: 30px;
+}
+
+.user_box--header_logo {
+    flex: 1;
+}
+
+.user_box--header_tips img {
+    max-width: 100%;
+    vertical-align: middle;
+}
+
+.user_box--content {
+    padding: 60px 40px;
+    box-sizing: border-box;
+}
+
+.user_box--content_title {
+    color: #BD9972;
+    padding-bottom: 13px;
+}
+
+.user_box--content_itemtitle {
+    color: #333333;
+    font-size: 20px;
+    padding-bottom: 24px;
+}
+
+.user_box--content p {
+    font-size: 9px;
+    line-height: 20px;
+    box-sizing: border-box;
+}
+
+
+/* 背景颜色 */
+
+.user_box--info {
+    background-color: #333333;
+    padding: 60px;
+    box-sizing: border-box;
+}
+
+.user_box--info_itemtitle {
+    color: #BD9972;
+    font-size: 8px;
+}
+
+.user_box--infoitem {}
+
+.user_box--infoitem_title {
+    margin: 15px 0;
+    height: 60px;
+    line-height: 60px;
+    font-size: 24px;
+    color: #fff;
+    border-top: 1px solid #BD9972;
+    border-bottom: 1px solid #BD9972;
+    box-sizing: border-box;
+    position: relative;
+}
+
+.user_box--infoitem_title::before {
+    position: absolute;
+    right: 0;
+    display: inline-block;
+    content: "+";
+    font-size: 40px;
+    color: #BD9972;
+}
+
+.user_box--infoitem_itemtitle {
+    font-size: 24px;
+    color: #fff;
+    padding-bottom: 18px;
+    position: relative;
+}
+
+.user_box--infoitem_itemtitle::before {
+    position: absolute;
+    right: 0;
+    content: "-";
+    display: inline-block;
+    font-size: 40px;
+    color: #BD9972;
+}
+
+.user_box--infoitem_list {
+    padding-bottom: 24px;
+}
+
+.user_box--infoitem_list-title {
+    font-size: 20px;
+    color: #BD9972;
+    margin-left: -15px;
+    box-sizing: border-box;
+}
+
+.user_box--infoiitem_p {
+    font-size: 9px;
+    color: #CCCCCC;
+    position: relative;
+    line-height: 20px;
+    margin-left: -5px;
+}
+
+.user_box--infoiitem_p::before {
+    position: absolute;
+    display: inline-block;
+    content: "";
+    width: 5px;
+    height: 5px;
+    left: -5px;
+    top: 50%;
+    transform: translateX(-50%);
+    border-radius: 50%;
+    background-color: #CCCCCC;
+}
+
+
+/* 图片 */
+
+.user_box--company {
+    padding: 40px 60px;
+    box-sizing: border-box;
+}
+
+.user_box--company_imgbox {
+    /* padding: 20px 30px 0px 30px; */
+    box-sizing: border-box;
+}
+
+.user_box--company_imgboxitem {
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid #E6E6E6;
+    box-sizing: border-box;
+}
+
+.user_box--company_imgboxitem img {
+    width: calc(100% / 5);
+    border-right: 1px solid #E6E6E6;
+    vertical-align: middle;
+}
+
+.user_box--company_imgboxitem img:last-child {
+    border: none;
+}
+
+.user_box--company_imgboxitem:last-child {
+    border: none;
+}
