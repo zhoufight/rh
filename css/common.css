@@ -49,25 +49,63 @@ img {
 .flex-item-1 {
   flex: 1;
 }
+.hide {
+  display: none;
+}
+.show {
+  display: block;
+}
 /* 导航部分 */
-.navbar {
+.navWrap {
+  position: fixed;
+  left: 0;
+  top: 0;
   width: 100%;
   background-color: #fff;
-}
-.navbar .navbar-brand {
-  margin-left: 56px;
-}
-.navbar .navbar-brand img {
-  width: 85px;
-  height: 30px;
-}
-.navbar .navbar-nav {
-  padding-right: 105px;
-}
-.navbar .navbar-nav a {
+  z-index: 999;
   font-size: 12px;
-  color: #9fa0a0;
-  margin-left: 31px;
+}
+.navWrap .navBarWrap {
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.2vw 1vw;
+}
+.navWrap .navBarWrap .brand {
+  width: 6vw;
+}
+.navWrap .navBarWrap .brand img {
+  max-width: 100%;
+  vertical-align: middle;
+}
+.navWrap .navBarWrap .logo2 {
+  width: 15vw;
+}
+.navWrap .navBarWrap .meun {
+  align-items: center;
+}
+.navWrap .navBarWrap .meun .menuList .item {
+  margin-left: 2vw;
+}
+.navWrap .navBarWrap .meun .menuList .item a {
+  color: #9FA0A0;
+}
+.navWrap .navBarWrap .meun .menuList .active a {
+  color: #000000;
+}
+.navWrap .navBarWrap .meun .meunIcon {
+  margin-left: 2vw;
+}
+.navWrap .navBarWrap .meun .meunIcon .toggler {
+  width: 26px;
+  height: 26px;
+  cursor: pointer;
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg'  viewBox='0 0 30 30'%3e%3cpath stroke='%23000000' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+}
+.navWrap .navBarWrap .meun .meunIcon .toggler:hover {
+  width: 26v;
+  height: 26px;
+  cursor: pointer;
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg'  viewBox='0 0 30 30'%3e%3cpath stroke='%23bb9970' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
 }
 .footer {
   font-size: 12px;
@@ -160,11 +198,13 @@ img {
   -webkit-box-orient: vertical;
 }
 @media screen and (max-width: 768px) {
-  .navbar .navbar-nav a {
-    margin-left: 0px;
-    color: red;
+  .navWrap .navBarWrap .brand {
+    width: 20vw;
   }
-  .navbar .navbar-brand {
-    margin-left: 0;
+  .navWrap .navBarWrap .logo2 {
+    width: 30vw;
+  }
+  .navWrap .navBarWrap .meun .menuWrap {
+    display: none;
   }
 }
