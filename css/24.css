@@ -1,0 +1,157 @@
+@charset "utf-8";
+.navWrap {
+  background-color: #020000;
+}
+.navWrap .navBarWrap .brand {
+  z-index: -1;
+}
+.navWrap .navBarWrap .meun .menuList .item a {
+  color: #9DA1A6;
+}
+.navWrap .navBarWrap .meun .meunIcon .toggler {
+  width: 26px;
+  height: 26px;
+  cursor: pointer;
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg'  viewBox='0 0 30 30'%3e%3cpath stroke='%239DA1A6' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+}
+.content {
+  background-color: #020000;
+  box-sizing: border-box;
+  padding: 14vw 5vw;
+  color: #ffffff;
+}
+.content .section .container-fluid {
+  padding-left: 0;
+  padding-right: 0;
+}
+.content .section .title {
+  color: #D3AB7E;
+  font-size: 14px;
+  padding: 1vw 0;
+}
+.content .section .des {
+  font-size: 20px;
+  padding-bottom: 5vw;
+}
+.content .section .imgText {
+  font-size: 16px;
+}
+.content .section .imgText .txt {
+  padding: 5vw 0;
+}
+.content .section .imgIcon {
+  width: 24vw;
+  margin: 0 auto;
+}
+.content .section .imgIcon img {
+  max-width: 100%;
+}
+.content .section .imgTextTwo {
+  font-size: 2vw;
+  padding: 10vw 20vw 10vw 0;
+  box-sizing: border-box;
+}
+.content .section .sectionTitle {
+  color: #D3AB7E;
+  font-size: 15px;
+  border-bottom: 1px solid #D3AB7E;
+  padding: 1vw 0;
+}
+.content .section .stepWrap {
+  margin-bottom: 2vw;
+}
+.content .section .stepWrap .step {
+  padding: 5vw 0;
+  box-sizing: border-box;
+}
+.content .section .stepWrap .step .stepIcon {
+  width: 18px;
+  margin-right: 10px;
+}
+.content .section .stepWrap .step .stepIcon img {
+  max-width: 100%;
+}
+.content .section .stepWrap .step .con .conTit span {
+  font-size: 14px;
+  color: #9FA0A0;
+}
+.content .section .stepWrap .step .con .conText {
+  color: #9FA0A0;
+  font-size: 14px;
+}
+.content .section .sectionImgIcon {
+  width: 180px;
+  margin: 0 auto;
+}
+.content .section .sectionImgIcon img {
+  max-width: 100%;
+}
+.content .section .ourBrand {
+  color: #9FA0A0;
+  font-size: 16px;
+  padding-top: 5vw;
+}
+.content .section .ourBrand .brands .fontStyle {
+  color: #ffffff;
+}
+.content .section .brandImg {
+  width: 40vw;
+  margin: 0 auto;
+}
+.content .section .brandImg img {
+  max-width: 100%;
+}
+.content .section .imgTextThree {
+  color: #ffffff;
+}
+.content .section .tip {
+  color: #ffffff;
+  font-size: 14px;
+  padding-top: 5vw;
+  padding-bottom: 5vw;
+}
+.content .section .caseWrap {
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+}
+.content .section .caseWrap .left ul li {
+  text-align: center;
+  margin-left: 8px;
+  position: relative;
+}
+.content .section .caseWrap .left ul li img {
+  width: 6vw;
+  height: 6vw;
+  vertical-align: middle;
+  border-radius: 4px;
+}
+.content .section .caseWrap .left ul li p {
+  font-size: 0.8vw;
+  font-weight: 400;
+  text-shadow: 0px 5px 5px #000000;
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 4px;
+  margin: 0 auto;
+}
+.content .section .caseWrap .right {
+  padding-left: 8px;
+}
+.content .section .caseWrap .right img {
+  width: 32px;
+  height: 30px;
+}
+@media screen and (max-width: 767px) {
+  .content .section .imgTextTwo {
+    font-size: 5vw;
+  }
+  .content .section .caseWrap .left ul li img {
+    width: 12vw;
+    height: 12vw;
+  }
+  .content .section .caseWrap .left ul li p {
+    font-size: 0.8vw;
+  }
+}
