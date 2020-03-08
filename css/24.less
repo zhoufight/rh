@@ -27,6 +27,32 @@
     }
   }
 }
+.cd-vertical-nav{
+  font-size: 14px;
+  position: fixed;
+  left: 2vw;
+  bottom: 0;
+  top: 0;
+  margin: auto;
+  height: 100%;
+  .subNav{
+    justify-content: center;
+    align-items:center;
+    height: 100%;
+    ul{
+      li{
+        font-size: 16px;
+        margin-bottom: 1vw;
+        a{
+          color: @gray;
+        }
+        a.active{
+          color: #ffffff;
+        }
+      }
+    }
+  }
+}
 .content{
   background-color: @colorOne;
   box-sizing: border-box;
@@ -173,6 +199,9 @@
 }
 
 @media screen and (max-width:767px){
+  .cd-vertical-nav{
+    display: none;
+  }
   .content{
     .section{
       .imgTextTwo{
