@@ -1,9 +1,7 @@
-.news_box {}
-
 .news_box--banner {
     height: 250px;
     background-color: #2B36E6;
-    box-sizing: border-box
+    box-sizing: border-box;
 }
 
 .news_box--place {

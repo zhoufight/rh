@@ -85,9 +85,60 @@ img {
 }
 .navWrap .navBarWrap .meun .menuList .item {
   margin-left: 2vw;
+  position: relative;
 }
 .navWrap .navBarWrap .meun .menuList .item a {
   color: #9FA0A0;
+}
+.navWrap .navBarWrap .meun .menuList .item .subTitleWrap {
+  position: absolute;
+  top: 2vw;
+  left: -79vw;
+  right: -15vw;
+  margin: auto;
+  background-color: #fff;
+  padding-top: 40px;
+  padding-bottom: 20px;
+  display: none;
+  z-index: -1;
+  cursor: pointer;
+}
+.navWrap .navBarWrap .meun .menuList .item .subTitleWrap .weCanDo {
+  justify-content: center;
+}
+.navWrap .navBarWrap .meun .menuList .item .subTitleWrap .weCanDo .itemMenu {
+  margin-left: 10vw;
+}
+.navWrap .navBarWrap .meun .menuList .item .subTitleWrap .weCanDo .itemMenu dl dt {
+  padding-bottom: 10px;
+  border-bottom: 1px solid #EEEEEE;
+}
+.navWrap .navBarWrap .meun .menuList .item .subTitleWrap .weCanDo .itemMenu dl dt .tit {
+  color: #BD9972;
+  font-size: 12px;
+}
+.navWrap .navBarWrap .meun .menuList .item .subTitleWrap .weCanDo .itemMenu dl dt .tit_sub {
+  font-size: 10px;
+  color: #9DA1A6;
+}
+.navWrap .navBarWrap .meun .menuList .item .subTitleWrap .weCanDo .itemMenu dl dd {
+  padding-top: 10px;
+}
+.navWrap .navBarWrap .meun .menuList .item .subTitleWrap .weCanDo .itemMenu dl dd a {
+  color: #000000;
+}
+.navWrap .navBarWrap .meun .menuList .item .subTitleWrap .weCanDo .itemMenu dl .active a {
+  color: #BD9972;
+  display: inline-block;
+  background-image: url('data:image/svg+xml,<svg class="bi bi-play-fill text-color" width="1em" height="1em" color="%23BD9972" viewBox="0 0 20 20" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><path d="M13.596 10.697l-6.363 3.692c-.54.313-1.233-.066-1.233-.697V6.308c0-.63.692-1.01 1.233-.696l6.363 3.692a.802.802 0 010 1.393z"/></svg>');
+  background-repeat: no-repeat;
+  padding-left: 14px;
+}
+.navWrap .navBarWrap .meun .menuList .item .subTitleWrap .weCanDo .itemMenu dl .active .color {
+  color: #BD9972;
+}
+.navWrap .navBarWrap .meun .menuList .item .hotel {
+  left: -100vw;
 }
 .navWrap .navBarWrap .meun .menuList .active a {
   color: #000000;
@@ -106,6 +157,53 @@ img {
   height: 26px;
   cursor: pointer;
   background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg'  viewBox='0 0 30 30'%3e%3cpath stroke='%23bb9970' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+}
+.maskMenu {
+  position: fixed;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  overflow: scroll;
+  background-color: #231f20;
+  z-index: 9999;
+  padding: 5vw;
+}
+.maskMenu .menuClose {
+  width: 4vw;
+  height: 4vw;
+  position: fixed;
+  right: 1.5vw;
+  top: 1vw;
+  cursor: pointer;
+}
+.maskMenu .menuClose .text-close {
+  color: #fff;
+}
+.maskMenu .menuClose:hover .text-close {
+  color: #BD9972;
+}
+.maskMenu .maskMenuItem a {
+  color: #fff;
+}
+.maskMenu .maskMenuItem a:hover {
+  color: #BD9972;
+}
+.maskMenu .maskMenuItem .left {
+  font-size: 36px;
+}
+.maskMenu .maskMenuItem .right {
+  padding-left: 14vw;
+  box-sizing: border-box;
+}
+.maskMenu .maskMenuItem .right .tit {
+  font-size: 700;
+  font-size: 16px;
+  color: #BD9972;
+}
+.maskMenu .maskMenuItem .right ul li a {
+  font-size: 18px;
+  line-height: 30px;
 }
 .footer {
   font-size: 12px;
@@ -206,5 +304,9 @@ img {
   }
   .navWrap .navBarWrap .meun .menuWrap {
     display: none;
+  }
+  .maskMenu .menuClose {
+    width: 8vw;
+    height: 8vw;
   }
 }
