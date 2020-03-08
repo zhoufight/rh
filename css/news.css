@@ -1,7 +1,11 @@
 .news_box--banner {
-    height: 250px;
     background-color: #2B36E6;
+    overflow: hidden;
     box-sizing: border-box;
+}
+
+.carousel-inner img {
+    width: 100%;
 }
 
 .news_box--place {
@@ -35,6 +39,7 @@
 }
 
 .news_box--content_sidebar {
+    padding-left: 35px;
     height: 125px;
     margin-right: 18px;
     box-sizing: border-box;
@@ -52,7 +57,7 @@
 }
 
 .news_box--content_nav {
-    min-width: 126px;
+    width: 100%;
     padding-right: 25px;
     box-sizing: border-box;
 }
@@ -63,13 +68,17 @@
     position: relative;
 }
 
+.news_box--content_navitem a {
+    width: 100%;
+}
+
 .news_box--content_navitem:first-child {
     color: #BD9972;
 }
 
 .news_box--content_navitem:first-child::after {
     position: absolute;
-    right: -25px;
+    right: -39px;
     content: "";
     display: inline-block;
     width: 2px;
@@ -241,7 +250,7 @@
 
 .news_box--imginfo {
     margin-top: 45px;
-    height: 325px;
+    min-height: 325px;
     box-sizing: border-box;
     overflow: hidden;
 }
@@ -252,23 +261,23 @@
     vertical-align: middle;
 }
 
-.new_box--itemimg {}
+.news_box--itemimg {}
 
-.new_box--itemimg_title {
+.news_box--itemimg_title {
     text-align: center;
     color: #BD9972;
     padding: 40px 0;
     box-sizing: border-box;
 }
 
-.new_box--itemimg_list {
+.news_box--itemimg_list {
     padding: 0 40px;
     box-sizing: border-box;
     display: flex;
     align-items: center;
 }
 
-.new_box--itemimg_listitem {
+.news_box--itemimg_listitem {
     position: relative;
     width: calc(100% / 4);
     margin-right: 10px;
@@ -276,7 +285,7 @@
     box-sizing: border-box;
 }
 
-.new_box--itemimg_listitem-item {
+.news_box--itemimg_listitem-item {
     position: absolute;
     right: -30px;
     top: -30px;
@@ -289,7 +298,7 @@
     color: #BD9972;
 }
 
-.new_box--itemimg_listitem-item::before {
+.news_box--itemimg_listitem-item::before {
     position: absolute;
     top: -5px;
     right: 5px;
@@ -303,7 +312,7 @@
     transform: rotate(45deg);
 }
 
-.new_box--itemimg_listitem-item::after {
+.news_box--itemimg_listitem-item::after {
     position: absolute;
     top: -9px;
     right: 8px;
@@ -312,7 +321,7 @@
     transform: rotate(70deg);
 }
 
-.new_box--itemimg_listitem-tips {
+.news_box--itemimg_listitem-tips {
     display: none;
     color: #fff;
     position: absolute;
@@ -321,7 +330,7 @@
     box-sizing: border-box;
 }
 
-.new_box--more {
+.news_box--more {
     margin: 38px auto;
     width: 130px;
     text-align: center;
