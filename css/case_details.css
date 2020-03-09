@@ -53,10 +53,10 @@
   padding: 8px 0;
 }
 .wrap .middle .cross_line {
-  padding: 50px 0;
+  padding: 4vw 0;
 }
 .wrap .middle .cross_line .line_center {
-  padding: 0 70px;
+  padding: 0 7vw;
 }
 .wrap .middle .wrap_page {
   margin-top: 20px;
@@ -73,7 +73,7 @@
   }
   .wrap .middle .media {
     padding: 3vw 0;
-    margin-left: 5vw;
+    margin-left: 15vw;
   }
 }
 @media screen and (max-width: 768px) {
