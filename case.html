@@ -8,30 +8,189 @@
   <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
   <meta name="description" content="" />
   <meta name="keywords" content="" />
+  <link rel="shortcut icon" href="./images/favicon.ico" type="image/x-icon">
   <link href="lib/bootstrap-4.4.1-dist/css/bootstrap.min.css" rel="stylesheet" />
   <link rel="stylesheet" href="css/common.css">
   <link rel="stylesheet" href="css/case.css">
 </head>
 
 <body>
-  <!-- 导航部分 -->
-  <nav class="navbar navbar-expand-lg navbar-light fixed-top">
-    <a class="navbar-brand" href="#"><img src="./images/pc_logo.png" alt=""></a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
-      aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-      <div class="navbar-nav ml-auto">
-        <a class="nav-item nav-link active" href="#">首页 <span class="sr-only">(current)</span></a>
-        <a class="nav-item nav-link" href="#">案例</a>
-        <a class="nav-item nav-link" href="#">我们的优势</a>
-        <a class="nav-item nav-link" href="#">我们能做什么</a>
-        <a class="nav-item nav-link" href="#">联系</a>
-        <a class="nav-item nav-link disabled" href="#" tabindex="-1" aria-disabled="true">酒店管理</a>
+   <!-- 导航 -->
+   <nav class="navWrap">
+    <div class="navBarWrap flex">
+      <div class="brand "><img src="images/pc_logo.png" alt="" srcset=""></div>
+      <div class="meun flex">
+        <div class="menuWrap">
+          <div class="menuList flex">
+            <div class="item menuItem active"><a href="index.html">首页</a></div>
+            <div class="item menuItem"><a href="case.html">案例</a></div>
+            <div class="item menuItem"><a href="usergood.html">我们的优势</a></div>
+            <div class="item  menuItem">
+              <a href="user.html">我们能做什么</a>
+              <div class="subTitleWrap menuItem">
+                <!-- 我们能做什么 下拉菜单 -->
+                <div class="weCanDo flex">
+                  <div class="itemMenu">
+                    <dl>
+                      <dt>
+                        <p class="tit">品牌战略咨询</p>
+                        <p class="tit_sub">Brand strategy consulting</p>
+                      </dt>
+                      <dd><a href="">战略规划</a></dd>
+                      <dd class="active"><a href="">定位咨询</a></dd>
+                      <dd><a href="">企业架构梳理</a></dd>
+                      <dd><a href="">理念口号</a></dd>
+                      <dd><a href="">策划命名</a></dd>
+                    </dl>
+                  </div>
+                  <div class="itemMenu">
+                    <dl>
+                      <dt>
+                        <p class="tit">品牌形象设计</p>
+                        <p class="tit_sub">Brand identity design</p>
+                      </dt>
+                      <dd><a href="">标志设计 \ VIS设计</a></dd>
+                      <dd><a href="">导视标牌设计</a></dd>
+                      <dd><a href="">软装设计</a></dd>
+                      <dd><a href="">灯光工程</a></dd>
+                      <dd><a href="">酒店推广物料设计</a></dd>
+                    </dl>
+                  </div>
+                  <div class="itemMenu">
+                    <dl>
+                      <dt>
+                        <p class="tit">导示规划与设计</p>
+                        <p class="tit_sub">Guide planning and design</p>
+                      </dt>
+                      <dd><a href="">城市、小镇公共环境规划</a></dd>
+                      <dd><a href="">旅游度假景区导视</a></dd>
+                      <dd><a href="">商业综合体&大型商场</a></dd>
+                      <dd><a href="">地产导示系统设计</a></dd>
+                      <dd><a href="">星级酒店\温泉\高端会所</a></dd>
+                      <dd><a href="">办公空</a></dd>
+                    </dl>
+                  </div>
+                  <div class="itemMenu">
+                    <dl>
+                      <dt>
+                        <p class="tit">工程制作</p>
+                        <p class="tit_sub">Engineering production</p>
+                      </dt>
+                      <dd><a href="">工程灯光设计&施工</a></dd>
+                      <dd><a href="">导示标识制作、安装</a></dd>
+                      <dd><a href="">宣传物料印刷</a></dd>
+                      <dd><a href="">产品&用品设计与打样</a></dd>
+                      <dd><a href="">纪念礼品设计&制作</a></dd>
+                    </dl>
+                  </div>
+
+                </div>
+              </div>
+            </div>
+            <div class="item"><a href="usertelphone.html">联系</a></div>
+            <div class="item menuItem">
+              <a href="">酒店管理</a>
+              <div class="subTitleWrap menuItem hotel">
+                <div class="weCanDo flex">
+                  <div class="itemMenu">
+                    <dl>
+                      <dt>
+                        <p class="tit">品牌战略咨询</p>
+                        <p class="tit_sub">Brand strategy consulting</p>
+                      </dt>
+                      <dd><a href="">战略规划</a></dd>
+                      <dd class="active"><a href="">定位咨询</a></dd>
+                      <dd><a href="">企业架构梳理</a></dd>
+                      <dd><a href="">理念口号</a></dd>
+                      <dd><a href="">策划命名</a></dd>
+                    </dl>
+                  </div>
+                  <div class="itemMenu">
+                    <dl>
+                      <dt>
+                        <p class="tit">品牌形象设计</p>
+                        <p class="tit_sub">Brand identity design</p>
+                      </dt>
+                      <dd><a href="">标志设计 \ VIS设计</a></dd>
+                      <dd><a href="">导视标牌设计</a></dd>
+                      <dd><a href="">软装设计</a></dd>
+                      <dd><a href="">灯光工程</a></dd>
+                      <dd><a href="">酒店推广物料设计</a></dd>
+                    </dl>
+                  </div>
+                  <div class="itemMenu">
+                    <dl>
+                      <dt>
+                        <p class="tit">导示规划与设计</p>
+                        <p class="tit_sub">Guide planning and design</p>
+                      </dt>
+                      <dd><a href="">城市、小镇公共环境规划</a></dd>
+                      <dd><a href="">旅游度假景区导视</a></dd>
+                      <dd><a href="">商业综合体&大型商场</a></dd>
+                      <dd><a href="">地产导示系统设计</a></dd>
+                      <dd><a href="">星级酒店\温泉\高端会所</a></dd>
+                      <dd><a href="">办公空</a></dd>
+                    </dl>
+                  </div>
+                  <div class="itemMenu">
+                    <dl>
+                      <dt>
+                        <p class="tit">工程制作</p>
+                        <p class="tit_sub">Engineering production</p>
+                      </dt>
+                      <dd><a href="">工程灯光设计&施工</a></dd>
+                      <dd><a href="">导示标识制作、安装</a></dd>
+                      <dd><a href="">宣传物料印刷</a></dd>
+                      <dd><a href="">产品&用品设计与打样</a></dd>
+                      <dd><a href="">纪念礼品设计&制作</a></dd>
+                    </dl>
+                  </div>
+
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="meunIcon">
+          <div class="toggler" onclick="showMaskMenu()"></i></div>
+        </div>
       </div>
     </div>
   </nav>
+  
+  <div class="maskMenu hide">
+    <div class="menuClose" onclick="hideMaskMenu()">
+      <svg class="bi bi-x text-close"  viewBox="0 0 20 20" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+        <path fill-rule="evenodd" d="M5.646 5.646a.5.5 0 000 .708l8 8a.5.5 0 00.708-.708l-8-8a.5.5 0 00-.708 0z" clip-rule="evenodd"/>
+        <path fill-rule="evenodd" d="M14.354 5.646a.5.5 0 010 .708l-8 8a.5.5 0 01-.708-.708l8-8a.5.5 0 01.708 0z" clip-rule="evenodd"/>
+      </svg>
+    </div>
+    <div class="maskMenuItem flex">
+      <div class="left">
+        <ul>
+          <li><a href="">About</a></li>
+          <li><a href="">Press</a></li>
+          <li><a href="">Contact</a></li>
+          <li><a href="">Careers</a></li>
+          <li><a href="">Shop</a></li>
+          <li><a href="24.html">24 Hour Assembly</a></li>
+          <li><a href="">Local Works</a></li>
+        </ul>
+      </div>
+      <div class="right">
+        <div class="tit">Connect</div>
+        <ul>
+          <li><a href="">Instagram</a></li>
+          <li><a href="">LinkedIn</a></li>
+          <li><a href="">Twitter</a></li>
+          <li><a href="">Pinterest</a></li>
+          <li><a href="">Dribbble</a></li>
+          <li><a href="">Newsletter</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <!-- 导航end -->
 
   <!-- 案例导航 -->
   <ul class="nav justify-content-end menu">
@@ -72,12 +231,12 @@
 
   <!-- 图片列表展示 -->
   <div class="images">
-    <div class="container-fluid ">
-      <div class="row ">
-        <div class="col-sm-6 col-md-3 ">
+    <div class="container-fluid clearfix">   
+      <div class="row">
+        <div class="item ">
           <a class="box">
-            <img  class="img-fluid "  src="./images/case/case1.png">
-            <div class="box-content text-left">
+            <img class="listIcon"  src="./images/SANZO_Can_05_1012px.jpg">
+            <div class="box-content ">
               <div class="arrow">
                 <img class="arrow_up" src="other/arrow-up.svg" alt="">
               </div> 
@@ -88,10 +247,10 @@
             </div>
           </a>
         </div>
-        <div class="col-sm-6 col-md-3 ">
+        <div class="item">
           <a class="box">
-            <img  class="img-fluid " src="./images/case/case1.png">
-            <div class="box-content text-left">
+            <img  class="listIcon"    src="./images/SANZO_Can_05_1012px.jpg">
+            <div class="box-content ">
               <div class="arrow">
                 <img class="arrow_up" src="other/arrow-up.svg" alt="">
               </div> 
@@ -102,10 +261,10 @@
             </div>
           </a>
         </div>
-        <div class="col-sm-6 col-md-3 ">
+        <div class="item ">
           <a class="box">
-            <img class="img-fluid " src="./images/case/case1.png">
-            <div class="box-content text-left">
+            <img  class="listIcon"   src="./images/SANZO_Can_05_1012px.jpg">
+            <div class="box-content ">
               <div class="arrow">
                 <img class="arrow_up" src="other/arrow-up.svg" alt="">
               </div> 
@@ -116,10 +275,126 @@
             </div>
           </a>
         </div>
-        <div class="col-sm-6 col-md-3 ">
+        <div class="item">
           <a class="box">
-            <img class="img-fluid " src="./images/case/case1.png">
-            <div class="box-content text-left">
+            <img  class="listIcon"   src="./images/SANZO_Can_05_1012px.jpg">
+            <div class="box-content ">
+              <div class="arrow">
+                <img class="arrow_up" src="other/arrow-up.svg" alt="">
+              </div> 
+              <div class="textWrap">
+                <h3 class="title">南宁万丽酒店</h3>
+                <span class="post">GIG国际金融资本中心总建筑面积23万㎡，南宁万丽酒店、超高层国际5A甲级写字楼，总高度213.45米。 金融资本中心及酒店标识设计</span>
+              </div>
+            </div>
+          </a>
+        </div>
+      </div>
+      <div class="row">
+        <div class="item ">
+          <a class="box">
+            <img class="listIcon"  src="./images/SANZO_Can_05_1012px.jpg">
+            <div class="box-content ">
+              <div class="arrow">
+                <img class="arrow_up" src="other/arrow-up.svg" alt="">
+              </div> 
+              <div class="textWrap">
+                <h3 class="title">南宁万丽酒店</h3>
+                <span class="post">GIG国际金融资本中心总建筑面积23万㎡，南宁万丽酒店、超高层国际5A甲级写字楼，总高度213.45米。 金融资本中心及酒店标识设计</span>
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="item">
+          <a class="box">
+            <img  class="listIcon"    src="./images/SANZO_Can_05_1012px.jpg">
+            <div class="box-content ">
+              <div class="arrow">
+                <img class="arrow_up" src="other/arrow-up.svg" alt="">
+              </div> 
+              <div class="textWrap">
+                <h3 class="title">南宁万丽酒店</h3>
+                <span class="post">GIG国际金融资本中心总建筑面积23万㎡，南宁万丽酒店、超高层国际5A甲级写字楼，总高度213.45米。 金融资本中心及酒店标识设计</span>
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="item ">
+          <a class="box">
+            <img  class="listIcon"   src="./images/SANZO_Can_05_1012px.jpg">
+            <div class="box-content ">
+              <div class="arrow">
+                <img class="arrow_up" src="other/arrow-up.svg" alt="">
+              </div> 
+              <div class="textWrap">
+                <h3 class="title">南宁万丽酒店</h3>
+                <span class="post">GIG国际金融资本中心总建筑面积23万㎡，南宁万丽酒店、超高层国际5A甲级写字楼，总高度213.45米。 金融资本中心及酒店标识设计</span>
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="item">
+          <a class="box">
+            <img  class="listIcon"   src="./images/SANZO_Can_05_1012px.jpg">
+            <div class="box-content ">
+              <div class="arrow">
+                <img class="arrow_up" src="other/arrow-up.svg" alt="">
+              </div> 
+              <div class="textWrap">
+                <h3 class="title">南宁万丽酒店</h3>
+                <span class="post">GIG国际金融资本中心总建筑面积23万㎡，南宁万丽酒店、超高层国际5A甲级写字楼，总高度213.45米。 金融资本中心及酒店标识设计</span>
+              </div>
+            </div>
+          </a>
+        </div>
+      </div>
+      <div class="row">
+        <div class="item ">
+          <a class="box">
+            <img class="listIcon"  src="./images/SANZO_Can_05_1012px.jpg">
+            <div class="box-content ">
+              <div class="arrow">
+                <img class="arrow_up" src="other/arrow-up.svg" alt="">
+              </div> 
+              <div class="textWrap">
+                <h3 class="title">南宁万丽酒店</h3>
+                <span class="post">GIG国际金融资本中心总建筑面积23万㎡，南宁万丽酒店、超高层国际5A甲级写字楼，总高度213.45米。 金融资本中心及酒店标识设计</span>
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="item">
+          <a class="box">
+            <img  class="listIcon"    src="./images/SANZO_Can_05_1012px.jpg">
+            <div class="box-content ">
+              <div class="arrow">
+                <img class="arrow_up" src="other/arrow-up.svg" alt="">
+              </div> 
+              <div class="textWrap">
+                <h3 class="title">南宁万丽酒店</h3>
+                <span class="post">GIG国际金融资本中心总建筑面积23万㎡，南宁万丽酒店、超高层国际5A甲级写字楼，总高度213.45米。 金融资本中心及酒店标识设计</span>
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="item ">
+          <a class="box">
+            <img  class="listIcon"   src="./images/SANZO_Can_05_1012px.jpg">
+            <div class="box-content ">
+              <div class="arrow">
+                <img class="arrow_up" src="other/arrow-up.svg" alt="">
+              </div> 
+              <div class="textWrap">
+                <h3 class="title">南宁万丽酒店</h3>
+                <span class="post">GIG国际金融资本中心总建筑面积23万㎡，南宁万丽酒店、超高层国际5A甲级写字楼，总高度213.45米。 金融资本中心及酒店标识设计</span>
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="item">
+          <a class="box">
+            <img  class="listIcon"   src="./images/SANZO_Can_05_1012px.jpg">
+            <div class="box-content ">
               <div class="arrow">
                 <img class="arrow_up" src="other/arrow-up.svg" alt="">
               </div> 
@@ -132,126 +407,10 @@
         </div>
       </div>
       <div class="row ">
-        <div class="col-sm-6 col-md-3">
-          <a class="box">
-            <img class="img-fluid " src="./images/case/case1.png">
-            <div class="box-content text-left">
-              <div class="arrow">
-                <img class="arrow_up" src="other/arrow-up.svg" alt="">
-              </div> 
-              <div class="textWrap">
-                <h3 class="title">南宁万丽酒店</h3>
-                <span class="post">GIG国际金融资本中心总建筑面积23万㎡，南宁万丽酒店、超高层国际5A甲级写字楼，总高度213.45米。 金融资本中心及酒店标识设计</span>
-              </div>
-            </div>
-          </a>
-        </div>
-        <div class="col-sm-6 col-md-3">
-          <a class="box">
-            <img class="img-fluid " src="./images/case/case1.png">
-            <div class="box-content text-left">
-              <div class="arrow">
-                <img class="arrow_up" src="other/arrow-up.svg" alt="">
-              </div> 
-              <div class="textWrap">
-                <h3 class="title">南宁万丽酒店</h3>
-                <span class="post">GIG国际金融资本中心总建筑面积23万㎡，南宁万丽酒店、超高层国际5A甲级写字楼，总高度213.45米。 金融资本中心及酒店标识设计</span>
-              </div>
-            </div>
-          </a>
-        </div>
-        <div class="col-sm-6 col-md-3">
-          <a class="box">
-            <img class="img-fluid " src="./images/case/case1.png">
-            <div class="box-content text-left">
-              <div class="arrow">
-                <img class="arrow_up" src="other/arrow-up.svg" alt="">
-              </div> 
-              <div class="textWrap">
-                <h3 class="title">南宁万丽酒店</h3>
-                <span class="post">GIG国际金融资本中心总建筑面积23万㎡，南宁万丽酒店、超高层国际5A甲级写字楼，总高度213.45米。 金融资本中心及酒店标识设计</span>
-              </div>
-            </div>
-          </a>
-        </div>
-        <div class="col-sm-6 col-md-3">
-          <a class="box">
-            <img class="img-fluid " src="./images/case/case1.png">
-            <div class="box-content text-left">
-              <div class="arrow">
-                <img class="arrow_up" src="other/arrow-up.svg" alt="">
-              </div> 
-              <div class="textWrap">
-                <h3 class="title">南宁万丽酒店</h3>
-                <span class="post">GIG国际金融资本中心总建筑面积23万㎡，南宁万丽酒店、超高层国际5A甲级写字楼，总高度213.45米。 金融资本中心及酒店标识设计</span>
-              </div>
-            </div>
-          </a>
-        </div>
-      </div>
-      <div class="row ">
-        <div class="col-sm-6 col-md-3">
-          <a class="box">
-            <img class="img-fluid " src="./images/case/case1.png">
-            <div class="box-content text-left">
-              <div class="arrow">
-                <img class="arrow_up" src="other/arrow-up.svg" alt="">
-              </div> 
-              <div class="textWrap">
-                <h3 class="title">南宁万丽酒店</h3>
-                <span class="post">GIG国际金融资本中心总建筑面积23万㎡，南宁万丽酒店、超高层国际5A甲级写字楼，总高度213.45米。 金融资本中心及酒店标识设计</span>
-              </div>
-            </div>
-          </a>
-        </div>
-        <div class="col-sm-6 col-md-3">
-          <a class="box">
-            <img class="img-fluid " src="./images/case/case1.png">
-            <div class="box-content text-left">
-              <div class="arrow">
-                <img class="arrow_up" src="other/arrow-up.svg" alt="">
-              </div> 
-              <div class="textWrap">
-                <h3 class="title">南宁万丽酒店</h3>
-                <span class="post">GIG国际金融资本中心总建筑面积23万㎡，南宁万丽酒店、超高层国际5A甲级写字楼，总高度213.45米。 金融资本中心及酒店标识设计</span>
-              </div>
-            </div>
-          </a>
-        </div>
-        <div class="col-sm-6 col-md-3">
-          <a class="box">
-            <img class="img-fluid " src="./images/case/case1.png">
-            <div class="box-content text-left">
-              <div class="arrow">
-                <img class="arrow_up" src="other/arrow-up.svg" alt="">
-              </div> 
-              <div class="textWrap">
-                <h3 class="title">南宁万丽酒店</h3>
-                <span class="post">GIG国际金融资本中心总建筑面积23万㎡，南宁万丽酒店、超高层国际5A甲级写字楼，总高度213.45米。 金融资本中心及酒店标识设计</span>
-              </div>
-            </div>
-          </a>
-        </div>
-        <div class="col-sm-6 col-md-3">
-          <a class="box">
-            <img class="img-fluid " src="./images/case/case1.png">
-            <div class="box-content text-left">
-              <div class="arrow">
-                <img class="arrow_up" src="other/arrow-up.svg" alt="">
-              </div> 
-              <div class="textWrap">
-                <h3 class="title">南宁万丽酒店</h3>
-                <span class="post">GIG国际金融资本中心总建筑面积23万㎡，南宁万丽酒店、超高层国际5A甲级写字楼，总高度213.45米。 金融资本中心及酒店标识设计</span>
-              </div>
-            </div>
-          </a>
-        </div>
-      </div>
-      <div class="row ">
-        <div class="col-sm-6 col-md-3">
+        <div class="item">
           
           <a class="box">
-            <img class="img-fluid " src="./images/case/case1.png">
+            <img  class="listIcon"   src="./images/case/case1.png">
             <div class="box-content text-left">
               <div class="arrow">
                 <img class="arrow_up" src="other/arrow-up.svg" alt="">
@@ -263,10 +422,10 @@
             </div>
           </a>
         </div>
-        <div class="col-sm-6 col-md-3">
+        <div class="item">
         
           <div class="box">
-            <img class="img-fluid " src="./images/case/case1.png">
+            <img  class="listIcon"   src="./images/case/case1.png">
             <div class="box-content text-left">
               <div class="arrow">
                 <img class="arrow_up" src="other/arrow-up.svg" alt="">
@@ -278,74 +437,74 @@
             </div>
           </div>
         </div>
-        <div class="col-sm-6 col-md-3 ">
-          <ul class="new_list ">
-            <li>
-              <div class="item flex">
+        <div class="item newWrap">
+          <ul class="new_list">
+            <li >
+              <div class="press flex">
                 <div class="tit textSingle">企业供给侧创新的根本是为品牌做加</div>
                 <div class="time">2020/02/12</div>
               </div>
             </li>
             <li>
-              <div class="item flex">
+              <div class="press flex">
                 <div class="tit textSingle">双定位品牌理论,让企业供给侧</div>
                 <div class="time">2020/02/12</div>
               </div>
             </li>            
             <li>
-              <div class="item flex">
+              <div class="press flex">
                 <div class="tit textSingle">对于企业而言,为自己的品牌定位</div>
                 <div class="time">2020/02/12</div>
               </div>
             </li>    
             <li>
-              <div class="item flex">
+              <div class="press flex">
                 <div class="tit textSingle">南宁万丽酒店品牌设计最新资料</div>
                 <div class="time">2020/02/12</div>
               </div>
             </li>    
             <li>
-              <div class="item flex">
+              <div class="press flex">
                 <div class="tit textSingle">中国最好的品牌设计公司在哪里呢</div>
                 <div class="time">2020/02/12</div>
               </div>
             </li>    
             <li>
-              <div class="item flex">
+              <div class="press flex">
                 <div class="tit textSingle">国外的品牌意向和设计动力如何发展</div>
                 <div class="time">2020/02/12</div>
               </div>
             </li>
             <li>
-              <div class="item flex">
+              <div class="press flex">
                 <div class="tit textSingle">人和时代得到2020年设计大奖</div>
                 <div class="time">2020/02/12</div>
               </div>
             </li>
             <li>
-              <div class="item flex">
+              <div class="press flex">
                 <div class="tit textSingle">酒店人才招聘的难题在什么地方呢</div>
                 <div class="time">2020/02/12</div>
               </div>
             </li>    
             <li>
-              <div class="item flex">
+              <div class="press flex">
                 <div class="tit textSingle">我国发展的设计要素是什么</div>
                 <div class="time">2020/02/12</div>
               </div>
             </li>    
             <li>
-              <div class="item flex">
+              <div class="press flex">
                 <div class="tit textSingle">设计在于构思和思想的前卫概念创</div>
                 <div class="time">2020/02/12</div>
               </div>
             </li>            
           </ul>
         </div>
-        <div class="col-sm-6 col-md-3">
+        <div class="item">
          
           <a class="box">
-            <img class="img-fluid " src="./images/case/case1.png">
+            <img class="listIcon"    src="./images/case/case1.png">
             <div class="box-content text-left">
               <div class="arrow">
                 <img class="arrow_up" src="other/arrow-up.svg" alt="">
@@ -359,11 +518,11 @@
           </a>
         </div>
       </div>
-      <div class="row ">
-        <div class="col-sm-6 col-md-3">
+      <div class="row">
+        <div class="item ">
           <a class="box">
-            <img class="img-fluid " src="./images/case/case1.png">
-            <div class="box-content text-left">
+            <img class="listIcon"  src="./images/SANZO_Can_05_1012px.jpg">
+            <div class="box-content ">
               <div class="arrow">
                 <img class="arrow_up" src="other/arrow-up.svg" alt="">
               </div> 
@@ -374,10 +533,10 @@
             </div>
           </a>
         </div>
-        <div class="col-sm-6 col-md-3">
+        <div class="item">
           <a class="box">
-            <img class="img-fluid " src="./images/case/case1.png">
-            <div class="box-content text-left">
+            <img  class="listIcon"    src="./images/SANZO_Can_05_1012px.jpg">
+            <div class="box-content ">
               <div class="arrow">
                 <img class="arrow_up" src="other/arrow-up.svg" alt="">
               </div> 
@@ -388,10 +547,10 @@
             </div>
           </a>
         </div>
-        <div class="col-sm-6 col-md-3">
+        <div class="item ">
           <a class="box">
-            <img class="img-fluid " src="./images/case/case1.png">
-            <div class="box-content text-left">
+            <img  class="listIcon"   src="./images/SANZO_Can_05_1012px.jpg">
+            <div class="box-content ">
               <div class="arrow">
                 <img class="arrow_up" src="other/arrow-up.svg" alt="">
               </div> 
@@ -402,10 +561,10 @@
             </div>
           </a>
         </div>
-        <div class="col-sm-6 col-md-3">
+        <div class="item">
           <a class="box">
-            <img class="img-fluid " src="./images/case/case1.png">
-            <div class="box-content text-left">
+            <img  class="listIcon"   src="./images/SANZO_Can_05_1012px.jpg">
+            <div class="box-content ">
               <div class="arrow">
                 <img class="arrow_up" src="other/arrow-up.svg" alt="">
               </div> 
@@ -417,11 +576,11 @@
           </a>
         </div>
       </div>
-      <div class="row ">
-        <div class="col-sm-6 col-md-3">
+      <div class="row">
+        <div class="item ">
           <a class="box">
-            <img class="img-fluid " src="./images/case/case1.png">
-            <div class="box-content text-left">
+            <img class="listIcon"  src="./images/SANZO_Can_05_1012px.jpg">
+            <div class="box-content ">
               <div class="arrow">
                 <img class="arrow_up" src="other/arrow-up.svg" alt="">
               </div> 
@@ -432,10 +591,10 @@
             </div>
           </a>
         </div>
-        <div class="col-sm-6 col-md-3">
+        <div class="item">
           <a class="box">
-            <img class="img-fluid " src="./images/case/case1.png">
-            <div class="box-content text-left">
+            <img  class="listIcon"    src="./images/SANZO_Can_05_1012px.jpg">
+            <div class="box-content ">
               <div class="arrow">
                 <img class="arrow_up" src="other/arrow-up.svg" alt="">
               </div> 
@@ -446,10 +605,10 @@
             </div>
           </a>
         </div>
-        <div class="col-sm-6 col-md-3">
+        <div class="item ">
           <a class="box">
-            <img class="img-fluid " src="./images/case/case1.png">
-            <div class="box-content text-left">
+            <img  class="listIcon"   src="./images/SANZO_Can_05_1012px.jpg">
+            <div class="box-content ">
               <div class="arrow">
                 <img class="arrow_up" src="other/arrow-up.svg" alt="">
               </div> 
@@ -460,10 +619,10 @@
             </div>
           </a>
         </div>
-        <div class="col-sm-6 col-md-3">
+        <div class="item">
           <a class="box">
-            <img class="img-fluid " src="./images/case/case1.png">
-            <div class="box-content text-left">
+            <img  class="listIcon"   src="./images/SANZO_Can_05_1012px.jpg">
+            <div class="box-content ">
               <div class="arrow">
                 <img class="arrow_up" src="other/arrow-up.svg" alt="">
               </div> 
@@ -477,258 +636,257 @@
       </div>
     </div>
   </div>
-  
 
   <!-- 加载更多部分 -->
   <div class="center-block very_more">
-    <a href="#" class="btn btn-default btn-lg active"  role="button"><span class="t_t">VIEW MORE ></span> </a>
+    <a href="#" class="btn btn-default btn-lg active" role="button"><span class="t_t">VIEW MORE ></span> </a>
   </div>
   <div class="wrap">
-    <img src="./images/case/warp_bg1.png" alt="">
+    <img class="img-fluid" src="./images/case/warp_bg1.png" alt="">
   </div>
 
   <!-- 合作伙伴 -->
   <div class="cooperative_client">
-    <div class="container-fluid text-left">
+    <div class="container-fluid ">
       <p class="text">我们的一些客户</p>
       <div class="row">
-        <div class="col-6 col-sm-6  col-md-2"> 
+        <div class="col-6 col-sm-6  col-md-2">
           <span>南宁万丽酒店</span>
         </div>
-        <div class="col-6 col-sm-6  col-md-2"> 
-          <span >厦门海峡文化中心</span>
+        <div class="col-6 col-sm-6  col-md-2">
+          <span>厦门海峡文化中心</span>
         </div>
-        <div class="col-6  col-sm-6  col-md-2"> 
-          <span >吉林长春吉旅酒店集团</span>
+        <div class="col-6  col-sm-6  col-md-2">
+          <span>吉林长春吉旅酒店集团</span>
         </div>
-        <div class="col-6  col-sm-6  col-md-2"> 
-          <span >华发集团</span>
+        <div class="col-6  col-sm-6  col-md-2">
+          <span>华发集团</span>
         </div>
-        <div class="col-6  col-sm-6  col-md-2"> 
-          <span >阿里巴巴FLYZOO HOTEL</span>
+        <div class="col-6  col-sm-6  col-md-2">
+          <span>阿里巴巴FLYZOO HOTEL</span>
         </div>
-        <div class="col-6  col-sm-6  col-md-2"> 
-          <span >北京玉渊潭管理集团</span>
-        </div>
-      </div>
-      <div class="row">
-        <div class="col-6  col-sm-6  col-md-2"> 
-          <span >佛山万豪酒店</span>
-        </div>
-        <div class="col-6  col-sm-6  col-md-2"> 
-          <span >上海奉贤中澳广场 </span>
-        </div>
-        <div class="col-6  col-sm-6  col-md-2"> 
-          <span >鄂旅投洪湖金湾酒店</span>
-        </div>
-        <div class="col-6  col-sm-6  col-md-2"> 
-          <span >广投集团</span>
-        </div>
-        <div class="col-6  col-sm-6  col-md-2"> 
-          <span >顺德新能源汽车小镇</span>
-        </div>
-        <div class="col-6  col-sm-6  col-md-2"> 
-          <span >方言（电影）主题酒店</span>
+        <div class="col-6  col-sm-6  col-md-2">
+          <span>北京玉渊潭管理集团</span>
         </div>
       </div>
       <div class="row">
-        <div class="col-6  col-sm-6  col-md-2"> 
-          <span >水底山温泉景区</span>
+        <div class="col-6  col-sm-6  col-md-2">
+          <span>佛山万豪酒店</span>
         </div>
-        <div class="col-6  col-sm-6  col-md-2"> 
-          <span >上海720度高科技体验馆 </span>
+        <div class="col-6  col-sm-6  col-md-2">
+          <span>上海奉贤中澳广场 </span>
         </div>
-        <div class="col-6  col-sm-6  col-md-2"> 
-          <span >齐鲁酒地文化旅</span>
+        <div class="col-6  col-sm-6  col-md-2">
+          <span>鄂旅投洪湖金湾酒店</span>
         </div>
-        <div class="col-6  col-sm-6  col-md-2"> 
-          <span >山东黄金集团</span>
+        <div class="col-6  col-sm-6  col-md-2">
+          <span>广投集团</span>
         </div>
-        <div class="col-6  col-sm-6  col-md-2"> 
-          <span >乐从岭南府</span>
+        <div class="col-6  col-sm-6  col-md-2">
+          <span>顺德新能源汽车小镇</span>
         </div>
-        <div class="col-6  col-sm-6  col-md-2"> 
-          <span >岳阳东方铂尔曼酒店</span>
-        </div>
-      </div>
-      <div class="row">
-        <div class="col-6  col-sm-6  col-md-2"> 
-          <span >厦门五通酒店 </span>
-        </div>
-        <div class="col-6  col-sm-6  col-md-2"> 
-          <span >北京中关村软件园 </span>
-        </div>
-        <div class="col-6  col-sm-6  col-md-2"> 
-          <span >武汉光谷金盾大酒店</span>
-        </div>
-        <div class="col-6  col-sm-6  col-md-2"> 
-          <span >绿城集团嵩山小镇</span>
-        </div>
-        <div class="col-6  col-sm-6  col-md-2"> 
-          <span >碧桂园水乡芳华</span>
-        </div>
-        <div class="col-6  col-sm-6  col-md-2"> 
-          <span >康莱博酒店集团</span>
+        <div class="col-6  col-sm-6  col-md-2">
+          <span>方言（电影）主题酒店</span>
         </div>
       </div>
       <div class="row">
-        <div class="col-6  col-sm-6  col-md-2"> 
-          <span >温德姆酒店 </span>
+        <div class="col-6  col-sm-6  col-md-2">
+          <span>水底山温泉景区</span>
         </div>
-        <div class="col-6  col-sm-6  col-md-2"> 
-          <span >中南城购物中心 </span>
+        <div class="col-6  col-sm-6  col-md-2">
+          <span>上海720度高科技体验馆 </span>
         </div>
-        <div class="col-6  col-sm-6  col-md-2"> 
-          <span >百色百投集团温德姆酒店</span>
+        <div class="col-6  col-sm-6  col-md-2">
+          <span>齐鲁酒地文化旅</span>
         </div>
-        <div class="col-6  col-sm-6  col-md-2"> 
-          <span >深圳地铁集团</span>
+        <div class="col-6  col-sm-6  col-md-2">
+          <span>山东黄金集团</span>
         </div>
-        <div class="col-6  col-sm-6  col-md-2"> 
-          <span >碧桂园世纪滨江</span>
+        <div class="col-6  col-sm-6  col-md-2">
+          <span>乐从岭南府</span>
         </div>
-        <div class="col-6  col-sm-6  col-md-2"> 
-          <span >康隆药业集团</span>
-        </div>
-      </div>
-      <div class="row">
-        <div class="col-6  col-sm-6  col-md-2"> 
-          <span >京华中心综合体</span>
-        </div>
-        <div class="col-6  col-sm-6  col-md-2"> 
-          <span >盐城宝广场</span>
-        </div>
-        <div class="col-6  col-sm-6  col-md-2"> 
-          <span >广投集团GIG国际中心</span>
-        </div>
-        <div class="col-6  col-sm-6  col-md-2"> 
-          <span >永生现代集团</span>
-        </div>
-        <div class="col-6  col-sm-6  col-md-2"> 
-          <span >碧桂园美的水木清华</span>
-        </div>
-        <div class="col-6  col-sm-6  col-md-2"> 
-          <span >罗卡斯精品酒店</span>
+        <div class="col-6  col-sm-6  col-md-2">
+          <span>岳阳东方铂尔曼酒店</span>
         </div>
       </div>
       <div class="row">
-        <div class="col-6  col-sm-6  col-md-2"> 
-          <span >重庆华侨城酒店</span>
+        <div class="col-6  col-sm-6  col-md-2">
+          <span>厦门五通酒店 </span>
         </div>
-        <div class="col-6  col-sm-6  col-md-2"> 
-          <span >瑞金荣誉国际酒店 </span>
+        <div class="col-6  col-sm-6  col-md-2">
+          <span>北京中关村软件园 </span>
         </div>
-        <div class="col-6  col-sm-6  col-md-2"> 
-          <span >成都置信集团</span>
+        <div class="col-6  col-sm-6  col-md-2">
+          <span>武汉光谷金盾大酒店</span>
         </div>
-        <div class="col-6  col-sm-6  col-md-2"> 
-          <span >海口港务集团海口中心</span>
+        <div class="col-6  col-sm-6  col-md-2">
+          <span>绿城集团嵩山小镇</span>
         </div>
-        <div class="col-6  col-sm-6  col-md-2"> 
-          <span >顺德未来城</span>
+        <div class="col-6  col-sm-6  col-md-2">
+          <span>碧桂园水乡芳华</span>
         </div>
-        <div class="col-6  col-sm-6  col-md-2"> 
-          <span >扬州迎宾馆</span>
-        </div>
-      </div>
-      <div class="row">
-        <div class="col-6  col-sm-6  col-md-2"> 
-          <span >东方嘉柏酒店 </span>
-        </div>
-        <div class="col-6  col-sm-6  col-md-2"> 
-          <span >恒大世博国际温泉中心 </span>
-        </div>
-        <div class="col-6  col-sm-6  col-md-2"> 
-          <span >中国泰和集团</span>
-        </div>
-        <div class="col-6  col-sm-6  col-md-2"> 
-          <span >华侨城集团</span>
-        </div>
-        <div class="col-6  col-sm-6  col-md-2"> 
-          <span >昆明西城心境</span>
-        </div>
-        <div class="col-6  col-sm-6  col-md-2"> 
-          <span >南宁香榭里御尊酒店</span>
+        <div class="col-6  col-sm-6  col-md-2">
+          <span>康莱博酒店集团</span>
         </div>
       </div>
       <div class="row">
-        <div class="col-6  col-sm-6  col-md-2"> 
-          <span >万豪酒店管理集团 </span>
+        <div class="col-6  col-sm-6  col-md-2">
+          <span>温德姆酒店 </span>
         </div>
-        <div class="col-6  col-sm-6  col-md-2"> 
-          <span >悦兮半岛温泉酒店 </span>
+        <div class="col-6  col-sm-6  col-md-2">
+          <span>中南城购物中心 </span>
         </div>
-        <div class="col-6  col-sm-6  col-md-2"> 
-          <span >中国泰和集团</span>
+        <div class="col-6  col-sm-6  col-md-2">
+          <span>百色百投集团温德姆酒店</span>
         </div>
-        <div class="col-6  col-sm-6  col-md-2"> 
-          <span >华侨城集团</span>
+        <div class="col-6  col-sm-6  col-md-2">
+          <span>深圳地铁集团</span>
         </div>
-        <div class="col-6  col-sm-6  col-md-2"> 
-          <span >昆明西城心境</span>
+        <div class="col-6  col-sm-6  col-md-2">
+          <span>碧桂园世纪滨江</span>
         </div>
-        <div class="col-6  col-sm-6  col-md-2"> 
-          <span >南宁香榭里御尊酒店</span>
-        </div>
-      </div>
-      <div class="row">
-        <div class="col-6  col-sm-6  col-md-2"> 
-          <span >北京中关村酒店 </span>
-        </div>
-        <div class="col-6  col-sm-6  col-md-2"> 
-          <span >兰州中心综合体</span>
-        </div>
-        <div class="col-6  col-sm-6  col-md-2"> 
-          <span >兰州天庆集团</span>
-        </div>
-        <div class="col-6  col-sm-6  col-md-2"> 
-          <span >金木棉集团</span>
-        </div>
-        <div class="col-6  col-sm-6  col-md-2"> 
-          <span >海南万宁妇女儿童医院</span>
-        </div>
-        <div class="col-6  col-sm-6  col-md-2"> 
-          <span >贵阳索菲特酒店</span>
+        <div class="col-6  col-sm-6  col-md-2">
+          <span>康隆药业集团</span>
         </div>
       </div>
       <div class="row">
-        <div class="col-6  col-sm-6  col-md-2"> 
-          <span >浙江瑞安国际大酒店 </span>
+        <div class="col-6  col-sm-6  col-md-2">
+          <span>京华中心综合体</span>
         </div>
-        <div class="col-6  col-sm-6  col-md-2"> 
-          <span >国瑞豪生大酒店 </span>
+        <div class="col-6  col-sm-6  col-md-2">
+          <span>盐城宝广场</span>
         </div>
-        <div class="col-6  col-sm-6  col-md-2"> 
-          <span >恒大集团</span>
+        <div class="col-6  col-sm-6  col-md-2">
+          <span>广投集团GIG国际中心</span>
         </div>
-        <div class="col-6  col-sm-6  col-md-2"> 
-          <span >鄂旅投集团悦兮半岛</span>
+        <div class="col-6  col-sm-6  col-md-2">
+          <span>永生现代集团</span>
         </div>
-        <div class="col-6  col-sm-6  col-md-2"> 
-          <span >华发江南府</span>
+        <div class="col-6  col-sm-6  col-md-2">
+          <span>碧桂园美的水木清华</span>
         </div>
-        <div class="col-6  col-sm-6  col-md-2"> 
-          <span >广域集团雅途酒店</span>
+        <div class="col-6  col-sm-6  col-md-2">
+          <span>罗卡斯精品酒店</span>
         </div>
       </div>
       <div class="row">
-        <div class="col-6  col-sm-6  col-md-2"> 
-          <span >厦门特房波特曼酒店</span>
+        <div class="col-6  col-sm-6  col-md-2">
+          <span>重庆华侨城酒店</span>
         </div>
-        <div class="col-6  col-sm-6  col-md-2"> 
-          <span >西宁石油大夏</span>
+        <div class="col-6  col-sm-6  col-md-2">
+          <span>瑞金荣誉国际酒店 </span>
         </div>
-        <div class="col-6  col-sm-6  col-md-2"> 
-          <span >金浦高淳“山慢城”温泉</span>
+        <div class="col-6  col-sm-6  col-md-2">
+          <span>成都置信集团</span>
         </div>
-        <div class="col-6  col-sm-6  col-md-2"> 
-          <span >兰州甘南文旅会展中心</span>
+        <div class="col-6  col-sm-6  col-md-2">
+          <span>海口港务集团海口中心</span>
         </div>
-        <div class="col-6  col-sm-6  col-md-2"> 
-          <span >华润置地新镇三迳村</span>
+        <div class="col-6  col-sm-6  col-md-2">
+          <span>顺德未来城</span>
         </div>
-        <div class="col-6  col-sm-6  col-md-2"> 
-          <span >绿城集团长峙岛</span>
+        <div class="col-6  col-sm-6  col-md-2">
+          <span>扬州迎宾馆</span>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-6  col-sm-6  col-md-2">
+          <span>东方嘉柏酒店 </span>
+        </div>
+        <div class="col-6  col-sm-6  col-md-2">
+          <span>恒大世博国际温泉中心 </span>
+        </div>
+        <div class="col-6  col-sm-6  col-md-2">
+          <span>中国泰和集团</span>
+        </div>
+        <div class="col-6  col-sm-6  col-md-2">
+          <span>华侨城集团</span>
+        </div>
+        <div class="col-6  col-sm-6  col-md-2">
+          <span>昆明西城心境</span>
+        </div>
+        <div class="col-6  col-sm-6  col-md-2">
+          <span>南宁香榭里御尊酒店</span>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-6  col-sm-6  col-md-2">
+          <span>万豪酒店管理集团 </span>
+        </div>
+        <div class="col-6  col-sm-6  col-md-2">
+          <span>悦兮半岛温泉酒店 </span>
+        </div>
+        <div class="col-6  col-sm-6  col-md-2">
+          <span>中国泰和集团</span>
+        </div>
+        <div class="col-6  col-sm-6  col-md-2">
+          <span>华侨城集团</span>
+        </div>
+        <div class="col-6  col-sm-6  col-md-2">
+          <span>昆明西城心境</span>
+        </div>
+        <div class="col-6  col-sm-6  col-md-2">
+          <span>南宁香榭里御尊酒店</span>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-6  col-sm-6  col-md-2">
+          <span>北京中关村酒店 </span>
+        </div>
+        <div class="col-6  col-sm-6  col-md-2">
+          <span>兰州中心综合体</span>
+        </div>
+        <div class="col-6  col-sm-6  col-md-2">
+          <span>兰州天庆集团</span>
+        </div>
+        <div class="col-6  col-sm-6  col-md-2">
+          <span>金木棉集团</span>
+        </div>
+        <div class="col-6  col-sm-6  col-md-2">
+          <span>海南万宁妇女儿童医院</span>
+        </div>
+        <div class="col-6  col-sm-6  col-md-2">
+          <span>贵阳索菲特酒店</span>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-6  col-sm-6  col-md-2">
+          <span>浙江瑞安国际大酒店 </span>
+        </div>
+        <div class="col-6  col-sm-6  col-md-2">
+          <span>国瑞豪生大酒店 </span>
+        </div>
+        <div class="col-6  col-sm-6  col-md-2">
+          <span>恒大集团</span>
+        </div>
+        <div class="col-6  col-sm-6  col-md-2">
+          <span>鄂旅投集团悦兮半岛</span>
+        </div>
+        <div class="col-6  col-sm-6  col-md-2">
+          <span>华发江南府</span>
+        </div>
+        <div class="col-6  col-sm-6  col-md-2">
+          <span>广域集团雅途酒店</span>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-6  col-sm-6  col-md-2">
+          <span>厦门特房波特曼酒店</span>
+        </div>
+        <div class="col-6  col-sm-6  col-md-2">
+          <span>西宁石油大夏</span>
+        </div>
+        <div class="col-6  col-sm-6  col-md-2">
+          <span>金浦高淳“山慢城”温泉</span>
+        </div>
+        <div class="col-6  col-sm-6  col-md-2">
+          <span>兰州甘南文旅会展中心</span>
+        </div>
+        <div class="col-6  col-sm-6  col-md-2">
+          <span>华润置地新镇三迳村</span>
+        </div>
+        <div class="col-6  col-sm-6  col-md-2">
+          <span>绿城集团长峙岛</span>
         </div>
       </div>
     </div>
@@ -737,67 +895,67 @@
   <!-- footer部分 -->
   <div class="footer">
     <div class="container-fluid">
-    <div class="row">
-      <div class="col-md-3">
-        <div class="left">
-          <div class="tit">深圳   北京   上海   香港   新加坡</div>
-          <div class="copyright">
-            <p>网站地图   XML地图   新闻</p>
-            <p>Copyright@1983-2019 CRT group. </p>
-            <p>NanShan District, Shenzhen, China Rhtimes Design. 713.523.3425</p>
-          </div>
-          <div class="num">粤ICP备09027073号</div>
-        </div>
-      </div>
-      <div class="col-md-3">
-        <div class="center">
-          <div class="tit2">友情链接</div>
-          <div class="listWrap">
-            <div class="list-item flex ">
-              <div class="list_l flex-item-1">品牌规划</div>
-              <div class="list_r flex-item-1">品牌规划</div>
+      <div class="row">
+        <div class="col-md-3">
+          <div class="left">
+            <div class="tit">深圳 北京 上海 香港 新加坡</div>
+            <div class="copyright">
+              <p>网站地图 XML地图 新闻</p>
+              <p>Copyright@1983-2019 CRT group. </p>
+              <p>NanShan District, Shenzhen, China Rhtimes Design. 713.523.3425</p>
             </div>
-            <div class="list-item flex ">
-              <div class="list_l flex-item-1">酒店设计公司</div>
-              <div class="list_r flex-item-1">酒店设计公司</div>
-            </div>
-            <div class="list-item flex">
-              <div class="list_l flex-item-1">酒店VI设计</div>
-              <div class="list_r flex-item-1">品牌规划</div>
-            </div>
-            <div class="list-item flex ">
-              <div class="list_l flex-item-1">酒店VI设计</div>
-              <div class="list_r flex-item-1">酒店设计公司</div>
-            </div>
+            <div class="num">粤ICP备09027073号</div>
           </div>
         </div>
-        
-      </div>
-      <div class="col-md-3">
-        <div class="centerTwo">
-          <div class="contact">
-            <p class="colorOne">咨询电话 Tel</p>
-            <p>+86  <span class="colorOne">755 86193667</span></p>
-            <p>+86  <span class="colorOne">138 2318 5580</span>（夏先生）</p>
-            <div class="qq">1622982@qq.com</div>
-            <div class="share">
-              <p>分享到</p>
-              <div class="icon flex">
-                <img src="images/qq.png" alt="">
-                <img src="images/sina.png" alt="">
-                <img src="images/weixin.png" alt="">
+        <div class="col-md-3">
+          <div class="center">
+            <div class="tit2">友情链接</div>
+            <div class="listWrap">
+              <div class="list-item flex ">
+                <div class="list_l flex-item-1">品牌规划</div>
+                <div class="list_r flex-item-1">品牌规划</div>
+              </div>
+              <div class="list-item flex ">
+                <div class="list_l flex-item-1">酒店设计公司</div>
+                <div class="list_r flex-item-1">酒店设计公司</div>
+              </div>
+              <div class="list-item flex">
+                <div class="list_l flex-item-1">酒店VI设计</div>
+                <div class="list_r flex-item-1">品牌规划</div>
+              </div>
+              <div class="list-item flex ">
+                <div class="list_l flex-item-1">酒店VI设计</div>
+                <div class="list_r flex-item-1">酒店设计公司</div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+        <div class="col-md-3">
+          <div class="centerTwo">
+            <div class="contact">
+              <p class="colorOne">咨询电话 Tel</p>
+              <p>+86 <span class="colorOne">755 86193667</span></p>
+              <p>+86 <span class="colorOne">138 2318 5580</span>（夏先生）</p>
+              <div class="qq">1622982@qq.com</div>
+              <div class="share">
+                <p>分享到</p>
+                <div class="icon flex">
+                  <img src="images/qq.png" alt="">
+                  <img src="images/sina.png" alt="">
+                  <img src="images/weixin.png" alt="">
+                </div>
               </div>
             </div>
           </div>
         </div>
-      </div>
-      <div class="col-md-3">
-        <div class="right">
-          <div class="qcode"><img src="images/qcode.png" alt=""></div>
-          <p>微信咨询   夏先生</p>
+        <div class="col-md-3">
+          <div class="right">
+            <div class="qcode"><img src="images/qcode.png" alt=""></div>
+            <p>微信咨询 夏先生</p>
+          </div>
         </div>
       </div>
-    </div>
     </div>
   </div>
   <!-- 返回顶部 -->
@@ -808,7 +966,7 @@
   <script src="js/jquery-3.4.1.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
     integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
-  </script>
+    </script>
   <script src="lib/bootstrap-4.4.1-dist/js/bootstrap.min.js"></script>
 </body>
 

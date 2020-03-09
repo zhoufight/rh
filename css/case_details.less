@@ -24,32 +24,107 @@
 .wrap{
   // 顶部
   .top{
-    padding: 17px 145px 0 0;
-    // padding-right: 145px;
+    margin: 1vw 10vw;
   }
 
   // 中间
   .middle{
-    padding-top: 30px;
+    
     .media{
+      padding: 3vw 23vw;
       .logo{
-        padding-left: 530px;
-        padding-right: 100px;
+        padding-right: 12.5vw;
       }
       .media-body{
-        .tit,mt-0{
-          font-size: 16px;
+        line-height: 30px;
+        .tit{
+          font-size: 1vw;
           font-weight:600;
-          color:rgba(51,51,51,1);
-          line-height:30px;
+          color:#666666;    
         }
         .text{
-          width:600px;
-          span{
-            text-indent: 25px;
+          width:31vw;
+          text-indent:31px;
+          .tit_1{
+            padding: 1vw 0;
           }
         }
+        .tit_bottom{
+          margin-top: 1vw;
+        }
+      }
+      
+    }
+    .imgs{
+      .content{
+        display: table;
+        margin: 0 auto;
+        .context{
+          font-size: 14px;
+          color:rgba(102,102,102,1);
+          padding: 8px 0;
+        }
+     }
+    }
+    .cross_line{
+      padding: 50px 0;
+      .line_center{
+        padding: 0 70px;
       }
     }
+    .wrap_page{
+      margin-top: 20px;
+    }
+    .related_cases{
+      font-size: 18px;
+      line-height: 25px;
+      margin: 80px 0;
+      color:rgba(189,153,114,1);
+    }
+  }
+}
+
+
+@media (min-width:768px ) and (max-width:1350px){
+  .wrap .middle {
+   width: 100%;
+  }
+  .wrap .middle .media{
+    padding: 3vw 0;
+    margin-left: 5vw;
+  }
+  .wrap .middle .media .logo{
+    
+  }
+  .wrap .middle .media .media-body{
+    // float: left;
+  }
+}
+
+@media screen  and (max-width: 768px){
+  .wrap .middle .media{
+    padding: 0;
+    .headline,.tit{
+      text-align: center;
+    }
+  }
+  .wrap .top{
+    margin: 1vw 0;
+  }
+  .wrap .middle .media .logo{
+    display: none;
+  }
+  .wrap .middle .media .media-body {
+    margin: 6vw 0;
+    width: 100%;
+  }
+  .wrap .middle .media .media-body .text{
+    width: 100%;
+    .tit_1{
+      padding: 4vw 0;
+    }
+  }
+  .wrap .middle .media .media-body  .tit_bottom{
+    padding: 4vw 0;
   }
 }
