@@ -47,6 +47,10 @@
   display: table;
   margin: 0 auto;
 }
+.wrap .middle .imgs .content img {
+  width: 680px;
+  height: 430px;
+}
 .wrap .middle .imgs .content .context {
   font-size: 14px;
   color: #666666;
