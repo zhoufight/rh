@@ -258,7 +258,7 @@ img {
   height: 100%;
   color: #fff;
   position: absolute;
-  padding: 0 24px ;
+  padding: 0 24px;
   left: 0;
   bottom: 0;
 }
@@ -489,5 +489,10 @@ img {
   }
   .images .container-fluid .row .item .new_list li::before {
     left: -20px;
+  }
+}
+@media screen and (min-width: 1920px) {
+  .navWrap .navBarWrap .meun .menuList .item .subTitleWrap {
+    left: -84vw;
   }
 }
