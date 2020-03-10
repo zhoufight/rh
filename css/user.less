@@ -1,4 +1,5 @@
 @charset "utf-8";
+
 .user_box {}
 
 .user_box--header {
@@ -57,45 +58,60 @@
     font-size: 8px;
 }
 
-.user_box--infoitem {}
+.user_box--infoitem {
+    .drownMenu {
+        padding-top: 18px;
+    }
+}
 
-.user_box--infoitem_title {
-    margin: 15px 0;
+.closeItem .user_box--infoitem_title {
+    // margin: 15px 0;
     height: 60px;
     line-height: 60px;
     font-size: 24px;
     color: #fff;
-    border-top: 1px solid #BD9972;
     border-bottom: 1px solid #BD9972;
     box-sizing: border-box;
     position: relative;
 }
+.closeItem .drownMenu{
+    display: none;
+}
+.closeItem .user_box--infoitem_title::before {
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    display: inline-block;
+    content: "";
+    background: url("../images/add.png") no-repeat;
+    background-size: 20px 20px;
+    cursor: pointer;
 
-.user_box--infoitem_title::before {
+}
+
+
+
+.openItem .user_box--infoitem_title::before {
+    width: 20px;
+    height: 20px;
     position: absolute;
     right: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    content: "";
     display: inline-block;
-    content: "+";
-    font-size: 40px;
-    color: #BD9972;
+    background: url("../images/reduce.png") no-repeat;
+    background-size: 20px 20px;
+    cursor: pointer;
 }
-
-.user_box--infoitem_itemtitle {
-    font-size: 24px;
-    color: #fff;
-    padding-bottom: 18px;
-    position: relative;
+.openItem .drownMenu{
+    display: block;
 }
-
-.user_box--infoitem_itemtitle::before {
-    position: absolute;
-    right: 0;
-    content: "-";
-    display: inline-block;
-    font-size: 40px;
-    color: #BD9972;
-}
-
 .user_box--infoitem_list {
     padding-bottom: 24px;
 }
@@ -160,4 +176,8 @@
 
 .user_box--company_imgboxitem:last-child {
     border: none;
+}
+.ourservice{
+    padding-bottom: 1vw;
+    border-bottom: 1px solid #BD9972;
 }
