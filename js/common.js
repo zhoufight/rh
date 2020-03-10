@@ -57,3 +57,21 @@ function showMaskMenu(param) {
 function hideMaskMenu() { 
   $(".maskMenu").fadeOut(500);
 }
+
+// 导航菜单滚动显示
+function navScroll(){
+  $(window).scroll(function(){
+    var scroTop = $(window).scrollTop();
+   
+    if(scroTop > 200){
+      $('.menuWrap').addClass('show');
+      $('.brand').addClass('logo2');
+      $('.brand img').attr('src','images/logo.png');
+    }else{
+      $('.menuWrap').addClass('hide');
+      $('.menuWrap').removeClass('show');
+      $('.brand').removeClass('logo2');
+      $('.brand img').attr('src','images/pc_logo.png');
+    }
+ });
+}
