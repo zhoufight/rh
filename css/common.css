@@ -491,8 +491,13 @@ img {
     left: -20px;
   }
 }
-@media screen and (min-width: 1920px) {
+@media screen and (min-width: 1921px) {
   .navWrap .navBarWrap .meun .menuList .item .subTitleWrap {
     left: -84vw;
+  }
+}
+@media screen and (max-width: 1920px) {
+  .navWrap .navBarWrap .meun .menuList .item .subTitleWrap {
+    left: -96vw;
   }
 }
