@@ -491,7 +491,11 @@ img {
     left: -20px;
   }
 }
+<<<<<<< HEAD
 @media screen and (min-width: 1921px) {
+=======
+@media screen and (max-width: 1920px) {
+>>>>>>> 9379698a3c5610a5fe14d868b73f39244397d0fb
   .navWrap .navBarWrap .meun .menuList .item .subTitleWrap {
     left: -84vw;
   }
