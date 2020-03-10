@@ -5,7 +5,8 @@
     <meta charset="UTF-8">
     <title>我们的优势</title>
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
-    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+    <meta name="viewport"
+        content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
     <meta name="description" content="" />
     <meta name="keywords" content="" />
     <link rel="shortcut icon" href="./images/favicon.ico" type="image/x-icon">
@@ -22,9 +23,9 @@
             <div class="meun flex">
                 <div class="menuWrap hide">
                     <div class="menuList flex">
-                        <div class="item menuItem active"><a href="index.html">首页</a></div>
+                        <div class="item menuItem "><a href="index.html">首页</a></div>
                         <div class="item menuItem"><a href="case.html">案例</a></div>
-                        <div class="item menuItem"><a href="usergood.html">我们的优势</a></div>
+                        <div class="item menuItem active"><a href="usergood.html">我们的优势</a></div>
                         <div class="item  menuItem">
                             <a href="user.html">我们能做什么</a>
                             <div class="subTitleWrap menuItem">
@@ -87,7 +88,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="item"><a href="usertelphone.html">联系</a></div>
+                        <div class="item menuItem"><a href="usertelphone.html">联系</a></div>
                         <div class="item menuItem">
                             <a href="">酒店管理</a>
                             <div class="subTitleWrap menuItem hotel">
@@ -152,13 +153,48 @@
                     </div>
                 </div>
                 <div class="meunIcon">
-                    <div class="toggler" onclick="showMaskMenu()">
-                        </i>
-                    </div>
+                    <div class="toggler" onclick="showMaskMenu()"></i></div>
                 </div>
             </div>
         </div>
     </nav>
+
+    <div class="maskMenu hide">
+        <div class="menuClose" onclick="hideMaskMenu()">
+            <svg class="bi bi-x text-close" viewBox="0 0 20 20" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" d="M5.646 5.646a.5.5 0 000 .708l8 8a.5.5 0 00.708-.708l-8-8a.5.5 0 00-.708 0z"
+                    clip-rule="evenodd" />
+                <path fill-rule="evenodd"
+                    d="M14.354 5.646a.5.5 0 010 .708l-8 8a.5.5 0 01-.708-.708l8-8a.5.5 0 01.708 0z"
+                    clip-rule="evenodd" />
+            </svg>
+        </div>
+        <div class="maskMenuItem flex">
+            <div class="left">
+                <ul>
+                    <li><a href="">About</a></li>
+                    <li><a href="">Press</a></li>
+                    <li><a href="">Contact</a></li>
+                    <li><a href="">Careers</a></li>
+                    <li><a href="">Shop</a></li>
+                    <li><a href="24.html">24 Hour Assembly</a></li>
+                    <li><a href="">Local Works</a></li>
+                </ul>
+            </div>
+            <div class="right">
+                <div class="tit">Connect</div>
+                <ul>
+                    <li><a href="">Instagram</a></li>
+                    <li><a href="">LinkedIn</a></li>
+                    <li><a href="">Twitter</a></li>
+                    <li><a href="">Pinterest</a></li>
+                    <li><a href="">Dribbble</a></li>
+                    <li><a href="">Newsletter</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!-- 导航end -->
     <div class="usergood_box">
         <!-- <div class="usergood_box--header">
             <div class="usergood_box--header_logo">
@@ -177,7 +213,8 @@
                         专注顶级旅游度假景区、星级酒店、温泉会所、CBD商业综合体、大型购物中心、商业地产、城市公共环境、岛屿小镇等规划设计与开发。</p>
                     <p class="col-xs-12 col-md-6" style="padding-top:20px;">独特制作工艺，领先的设备，完善的质量管理体系，造就行业领先的精品之作。</p>
                     <p class="col-xs-12 col-md-6" style="padding-top:20px;">
-                        我们为每个项目量身定制一个独特的团队，以开发出应对您挑战的最佳解决方案。我们擅长提炼东方文化元素和西方文化元素，与商业文化结合得美仑美奂；因为我们的专业，赢得了客户对我们的支持和信任。 创造了经典案例享有盛誉，业务范围遍及世界各地，包括：爱尔兰、新加坡、韩国、越南、台湾、大陆。
+                        我们为每个项目量身定制一个独特的团队，以开发出应对您挑战的最佳解决方案。我们擅长提炼东方文化元素和西方文化元素，与商业文化结合得美仑美奂；因为我们的专业，赢得了客户对我们的支持和信任。
+                        创造了经典案例享有盛誉，业务范围遍及世界各地，包括：爱尔兰、新加坡、韩国、越南、台湾、大陆。
                     </p>
                 </div>
             </div>
@@ -338,7 +375,7 @@
         <div class="icon"><img src="images/backtop.png" alt=""></div>
     </div>
     <script>
-        window.onload = function() {
+        window.onload = function () {
             onShowHide(0, 1)
         }
 
