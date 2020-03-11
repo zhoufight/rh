@@ -545,6 +545,27 @@ img {
   }
 }
 
+// 合作伙伴
+.cooperative_client{
+  width: 100%;
+  border-top: 100px solid rgba(255, 254, 255, 1);
+  border-left: 210px solid rgba(255, 254, 255, 1);
+  padding-bottom: 100px;
+
+  .container-fluid {
+    background-color: #fff;
+
+    .text {
+      font-size: 16px;
+      color: rgba(189, 153, 114, 1);
+      padding-bottom: 82px;
+    }
+
+    .row {
+      line-height: 40px;
+    }
+  }
+} 
 
 /*footter底部*/
 .footer {
@@ -738,5 +759,29 @@ img {
 @media screen and (max-width: 1920px) {
   .navWrap .navBarWrap .meun .menuList .item .subTitleWrap{
     left: -96vw;
+  }
+}
+
+
+// 媒体查询
+@media screen  and (max-width: 768px){
+  .images .container-fluid .row {
+   text-align: center;
+   margin-left: 0;
+  }
+
+  SANZO_Can_05_1012px.jgeg .item{
+    // width: 100%;
+   
+  }
+
+}
+
+// 媒体查询
+@media screen  and (max-width: 768px){
+  .cooperative_client{
+    border-top:none;
+    border-left:none;
+    text-align: center;
   }
 }

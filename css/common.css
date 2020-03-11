@@ -429,6 +429,23 @@ img {
   color: #959495;
   line-height: 48px;
 }
+.cooperative_client {
+  width: 100%;
+  border-top: 100px solid #fffeff;
+  border-left: 210px solid #fffeff;
+  padding-bottom: 100px;
+}
+.cooperative_client .container-fluid {
+  background-color: #fff;
+}
+.cooperative_client .container-fluid .text {
+  font-size: 16px;
+  color: #bd9972;
+  padding-bottom: 82px;
+}
+.cooperative_client .container-fluid .row {
+  line-height: 40px;
+}
 /*footter底部*/
 .footer {
   font-size: 12px;
@@ -562,5 +579,18 @@ img {
 @media screen and (max-width: 1920px) {
   .navWrap .navBarWrap .meun .menuList .item .subTitleWrap {
     left: -96vw;
+  }
+}
+@media screen and (max-width: 768px) {
+  .images .container-fluid .row {
+    text-align: center;
+    margin-left: 0;
+  }
+}
+@media screen and (max-width: 768px) {
+  .cooperative_client {
+    border-top: none;
+    border-left: none;
+    text-align: center;
   }
 }

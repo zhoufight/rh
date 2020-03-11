@@ -15,33 +15,3 @@
 .menu .nav-item .active {
   color: #D3AB7E;
 }
-.cooperative_client {
-  width: 100%;
-  border-top: 100px solid #fffeff;
-  border-left: 210px solid #fffeff;
-  padding-bottom: 100px;
-}
-.cooperative_client .container-fluid {
-  background-color: #fff;
-}
-.cooperative_client .container-fluid .text {
-  font-size: 16px;
-  color: #bd9972;
-  padding-bottom: 82px;
-}
-.cooperative_client .container-fluid .row {
-  line-height: 40px;
-}
-@media screen and (max-width: 768px) {
-  .images .container-fluid .row {
-    text-align: center;
-    margin-left: 0;
-  }
-}
-@media screen and (max-width: 768px) {
-  .cooperative_client {
-    border-top: none;
-    border-left: none;
-    text-align: center;
-  }
-}
