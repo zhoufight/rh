@@ -21,7 +21,7 @@
         <div class="navBarWrap flex">
             <div class="brand "><img src="images/pc_logo.png" alt="" srcset=""></div>
             <div class="meun flex">
-                <div class="menuWrap hide">
+                <div class="menuWrap">
                     <div class="menuList flex">
                         <div class="item menuItem"><a href="index.html">首页</a></div>
                         <div class="item menuItem"><a href="case.html">案例</a></div>
@@ -338,7 +338,7 @@
                 <div class="row list-item col-md-3">
                     <div class="newsdetail_box--list col-sm-12">
                         <div class="newsdetail_box--listitem">
-                            <div class="newsdetail_box--list_title">
+                            <div class="newsdetail_box--list_title ">
                                 <h5>新闻资讯</h5>
                                 <h5>News</h5>
                             </div>
@@ -350,7 +350,7 @@
                                     <p class="newsdetail_box--list_content-item"><a href="">饭店新闻</a></p>
                                 </div>
                                 <div class="column d-flex justify-content-between">
-                                    <p class="newsdetail_box--list_content-item"><a href="">温泉新闻</a></p>
+                                    <p class="newsdetail_box--list_content-item "><a href="" class="active">温泉新闻</a></p>
                                     <p class="newsdetail_box--list_content-item"><a href="">商业地产</a></p>
                                     <p class="newsdetail_box--list_content-item"><a href="">CBD商务区</a></p>
                                 </div>
@@ -369,11 +369,13 @@
                                     <p class="newsdetail_box--list_content-item"><a href="">旅游区标识</a></p>
                                     <p class="newsdetail_box--list_content-item"><a href="">购物中心</a></p>
                                 </div>
-                                <div class="column"><p class="newsdetail_box--list_content-item"><a href="">商场设计</a></p></div>
+                                <div class="column d-flex justify-content-between ">
+                                    <p class="newsdetail_box--list_content-item"><a href="">国宾馆</a></p>
+                                </div>
                             </div>
                         </div>
                         <div class="newsdetail_box--listitem">
-                            <div class="newsdetail_box--list_title">
+                            <div class="newsdetail_box--list_title active">
                                 <h5>温泉新闻</h5>
                                 <h5>Hot spring news</h5>
                             </div>
@@ -457,23 +459,23 @@
                                 <h5>相关标签</h5>
                                 <h5>Design</h5>
                             </div>
-                            <div class="newsdetail_box--list_content ">
-                                <div class="">
+                            <div class="newsdetail_box--list_content newsWrap">
+                                <div class="column d-flex justify-content-between">
                                     <p class="newsdetail_box--list_content-item"><a href="">案例欣赏</a></p>
                                     <p class="newsdetail_box--list_content-item"><a href="">酒店VI设计</a></p>
                                     <p class="newsdetail_box--list_content-item"><a href="">酒店标识设计</a></p>
                                 </div>
-                                <div class="">
+                                <div class="column d-flex justify-content-between">
                                     <p class="newsdetail_box--list_content-item"><a href="">酒店标识设计</a></p>
                                     <p class="newsdetail_box--list_content-item"><a href="">深圳酒店VI设计公司</a></p>
 
                                 </div>
-                                <div class="">
+                                <div class="column d-flex justify-content-between">
                                     <p class="newsdetail_box--list_content-item"><a href="">温泉VI设计</a></p>
                                     <p class="newsdetail_box--list_content-item"><a href="">温泉标识设计</a></p>
                                     <p class="newsdetail_box--list_content-item"><a href="">温泉CIS设计公司</a></p>
                                 </div>
-                                <div class="">
+                                <div class="column d-flex justify-content-between">
                                     <p class="newsdetail_box--list_content-item"><a href="">温泉软装设计</a></p>
                                     <p class="newsdetail_box--list_content-item"><a href="">温泉导视设计</a></p>
                                     <p class="newsdetail_box--list_content-item"><a href="">温泉室内设计</a></p>
@@ -702,6 +704,7 @@
     <script src="js/jquery-3.4.1.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
     <script src="lib/bootstrap-4.4.1-dist/js/bootstrap.min.js"></script>
+    <script src="js/common.js"></script>
     <script>
         function itemimgList(status = 0, i = '') {
             if (i === '') {
