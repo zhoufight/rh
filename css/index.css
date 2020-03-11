@@ -55,8 +55,11 @@
 .sectionCenter p {
   font-size: 12px;
 }
+.sectionCenter .imgTxt {
+  width: 25vw;
+}
 .sectionCenter .up {
-  margin-bottom: 90px;
+  margin-bottom: 6vw;
   padding-top: 20px;
 }
 .sectionCenter .up img {
