@@ -338,6 +338,9 @@ img {
   background: #666666;
   border-radius: 50%;
 }
+.images .container-fluid .row .item .new_list li a {
+  color: #666666;
+}
 .images .container-fluid .row .item .new_list li .press {
   flex-flow: row nowrap;
   justify-content: space-between;
