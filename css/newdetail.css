@@ -116,6 +116,9 @@
   position: relative;
   box-sizing: border-box;
 }
+.newsdetail_box--list--text a {
+  color: #666666;
+}
 .newsdetail_box--list--text::before {
   position: absolute;
   left: 2px;

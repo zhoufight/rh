@@ -1,3 +1,6 @@
+h5 {
+  font-weight: normal;
+}
 .newsdetail_box--banner {
   height: 250px;
   background-color: #2B36E6;
@@ -116,6 +119,9 @@
   position: relative;
   box-sizing: border-box;
 }
+.newsdetail_box--list--text a {
+  color: #666666;
+}
 .newsdetail_box--list--text::before {
   position: absolute;
   left: 2px;
@@ -133,7 +139,7 @@
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
-  padding-right: 6vw;
+  padding-right: 3vw;
 }
 newsdetail_box--list_content .newsdetail_box--list_content-item {
   line-height: 40px;
