@@ -9,6 +9,9 @@
   justify-content: flex-end;
   padding-right: 25px;
   box-sizing: border-box;
+}
+.newsdetail_box--place span,
+.newsdetail_box--place a {
   color: #666666;
 }
 .newsdetail_box--container {
@@ -38,15 +41,23 @@
 }
 .newsdetail_box--content_navitem {
   line-height: 41px;
-  color: #999999;
   position: relative;
+}
+.newsdetail_box--content_navitem a {
+  color: #999999;
+}
+.newsdetail_box--content_navitem a:hover {
+  color: #BD9972;
+}
+.newsdetail_box--content_navitem .active {
+  color: #BD9972;
 }
 .newsdetail_box--content_navitem:first-child {
   color: #BD9972;
 }
 .newsdetail_box--content_navitem:first-child::after {
   position: absolute;
-  right: -25px;
+  right: -2.1vw;
   content: "";
   display: inline-block;
   width: 2px;
@@ -59,6 +70,7 @@
   box-sizing: border-box;
 }
 .newsdetail_box--title {
+  font-size: 1.5vw;
   color: #333;
 }
 .newsdetail_box--tips {
@@ -69,7 +81,7 @@
 .newsdetail_box--tips_know,
 .newsdetail_box--tips_author {
   margin-right: 13px;
-  color: #333;
+  color: #666666;
 }
 .newsdetail_box--content {
   color: #666;
@@ -115,12 +127,9 @@
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
+  padding-right: 6vw;
 }
-.newsdetail_box--list_content {
-  display: flex;
-  flex-wrap: wrap;
-}
-.newsdetail_box--list_content-item {
+newsdetail_box--list_content .newsdetail_box--list_content-item {
   line-height: 40px;
   box-sizing: border-box;
 }
@@ -131,8 +140,11 @@
 div.newsdetail_box--info {
   border-right: 1px solid #eeeeee;
 }
-div.newsdetail_box--info .newsdetail_box--content .item--img_box .text_top {
-  padding-top: 1vw;
+div.newsdetail_box--info .newsdetail_box--content .text_top {
+  padding-top: 2vw;
+}
+div.newsdetail_box--info .newsdetail_box--content .item--img_box {
+  padding: 2vw 0;
 }
 div.newsdetail_box--info .caseWrap {
   justify-content: center;
@@ -223,6 +235,15 @@ div.newsdetail_box--info .cross_line .line_bottom .right {
 }
 div.newsdetail_box--info .cross_line .line_bottom .right span:nth-child(2) {
   margin: 0 2vw;
+}
+.newsWrap .column {
+  text-align: left;
+}
+.newsWrap .column p {
+  margin: 0.5vw 0;
+}
+.newsWrap .column p a {
+  color: #666666;
 }
 .wrap {
   padding-top: 4vw;

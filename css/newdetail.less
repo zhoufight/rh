@@ -1,5 +1,7 @@
 .newsdetail_box {}
 
+
+
 .newsdetail_box--banner {
     height: 250px;
     background-color: #2B36E6;
@@ -12,7 +14,9 @@
     justify-content: flex-end;
     padding-right: 25px;
     box-sizing: border-box;
-    color: #666666;
+    span,a{
+         color: #666666;
+    }
 }
 
 .newsdetail_box--container {
@@ -46,8 +50,17 @@
 
 .newsdetail_box--content_navitem {
     line-height: 41px;
-    color: #999999;
+   
     position: relative;
+    a{
+        color: #999999;
+        &:hover{
+            color: #BD9972; 
+        }
+    }
+    .active{
+        color: #BD9972;
+    }
 }
 
 .newsdetail_box--content_navitem:first-child {
@@ -56,7 +69,7 @@
 
 .newsdetail_box--content_navitem:first-child::after {
     position: absolute;
-    right: -25px;
+    right: -2.1vw;
     content: "";
     display: inline-block;
     width: 2px;
@@ -73,6 +86,7 @@
 }
 
 .newsdetail_box--title {
+    font-size: 1.5vw;
     color: #333;
 }
 
@@ -85,7 +99,7 @@
 .newsdetail_box--tips_know,
 .newsdetail_box--tips_author {
     margin-right: 13px;
-    color: #333;
+    color: #666666 ;
 }
 
 .newsdetail_box--content {
@@ -146,15 +160,18 @@
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
+    padding-right: 6vw;
 }
 
-.newsdetail_box--list_content {
-    display: flex;
-    flex-wrap: wrap;
-}
+// .newsdetail_box--list_content {
+//     display: flex;
+//     flex-wrap: wrap;
+// }
+
+newsdetail_box--list_content 
 
 .newsdetail_box--list_content-item {
-    // min-width: calc(100% / 3);
+    
     line-height: 40px;
     box-sizing: border-box;
 }
@@ -170,11 +187,14 @@
 div.newsdetail_box--info {
     border-right: 1px solid  rgba(238,238,238,1);
     .newsdetail_box--content{
-        .item--img_box{
-            .text_top{
-                padding-top: 1vw;
-            }
+        
+        .text_top{
+                padding-top: 2vw;
         }
+        .item--img_box{
+            padding: 2vw 0;
+        }
+        
     }
     .caseWrap{
         justify-content: center;
@@ -282,6 +302,22 @@ div.newsdetail_box--info {
     }
 }
 
+.newsWrap .column{
+    // float: left;
+    // width: 33%;
+    // padding-right:20 px;
+    // box-sizing: border-box;
+    text-align: left;
+    p{  
+        margin: 0.5vw 0;
+        a{
+            
+            color: #666666;
+        }
+    }
+    
+  }
+
 // 背景图
 .wrap{
     padding-top: 4vw;
@@ -293,3 +329,4 @@ div.newsdetail_box--info {
     margin: 80px 0;
     color:rgba(189,153,114,1);
 }
+
