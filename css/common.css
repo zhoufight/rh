@@ -566,7 +566,7 @@ img {
   }
   .images .container-fluid .row .item .new_list {
     text-align: left;
-    line-height: 8.8vw;
+    line-height: 8vw;
   }
   .images .container-fluid .row .item .new_list li::before {
     left: -20px;
@@ -593,5 +593,10 @@ img {
     border-top: none;
     border-left: none;
     text-align: center;
+  }
+}
+@media (max-width: 1024px) and (min-width: 769px) {
+  .images .container-fluid .row {
+    flex-wrap: nowrap;
   }
 }

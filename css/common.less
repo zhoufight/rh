@@ -743,7 +743,7 @@ img {
 
   .images .container-fluid .row .item .new_list {
     text-align: left;
-    line-height: 8.8vw;
+    line-height: 8vw;
   }
 
   .images .container-fluid .row .item .new_list li::before {
@@ -785,4 +785,19 @@ img {
     border-left:none;
     text-align: center;
   }
+}
+
+
+// 媒体查询
+// @media (mix-width: 769px) and (max-width:1024px){
+//   .images .container-fluid .row{
+//     flex-wrap:nowrap;
+//   }
+// }
+
+@media (max-width:1024px) and (min-width:769px){
+  .images .container-fluid .row{
+    flex-wrap:nowrap;
+  }
+ 
 }
