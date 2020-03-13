@@ -2,6 +2,15 @@
 .wrap .top {
   margin: 1vw 10vw;
 }
+.wrap .top .location {
+  color: #666666;
+}
+.wrap .top .location a {
+  color: #666666;
+}
+.wrap .top .location a:hover {
+  color: #bd9972;
+}
 .wrap .middle .media {
   padding: 3vw 23vw;
 }
