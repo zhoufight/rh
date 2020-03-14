@@ -71,7 +71,7 @@ a:hover {
   src: url(../other/TiemposText-Medium.woff) format("woff");
 }
 body {
-  padding-top: 50px;
+  padding-top: 4.94791667vw;
   font-family: BentonSans;
 }
 /* 清除浮动 */
@@ -115,7 +115,7 @@ img {
 .navWrap .navBarWrap {
   justify-content: space-between;
   align-items: center;
-  padding: 1.2vw 1vw;
+  padding: 1.2vw 1vw 1.2vw 5.20833333vw;
 }
 .navWrap .navBarWrap .brand {
   width: 6vw;
@@ -216,7 +216,6 @@ img {
   top: 0;
   right: 0;
   bottom: 0;
-  overflow: scroll;
   background-color: #231f20;
   z-index: 9999;
   padding: 5vw;
@@ -242,7 +241,7 @@ img {
   color: #BD9972;
 }
 .maskMenu .maskMenuItem .left {
-  font-size: 36px;
+  font-size: 1.875vw;
 }
 .maskMenu .maskMenuItem .right {
   padding-left: 14vw;

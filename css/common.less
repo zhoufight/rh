@@ -78,7 +78,7 @@ a:hover {
   src: url(../other/TiemposText-Medium.woff) format("woff");
 }
 body {
-  padding-top: 50px;
+  padding-top: 95*@vw;
   font-family: BentonSans;
 
 }
@@ -130,12 +130,12 @@ img {
   .navBarWrap {
     justify-content: space-between;
     align-items: center;
-    padding: 1.2vw 1vw;
+    padding: 1.2vw 1vw 1.2vw 100*@vw;
 
     // flex-direction: column;
     .brand {
       width: 6vw;
-
+      
       img {
         max-width: 100%;
         vertical-align: middle;
@@ -270,7 +270,6 @@ img {
   top: 0;
   right: 0;
   bottom: 0;
-  overflow: scroll;
   background-color: #231f20;
   z-index: 9999;
   padding: 5vw;
@@ -304,7 +303,7 @@ img {
     }
 
     .left {
-      font-size: 36px;
+      font-size: 36*@vw;
     }
 
     .right {
