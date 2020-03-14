@@ -4,6 +4,7 @@
 }
 .navWrap .navBarWrap .brand {
   z-index: -1;
+  width: 4.16666667vw;
 }
 .navWrap .navBarWrap .meun .menuList .item a {
   color: #9DA1A6;
@@ -29,11 +30,11 @@
   height: 100%;
 }
 .cd-vertical-nav .subNav ul li {
-  font-size: 16px;
-  margin-bottom: 1vw;
+  font-size: 1.04166667vw;
+  margin-bottom: 1.97916667vw;
 }
 .cd-vertical-nav .subNav ul li a {
-  color: #9FA0A0;
+  color: #ffffff;
 }
 .cd-vertical-nav .subNav ul li a.active {
   color: #ffffff;
@@ -41,7 +42,7 @@
 .content {
   background-color: #020000;
   box-sizing: border-box;
-  padding: 14vw 5vw;
+  padding: 9.375vw 10.15625vw;
   color: #ffffff;
 }
 .content .section .container-fluid {
@@ -50,42 +51,44 @@
 }
 .content .section .title {
   color: #D3AB7E;
-  font-size: 14px;
-  padding: 1vw 0;
+  font-size: 1.5625vw;
+  padding-bottom: 2.08333333vw;
 }
 .content .section .des {
-  font-size: 20px;
-  padding-bottom: 5vw;
+  font-size: 2.60416667vw;
+  line-height: 1.2;
+  padding-bottom: 7.8125vw;
 }
 .content .section .imgText {
-  font-size: 16px;
+  font-size: 1.35416667vw;
+  line-height: 1.46;
 }
 .content .section .imgText .txt {
-  padding: 5vw 0;
+  padding: 5.20833333vw 0;
 }
 .content .section .imgIcon {
-  width: 24vw;
-  margin: 0 auto;
+  width: 16.66666667vw;
+  margin: 5.20833333vw auto 0;
 }
 .content .section .imgIcon img {
   max-width: 100%;
 }
 .content .section .imgTextTwo {
-  font-size: 2vw;
-  padding: 10vw 20vw 10vw 0;
+  font-size: 2.86458333vw;
+  line-height: 1.2;
+  padding: 19.27083333vw 0 13.54166667vw;
   box-sizing: border-box;
 }
 .content .section .sectionTitle {
   color: #D3AB7E;
-  font-size: 15px;
+  font-size: 0.78125vw;
   border-bottom: 1px solid #D3AB7E;
-  padding: 1vw 0;
+  padding: 0.9375vw 0;
 }
 .content .section .stepWrap {
-  margin-bottom: 2vw;
+  margin-bottom: 3.64583333vw;
 }
 .content .section .stepWrap .step {
-  padding: 5vw 0;
   box-sizing: border-box;
 }
 .content .section .stepWrap .step .stepIcon {
@@ -94,14 +97,23 @@
 }
 .content .section .stepWrap .step .stepIcon img {
   max-width: 100%;
+  display: block;
+}
+.content .section .stepWrap .step .con .conTit {
+  font-size: 1.35416667vw;
+  line-height: 1.35416667vw;
+  margin-bottom: 0.52083333vw;
 }
 .content .section .stepWrap .step .con .conTit span {
-  font-size: 14px;
   color: #9FA0A0;
 }
 .content .section .stepWrap .step .con .conText {
   color: #9FA0A0;
-  font-size: 14px;
+  font-size: 1.25vw;
+  line-height: 1.42;
+}
+.content .section .stepWrap-first {
+  margin-top: 6.77083333vw;
 }
 .content .section .sectionImgIcon {
   width: 180px;
@@ -115,12 +127,19 @@
   font-size: 16px;
   padding-top: 5vw;
 }
+.content .section .ourBrand .brands {
+  font-size: 1.45833333vw;
+  line-height: 1.72;
+  clear: both;
+}
 .content .section .ourBrand .brands .fontStyle {
   color: #ffffff;
 }
 .content .section .brandImg {
   width: 40vw;
   margin: 0 auto;
+  text-align: right;
+  float: right;
 }
 .content .section .brandImg img {
   max-width: 100%;
@@ -130,9 +149,10 @@
 }
 .content .section .tip {
   color: #ffffff;
-  font-size: 14px;
-  padding-top: 5vw;
-  padding-bottom: 5vw;
+  font-size: 1.25vw;
+  line-height: 1.42;
+  padding-top: 5.72916667vw;
+  padding-bottom: 4.6875vw;
 }
 .content .section .caseWrap {
   justify-content: center;
@@ -180,5 +200,30 @@
   }
   .content .section .caseWrap .left ul li p {
     font-size: 0.8vw;
+  }
+}
+@media screen and (max-width: 550px) {
+  body {
+    padding-top: 46px;
+  }
+  .navWrap .navBarWrap {
+    padding-left: 15px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+  .navWrap .navBarWrap .brand {
+    width: 26px;
+  }
+  .content .section .stepWrap .step .con .conTit {
+    margin-bottom: 10px;
+  }
+  .col-md-8,
+  col-md-4,
+  .col-md-12,
+  .col-4 {
+    padding: 0;
+  }
+  .col-8 {
+    padding-right: 0;
   }
 }

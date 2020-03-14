@@ -2,11 +2,13 @@
 @colorOne:#020000;
 @brown:#D3AB7E;
 @gray:#9FA0A0;
+@vw:0.0520833333333333vw;
 .navWrap{
   background-color: @colorOne;
   .navBarWrap{
     .brand{
       z-index: -1;
+      width: 80*@vw;
     }
     .meun{
       .menuList{
@@ -41,10 +43,10 @@
     height: 100%;
     ul{
       li{
-        font-size: 16px;
-        margin-bottom: 1vw;
+        font-size: 20 * @vw;
+        margin-bottom: 38 * @vw;
         a{
-          color: @gray;
+          color: #ffffff;
         }
         a.active{
           color: #ffffff;
@@ -56,7 +58,7 @@
 .content{
   background-color: @colorOne;
   box-sizing: border-box;
-  padding: 14vw 5vw;
+  padding: 180*@vw 195*@vw;
   color: #ffffff;
   .section{
     .container-fluid{
@@ -65,63 +67,73 @@
     }
     .title{
       color: @brown;
-      font-size: 14px;
-      padding: 1vw 0;
+      font-size: 30*@vw;
+      padding-bottom: 40*@vw;
     }
     .des{
-      font-size: 20px;
-      padding-bottom: 5vw;
+      font-size: 50*@vw;
+      line-height: 1.2;
+      padding-bottom: 150*@vw;
     }
     .imgText{
-      font-size: 16px;
+      font-size: 26*@vw;
+      line-height: 1.46;
       .txt{
-        padding: 5vw 0;
+        padding: 100*@vw 0;
       }
     }
     .imgIcon{
-      width: 24vw;
-      margin:  0 auto;
+      width: 320*@vw;
+      margin:  100*@vw auto 0;
       img{
         max-width: 100%;
       }
     }
     .imgTextTwo{
-      font-size: 2vw;
-      padding:10vw 20vw 10vw 0;
+      font-size: 55*@vw;
+      line-height: 1.2;
+      padding:370*@vw 0 260*@vw;
       box-sizing: border-box;
     }
     .sectionTitle{
       color: @brown;
-      font-size: 15px;
+      font-size: 15*@vw;
       border-bottom: 1px solid @brown;
-      padding: 1vw 0;
+      padding: 18*@vw 0;
     }
     .stepWrap{
-      margin-bottom: 2vw;
+      margin-bottom: 70*@vw;
       .step{
-        padding: 5vw 0;
+        // padding: 125*@vw 0 70*@vw;
         box-sizing: border-box;
         .stepIcon{
           width: 18px;
           margin-right: 10px;
           img{
             max-width: 100%;
+            display: block;
           }
         }
         .con{
           .conTit{
+            font-size: 26*@vw;
+            line-height: 26*@vw;
+            margin-bottom: 10*@vw;
             span{
-              font-size: 14px;
               color: @gray;
             }
           }
           .conText{
             color:@gray;
-            font-size: 14px;
+            font-size: 24*@vw;
+            line-height: 1.42;
           }
         }
       }
 
+    }
+    .stepWrap-first{
+      margin-top: 130*@vw;
     }
     .sectionImgIcon{
       width: 180px;
@@ -136,6 +148,9 @@
       font-size: 16px;
       padding-top: 5vw;
       .brands{
+        font-size: 28*@vw;
+        line-height: 1.72;
+        clear: both;
         .fontStyle{
           color: #ffffff;
         }
@@ -144,6 +159,8 @@
     .brandImg{
       width: 40vw;
       margin:  0 auto;
+      text-align: right;
+      float: right;
       img{
         max-width: 100%;
       }
@@ -153,9 +170,10 @@
     }
     .tip{
       color: #ffffff;
-      font-size: 14px;
-      padding-top: 5vw;
-      padding-bottom: 5vw;
+      font-size: 24*@vw;
+      line-height: 1.42;
+      padding-top: 110*@vw;
+      padding-bottom: 90*@vw;
     }
     .caseWrap{
       justify-content: center;
@@ -232,4 +250,38 @@
     }
   }
  
+}
+@media screen and (max-width:550px){
+  body{
+    padding-top: 46px;
+  }
+  .navWrap{
+    .navBarWrap{
+      padding-left: 15px;
+      padding-top: 10px;
+      padding-bottom: 10px;
+      .brand {
+        width: 26px;
+      }
+    }
+  }
+  .content{
+    .section{
+      .stepWrap{
+        .step{
+          .con{
+            .conTit{
+              margin-bottom: 10px;
+            }
+          }
+        }
+      }
+    }
+  }
+  .col-md-8,col-md-4,.col-md-12,.col-4{
+    padding: 0;
+  }
+  .col-8{
+    padding-right: 0;
+  }
 }
