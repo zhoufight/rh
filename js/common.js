@@ -65,13 +65,14 @@ function navScroll(){
    
     if(scroTop > 200){
       $('.menuWrap').addClass('show');
-      $('.brand').addClass('logo2');
-      $('.brand img').attr('src','images/logo.png');
+      $('.brand').removeClass('logo2');
+      $('.brand img').attr('src','images/pc_logo.png');
     }else{
       $('.menuWrap').addClass('hide');
       $('.menuWrap').removeClass('show');
-      $('.brand').removeClass('logo2');
-      $('.brand img').attr('src','images/pc_logo.png');
+      $('.brand').addClass('logo2');
+
+      $('.brand img').attr('src','images/logo.png');
     }
  });
 }

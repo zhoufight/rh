@@ -1,19 +1,30 @@
 @charset "utf-8";
+@fontSize18:0.9vw;
+@fontSize48:2.5vw;
+@fontSize36:2vw;
+@fontSize24:1.3vw;
+@fontSize30:1.6vw;
+@vw:0.0520833333333333vw;
+
 .tips{
-  padding: 4vw 1.5vw 1vw;
+  padding: 7.2vw 1.6vw 0.1vw  5vw;
+  font-size: 1.65vw;
+  color: #000000;
+  font-weight: 300;
   .tips_txt{
     padding-bottom: 4vw;
     .des{
       padding-bottom: 2vw;
+      padding-right:47vw ;
     }
   }
   .tabWrap{
     .tabMenu{
       justify-content: flex-end;
-      font-size: 10px;
+      font-size: 0.9vw;
       align-items: center;
       .item{
-        margin-left: 2vw;
+        margin-left: 2.5vw;
         a{
           color: #9DA1A6;
           padding-bottom: 2px;
@@ -28,7 +39,7 @@
       }
     }
     .icon{
-      width: 15px;
+      width: 1.6vw;
       margin-left: 2vw;
       
       cursor: pointer;
@@ -38,6 +49,9 @@
       }
     }
   }
+}
+section#grid{
+  padding:  0 0.5vw;
 }
 .more{
   margin: 40px auto;
@@ -53,53 +67,63 @@
 }
 .sectionCenter{
   width: 100%;
+  height: 34vw;
   font-size: 12px;
   background: url('../images/ying_bg.png') no-repeat;
   background-size: 100%;
   color: #ffffff;
-  padding: 0  5vw;
+  padding: 2vw  0 0 12vw;
+  box-sizing: border-box;
   p{
-    font-size: 12px;
+    font-size: @fontSize18;
   }
   .imgTxt{
-    width: 25vw;
+    width: 33vw;
+    font-size: @fontSize18;
+    padding-top: 0.5vw;
   }
   .up{
-    margin-bottom: 6vw;
-    padding-top: 20px;
+    margin-bottom: 9.8vw;
+    
     img{
-      width: 80px;
-      height: 60px;
+      width: 8.3vw;
+      height: 6.3vw;
       vertical-align: middle;
     }
   }
   .down{
     padding-bottom: 10px;
     img{
-      width: 120px;
-      height: 86px;
+      width: 12.5vw;
+      height: 9vw;
       vertical-align: middle;
+    }
+    p{
+      width: 9vw;
+      padding-top: 9px;
     }
   }
 }
 .cooperativeClient{
-  padding: 0  5vw 4vw;
+  padding: 0  5vw 6.2vw;
   .title{
-    padding: 40px 0;
+    padding: 4.2vw 0 2.8vw 0;
     text-align: center;
-    font-size: 24px;
+    p{
+      font-size: @fontSize48;
+    }
     .sub_tit{
       color: #999999;
-      font-size: 18px;
+      font-size: @fontSize36;
     }
   }
   .list{
     flex-wrap: wrap;
     justify-content: space-between;
+    padding: 0 6vw;
     .itemIcon{
       width: 16vw;
       margin-bottom: 1vw;
-      border: 1px dashed rgb(133, 130, 130);
       img{
         max-width: 100%;
       }
@@ -107,30 +131,39 @@
   }
 }
 .newList{
-  padding:  0 5vw;
+  padding:  0 11vw;
   .list-item{
     margin-bottom: 10vh;
+  }
+  .col-md-6{
+    padding: 0;
   }
   .imgIcon{
     
     img{
-      max-width: 100%;
+      width: 36.5vw;
+      height: 20.5vw;
       vertical-align: middle;
     }
   }
   .category{
+    padding-left: 3vw;
     .tit{
       color: #666666;
-      font-size: 12px;
-      padding-bottom: 28px;
+      font-size:@fontSize24;
+      padding-bottom: 2.8vw;
       padding-top: 5px;
+      span{
+        padding-left: 0.9vw;
+      }
     }
     .des{
       .des_tit{
+        font-size: 30*@vw;
         padding: 5px 0;
       }
       .des_content{
-        font-size: 12px;
+        font-size: 12*@vw;
         line-height: 24px;
         height: 48px;
         color: #999999;
@@ -182,6 +215,62 @@
 @media screen and (max-width:640px) {
   .sectionCenter{
     background-size: cover;
+    height: 100%;
+    .imgTxt{
+      width: 69vw;
+      padding-top: 1.5vw;
+    }
+    .up{
+      
+      img{
+        width: 18.3vw;
+        height: 17.3vw;
+        vertical-align: middle;
+      }
+    }
+    .down{
+    
+      img{
+        width: 12.5vw;
+        height: 9vw;
+        vertical-align: middle;
+      }
+      p{
+        width: 30vw;
+        padding-top: 9px;
+      }
+    }
   }
 }
-
+@media screen and (max-width:767px) {
+  .tips{
+    .tabWrap{
+      .tabMenu{
+        .item{
+          margin-left: 1.5vw;
+        }
+      }
+      .icon{
+        width: 5.6vw;
+      }
+    }
+  }
+}
+@media screen and (max-width:320px) {
+  .tips{
+    padding: 7.2vw 1.6vw 0.5vw 2vw;
+    .tabWrap{
+      .tabMenu{
+        .item{
+          margin-left: 0.5vw;
+        }
+      }
+    }  
+      
+  }
+}
+@media screen and (max-width:360px) {
+  .tips{
+    padding: 7.2vw 1.6vw 1.2vw 2vw;
+  }
+}
