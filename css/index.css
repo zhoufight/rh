@@ -119,7 +119,7 @@ section#grid {
   padding: 0 11vw;
 }
 .newList .list-item {
-  margin-bottom: 10vh;
+  margin-bottom: 2.08333333vw;
 }
 .newList .col-md-6 {
   padding: 0;
@@ -166,9 +166,24 @@ section#grid {
 .newList .category ul li {
   align-items: center;
   font-size: 0.72916667vw;
-  width: 9.375vw;
+  width: 10vw;
   margin-bottom: 0.9375vw;
   margin-right: 1.97916667vw;
+  position: relative;
+  padding-left: 6px;
+}
+.newList .category ul li:before {
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  width: 6px;
+  height: 6px;
+  content: "";
+  display: block;
+  margin: auto;
+  border-radius: 50%;
+  background: #9fa0a0;
 }
 .newList .category ul li .list-Icon {
   width: 6px;
@@ -178,16 +193,31 @@ section#grid {
 }
 .newList .category ul li .txt {
   padding-left: 5px;
-  width: 155px;
 }
 .newList .category ul li .txt a {
   color: #9FA0A0;
+}
+.newList .category ul li .txt a:hover {
+  color: #BD9972;
 }
 .newList .category ul li:nth-child(3n+3) {
   margin-right: 0;
 }
 .newList .pdl {
   padding-left: 3vw;
+}
+@media screen and (max-width: 768px) {
+  .newList .category ul li {
+    width: 64.58333333vw;
+    margin-right: 0;
+  }
+  .newList .imgIcon img {
+    width: 100% ;
+    height: 100%;
+  }
+  .newList .pdl {
+    padding-left: 0;
+  }
 }
 @media screen and (max-width: 640px) {
   .sectionCenter {

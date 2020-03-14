@@ -99,6 +99,9 @@ img {
 .show {
   display: block;
 }
+.pd0 {
+  padding: 0;
+}
 /* 导航部分 */
 .navWrap {
   position: fixed;
@@ -107,7 +110,7 @@ img {
   width: 100%;
   background-color: #fff;
   z-index: 999;
-  font-size: 18px;
+  font-size: 0.9375vw;
 }
 .navWrap .navBarWrap {
   justify-content: space-between;
@@ -143,7 +146,7 @@ img {
   margin: auto;
   background-color: #fff;
   padding-top: 40px;
-  padding-bottom: 20px;
+  padding-bottom: 1.77083333vw;
   display: none;
   z-index: -1;
   cursor: pointer;
@@ -155,22 +158,23 @@ img {
   margin-left: 10vw;
 }
 .navWrap .navBarWrap .meun .menuList .item .subTitleWrap .weCanDo .itemMenu dl dt {
-  padding-bottom: 10px;
+  padding-bottom: 1.09375vw;
   border-bottom: 1px solid #EEEEEE;
 }
 .navWrap .navBarWrap .meun .menuList .item .subTitleWrap .weCanDo .itemMenu dl dt .tit {
   color: #BD9972;
-  font-size: 12px;
+  font-size: 1.04166667vw;
 }
 .navWrap .navBarWrap .meun .menuList .item .subTitleWrap .weCanDo .itemMenu dl dt .tit_sub {
-  font-size: 10px;
+  font-size: 0.83333333vw;
   color: #9DA1A6;
 }
 .navWrap .navBarWrap .meun .menuList .item .subTitleWrap .weCanDo .itemMenu dl dd {
-  padding-top: 10px;
+  padding-top: 0.83333333vw;
+  font-size: 0.83333333vw;
 }
 .navWrap .navBarWrap .meun .menuList .item .subTitleWrap .weCanDo .itemMenu dl dd a {
-  color: #000000;
+  color: #333333;
 }
 .navWrap .navBarWrap .meun .menuList .item .subTitleWrap .weCanDo .itemMenu dl .active a {
   color: #BD9972;
@@ -181,6 +185,9 @@ img {
 }
 .navWrap .navBarWrap .meun .menuList .item .subTitleWrap .weCanDo .itemMenu dl .active .color {
   color: #BD9972;
+}
+.navWrap .navBarWrap .meun .menuList .item .weCanItem {
+  right: -35.8125vw;
 }
 .navWrap .navBarWrap .meun .menuList .item .hotel {
   left: -100vw;
@@ -457,25 +464,29 @@ img {
 }
 /*footter底部*/
 .footer {
-  font-size: 12px;
+  font-size: 0.83333333vw;
   background-color: #3D3D3D;
   color: #9FA0A0;
-  padding: 0 5vw 62px;
+  padding: 0 10.41666667vw 6.875vw;
+  box-sizing: border-box;
 }
 .footer .left,
 .footer .center,
 .footer .centerTwo,
 .footer .right {
-  margin-top: 62px;
+  margin-top: 6.45833333vw;
 }
 .footer .left .tit {
   color: white;
 }
+.footer .left .tit a {
+  color: #ffffff;
+}
 .footer .left .copyright {
-  padding-top: 40px;
+  padding-top: 4.27083333vw;
 }
 .footer .left .copyright p {
-  line-height: 20px;
+  line-height: 40px;
 }
 .footer .left .num {
   padding-top: 30px;
@@ -484,23 +495,32 @@ img {
   color: #9FA0A0;
 }
 .footer .center .tit2 {
-  padding-bottom: 24px;
+  padding-bottom: 2.55208333vw;
 }
 .footer .center .listWrap {
   border-right: 1px solid #666666;
 }
 .footer .center .listWrap .list-item {
   justify-content: space-between;
+  margin-bottom: 1.04166667vw;
+}
+.footer .centerTwo .contact {
+  padding-left: 7.8125vw;
 }
 .footer .centerTwo .contact .colorOne {
   color: white;
+  font-size: 0.83333333vw;
 }
 .footer .centerTwo .contact p {
-  line-height: 24px;
+  line-height: 32px;
+  font-size: 1.04166667vw;
+}
+.footer .centerTwo .contact p span.name {
+  font-size: 0.72916667vw;
 }
 .footer .centerTwo .contact .qq {
-  padding-top: 30px;
-  padding-bottom: 40px;
+  padding-top: 3.02083333vw;
+  padding-bottom: 4.11458333vw;
 }
 .footer .centerTwo .contact .share img {
   vertical-align: middle;
@@ -982,5 +1002,14 @@ div.newsdetail_box--info .caseWrap .left ul li:hover p,
   .images .container-fluid .row .item .box .box-content .title,
   .images .container-fluid .row .item .box .box-content .post {
     opacity: 1;
+  }
+  .footer {
+    height: 100%;
+  }
+  .footer .centerTwo .contact {
+    padding-left: 2.60416667vw;
+  }
+  .footer .container-fluid {
+    padding: 0;
   }
 }
