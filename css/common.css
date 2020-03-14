@@ -272,15 +272,20 @@ img {
   width: 100%;
   overflow: hidden;
 }
+.images .container-fluid {
+  padding-left: 2.6vw;
+  padding-right: 2.6vw;
+}
 .images .container-fluid .row {
   margin-left: 0;
   margin-right: 0;
   justify-content: space-between;
 }
 .images .container-fluid .row .item {
-  width: 23.8vw;
-  height: 23.8vw;
-  margin-bottom: 0.5vw;
+  width: 23.2vw;
+  height: 23.2vw;
+  margin-bottom: 1vw;
+  margin-bottom: 0.36vw;
 }
 .images .container-fluid .row .item .box {
   display: inline-block;
@@ -312,8 +317,8 @@ img {
   opacity: 0.5;
 }
 .images .container-fluid .row .item .box .listIcon {
-  width: 23.8vw;
-  height: 23.8vw;
+  width: 23.2vw;
+  height: 23.2vw;
 }
 .images .container-fluid .row .item .box .box-content {
   width: 100%;
@@ -362,17 +367,21 @@ img {
   overflow: hidden;
   word-spacing: normal;
 }
+.images .container-fluid .row .item .new_list {
+  width: 100%;
+  height: 100%;
+}
 .images .container-fluid .row .item .new_list li {
   width: 100%;
   color: #666666;
   font-size: 0.85vw;
   position: relative;
-  padding: 0.5vw 1vw;
+  text-indent: 20px;
   box-sizing: border-box;
 }
 .images .container-fluid .row .item .new_list li::before {
   position: absolute;
-  left: -10px;
+  left: 10px;
   top: 0;
   bottom: 0;
   margin: auto;
@@ -402,10 +411,8 @@ img {
 }
 .images .container-fluid .row .item.newWrap {
   display: flex;
-  justify-content: center;
-  align-items: center;
   box-sizing: border-box;
-  background-color: #fffeff;
+  background-color: pink;
   overflow: hidden;
 }
 /*加载更多very_more */
@@ -824,6 +831,18 @@ div.newsdetail_box--info .cross_line .line_bottom .right span:nth-child(2) {
 }
 /*案例图片列表*/
 @media screen and (max-width: 768px) {
+  .images .container-fluid {
+    padding: 0 15px;
+  }
+  .images .container-fluid .row {
+    text-align: center;
+    margin-left: 0;
+  }
+  .cooperative_client {
+    border-top: none;
+    border-left: none;
+    text-align: center;
+  }
   .images .container-fluid .row .item,
   .images .container-fluid .row .item .box .listIcon {
     width: 100vw;
@@ -850,18 +869,7 @@ div.newsdetail_box--info .cross_line .line_bottom .right span:nth-child(2) {
     left: -96vw;
   }
 }
-@media screen and (max-width: 768px) {
-  .images .container-fluid .row {
-    text-align: center;
-    margin-left: 0;
-  }
-  .cooperative_client {
-    border-top: none;
-    border-left: none;
-    text-align: center;
-  }
-}
-@media (max-width: 1024px) and (min-width: 769px) {
+@media (max-width: 1840px) and (min-width: 769px) {
   .images .container-fluid .row {
     flex-wrap: nowrap;
   }
