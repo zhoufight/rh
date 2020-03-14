@@ -2,13 +2,15 @@
 
 
 .menu {
-  padding: 13vw 5vw 0.8vw 0;
-  // font-size: 16px;
+  padding: 13vw 5vw 1vw 0;
+  font-family:Source Han Sans SC;
   .nav-item {
-    margin-left: 0.2vw;
+    // margin-left: 0.5vw;
+    margin-right: -0.2vw;
     .nav-link {
-      color: rgba(159, 160, 160, 1);
+      color: #9FA0A0;
       font-size: 16px;
+      margin-left: 0.18vw;
       &:hover {
         color: #D3AB7E;
       }
@@ -20,13 +22,11 @@
 }
 
 
-//客户背景图
-// .wrap{
-//   background-position: center center;
-//   margin: 0 auto;
-//   background-size: auto 100%;
-// }
-
-
-
+@media screen and (max-width: 768px){
+  .menu {
+    padding: 0;
+    line-height: 16px;
+    margin-bottom: 2vw;
+  }
+}
 

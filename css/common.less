@@ -351,18 +351,19 @@ img {
 
   .container-fluid {
 
-
+    padding-left: 2.6vw;
+    padding-right: 2.6vw;
     .row {
       margin-left: 0;
       margin-right: 0;
       justify-content: space-between;
-
       .item {
-        // float: left;
-        width: 23.8vw;
-        height: 23.8vw;
-        margin-bottom: 0.5vw;
-
+       
+        width: 23.2vw;
+        height: 23.2vw;
+      
+        margin-bottom: 1vw;
+        margin-bottom: 0.36vw;
         .box {
           display: inline-block;
           position: relative;
@@ -397,8 +398,8 @@ img {
           }
 
           .listIcon {
-            width: 23.8vw;
-            height: 23.8vw;
+            width: 23.2vw;
+            height: 23.2vw;
           }
 
           .box-content {
@@ -461,18 +462,21 @@ img {
         }
 
         .new_list {
-
+          width: 100%;
+          height: 100%;
+          
           li {
             width: 100%;
             color: #666666;
             font-size: 0.85vw;
             position: relative;
-            padding: 0.5vw 1vw;
+            // padding: 0.5vw 1vw;
+            text-indent: 20px;
             box-sizing: border-box;
-
+           
             &::before {
               position: absolute;
-              left: -10px;
+              left: 10px;
               top: 0;
               bottom: 0;
               margin: auto;
@@ -487,6 +491,8 @@ img {
               color: #666666;
             }
             .press {
+              // width: 19vw;
+              // height: 19vw;
               flex-flow: row nowrap;
               justify-content: space-between;
 
@@ -509,10 +515,11 @@ img {
 
       .item.newWrap {
         display: flex;
-        justify-content: center;
-        align-items: center;
+        // justify-content: center;
+        // align-items: center;
         box-sizing: border-box;
-        background-color: rgba(255, 254, 255, 1);
+        // background-color: rgba(255, 254, 255, 1);
+        background-color: pink;
         overflow: hidden;
       }
     }
@@ -1094,6 +1101,20 @@ div.newsdetail_box--info {
 
 /*案例图片列表*/
 @media screen and (max-width: 768px) {
+  .images .container-fluid{
+    padding: 0 15px;
+  }
+  .images .container-fluid .row {
+    text-align: center;
+    margin-left: 0;
+   }
+ 
+   .cooperative_client{
+     border-top:none;
+     border-left:none;
+     text-align: center;
+   }
+ 
 
   .images .container-fluid .row .item,
   .images .container-fluid .row .item .box .listIcon {
@@ -1129,26 +1150,13 @@ div.newsdetail_box--info {
 }
 
 
-// 媒体查询
-@media screen  and (max-width: 768px){
-  .images .container-fluid .row {
-   text-align: center;
-   margin-left: 0;
-  }
-
-  .cooperative_client{
-    border-top:none;
-    border-left:none;
-    text-align: center;
-  }
-
-}
 
 
 
-@media (max-width:1024px) and (min-width:769px){
+@media (max-width:1840px) and (min-width:769px){
   .images .container-fluid .row{
     flex-wrap:nowrap;
+
   }
  
 }
