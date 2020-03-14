@@ -1,4 +1,5 @@
 @charset "utf-8";
+@vw:0.0520833333333333vw;  // vw 单位按1920计算
 
 .user_box {}
 
@@ -47,108 +48,10 @@
 
 /* 背景颜色 */
 
-.user_box--info {
-    background-color: #333333;
-    padding: 60px;
-    box-sizing: border-box;
-}
-
-.user_box--info_itemtitle {
-    color: #BD9972;
-    font-size: 8px;
-}
-
-.user_box--infoitem {
-    .drownMenu {
-        padding-top: 18px;
-    }
-}
-
-.closeItem .user_box--infoitem_title {
-    // margin: 15px 0;
-    height: 60px;
-    line-height: 60px;
-    font-size: 24px;
-    color: #fff;
-    border-bottom: 1px solid #BD9972;
-    box-sizing: border-box;
-    position: relative;
-}
-.closeItem .drownMenu{
-    display: none;
-}
-.closeItem .user_box--infoitem_title::before {
-    width: 20px;
-    height: 20px;
-    position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    margin: auto;
-    display: inline-block;
-    content: "";
-    background: url("../images/add.png") no-repeat;
-    background-size: 20px 20px;
-    cursor: pointer;
-
-}
-
-
-
-.openItem .user_box--infoitem_title::before {
-    width: 20px;
-    height: 20px;
-    position: absolute;
-    right: 0;
-    top: 0;
-    bottom: 0;
-    margin: auto;
-    content: "";
-    display: inline-block;
-    background: url("../images/reduce.png") no-repeat;
-    background-size: 20px 20px;
-    cursor: pointer;
-}
-.openItem .drownMenu{
-    display: block;
-}
-.user_box--infoitem_list {
-    padding-bottom: 24px;
-}
-
-.user_box--infoitem_list-title {
-    font-size: 20px;
-    color: #BD9972;
-    margin-left: -15px;
-    box-sizing: border-box;
-}
-
-.user_box--infoiitem_p {
-    font-size: 9px;
-    color: #CCCCCC;
-    position: relative;
-    line-height: 20px;
-    margin-left: -5px;
-}
-
-.user_box--infoiitem_p::before {
-    position: absolute;
-    display: inline-block;
-    content: "";
-    width: 5px;
-    height: 5px;
-    left: -5px;
-    top: 50%;
-    transform: translateX(-50%);
-    border-radius: 50%;
-    background-color: #CCCCCC;
-}
-
-
 /* 图片 */
 
 .user_box--company {
-    padding: 40px 60px;
+    padding: 135*@vw 122*@vw  183*@vw 122*@vw;
     box-sizing: border-box;
 }
 
@@ -184,30 +87,33 @@
 .txt{
     padding-bottom: 65px;
     .bigText{
-        font-size: 20px;
-        padding:85px 60px 0;
+        font-size: 40*@vw;
+        padding:165*@vw 122*@vw 0;
     }
     .smallTxt{
         text-align: left;
-        padding-top: 34px;
-        font-size: 12px;
-        padding-right: 8vw;
+        padding-top: 67*@vw;
+        font-size: 18*@vw;
+        padding-right: 9vw;
         padding-left: 8vw;
 
         justify-content: flex-end;
     }
 }
 .imgText{
-    width: 220px;
+    width: 440*@vw;
     margin: 0 auto;
-    padding-top: 50px;
+    padding-top: 99*@vw;
+    
     img{
         max-width: 100%;
     }
 }
 .imgdes{
     text-align: center;
-    padding-top: 106px;
-    padding-bottom: 90px;
+    padding-top: 212*@vw;
+    color: #595757;
+    font-size: 24*@vw;
+    line-height: 2;
     // padding: 106px 60px 90px;
 }

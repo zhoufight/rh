@@ -82,7 +82,7 @@ a:hover {
   src: url(../other/TiemposText-Medium.woff) format("woff");
 }
 body {
-  padding-top: 50px;
+  padding-top: 95*@vw;
   font-family: BentonSans;
 
 }
@@ -134,12 +134,12 @@ img {
   .navBarWrap {
     justify-content: space-between;
     align-items: center;
-    padding: 1.2vw 1vw;
+    padding: 1.2vw 1vw 1.2vw 100*@vw;
 
     // flex-direction: column;
     .brand {
       width: 6vw;
-
+      
       img {
         max-width: 100%;
         vertical-align: middle;
@@ -274,7 +274,6 @@ img {
   top: 0;
   right: 0;
   bottom: 0;
-  overflow: scroll;
   background-color: #231f20;
   z-index: 9999;
   padding: 5vw;
@@ -308,7 +307,7 @@ img {
     }
 
     .left {
-      font-size: 36px;
+      font-size: 36*@vw;
     }
 
     .right {
@@ -1436,6 +1435,112 @@ div.newsdetail_box--info .caseWrap .left ul li:hover p,
 }
 
 //  新闻栏目列表end
+
+// 我们能做什么 ， 酒店管理 折叠面板　stat 
+.user_box--info {
+  background-color: #333333;
+  padding: 122*@vw;
+  box-sizing: border-box;
+}
+
+.user_box--info_itemtitle {
+  color: #BD9972;
+  font-size: 16*@vw;
+}
+
+.user_box--infoitem {
+  .drownMenu {
+      padding-top: 18px;
+  }
+}
+
+.closeItem .user_box--infoitem_title {
+  // margin: 15px 0;
+  height: 60px;
+  line-height: 60px;
+  font-size: 48*@vw;
+  color: #fff;
+  border-bottom: 1px solid #BD9972;
+  box-sizing: border-box;
+  position: relative;
+}
+.closeItem .drownMenu{
+  display: none;
+}
+.closeItem .user_box--infoitem_title::before {
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  display: inline-block;
+  content: "";
+  background: url("../images/add.png") no-repeat;
+  background-size: 30px 30px;
+  cursor: pointer;
+
+}
+
+
+.openItem .user_box--infoitem_title{
+  border-bottom: none;
+}
+.openItem .user_box--infoitem_title::before {
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  content: "";
+  display: inline-block;
+  background: url("../images/reduce.png") no-repeat;
+  background-size: 30px 30px;
+  cursor: pointer;
+}
+.openItem .drownMenu{
+  display: block;
+}
+.user_box--infoitem_list {
+  padding-bottom: 24px;
+}
+
+.user_box--infoitem_list-title {
+  font-size: 44*@vw;
+  color: #BD9972;
+  margin-left: -15px;
+  box-sizing: border-box;
+  padding-bottom: 28*@vw;
+}
+
+.user_box--infoiitem_p {
+  font-size: 18*@vw;
+  color: #CCCCCC;
+  position: relative;
+  line-height: 20px;
+  margin-left: -5px;
+  padding-left: 10*@vw;
+  margin-bottom: 8*@vw;
+}
+
+.user_box--infoiitem_p::before {
+  position: absolute;
+  display: inline-block;
+  content: "";
+  width: 5px;
+  height: 5px;
+  left: -5px;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  background-color: #CCCCCC;
+  border-radius: 50%;
+}
+//折叠面板　end
+
 
 @media screen and (max-width: 767px) {
   .images .container-fluid .row .item .box .box-content .arrow{display: block;}

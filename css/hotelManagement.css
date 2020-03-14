@@ -34,92 +34,9 @@
   box-sizing: border-box;
 }
 /* 背景颜色 */
-.user_box--info {
-  background-color: #333333;
-  padding: 60px;
-  box-sizing: border-box;
-}
-.user_box--info_itemtitle {
-  color: #BD9972;
-  font-size: 8px;
-}
-.user_box--infoitem .drownMenu {
-  padding-top: 18px;
-}
-.closeItem .user_box--infoitem_title {
-  height: 60px;
-  line-height: 60px;
-  font-size: 24px;
-  color: #fff;
-  border-bottom: 1px solid #BD9972;
-  box-sizing: border-box;
-  position: relative;
-}
-.closeItem .drownMenu {
-  display: none;
-}
-.closeItem .user_box--infoitem_title::before {
-  width: 20px;
-  height: 20px;
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  margin: auto;
-  display: inline-block;
-  content: "";
-  background: url("../images/add.png") no-repeat;
-  background-size: 20px 20px;
-  cursor: pointer;
-}
-.openItem .user_box--infoitem_title::before {
-  width: 20px;
-  height: 20px;
-  position: absolute;
-  right: 0;
-  top: 0;
-  bottom: 0;
-  margin: auto;
-  content: "";
-  display: inline-block;
-  background: url("../images/reduce.png") no-repeat;
-  background-size: 20px 20px;
-  cursor: pointer;
-}
-.openItem .drownMenu {
-  display: block;
-}
-.user_box--infoitem_list {
-  padding-bottom: 24px;
-}
-.user_box--infoitem_list-title {
-  font-size: 20px;
-  color: #BD9972;
-  margin-left: -15px;
-  box-sizing: border-box;
-}
-.user_box--infoiitem_p {
-  font-size: 9px;
-  color: #CCCCCC;
-  position: relative;
-  line-height: 20px;
-  margin-left: -5px;
-}
-.user_box--infoiitem_p::before {
-  position: absolute;
-  display: inline-block;
-  content: "";
-  width: 5px;
-  height: 5px;
-  left: -5px;
-  top: 50%;
-  transform: translateX(-50%);
-  border-radius: 50%;
-  background-color: #CCCCCC;
-}
 /* 图片 */
 .user_box--company {
-  padding: 40px 60px;
+  padding: 7.03125vw 6.35416667vw 9.53125vw 6.35416667vw;
   box-sizing: border-box;
 }
 .user_box--company_imgbox {
@@ -151,27 +68,29 @@
   padding-bottom: 65px;
 }
 .txt .bigText {
-  font-size: 20px;
-  padding: 85px 60px 0;
+  font-size: 2.08333333vw;
+  padding: 8.59375vw 6.35416667vw 0;
 }
 .txt .smallTxt {
   text-align: left;
-  padding-top: 34px;
-  font-size: 12px;
-  padding-right: 8vw;
+  padding-top: 3.48958333vw;
+  font-size: 0.9375vw;
+  padding-right: 9vw;
   padding-left: 8vw;
   justify-content: flex-end;
 }
 .imgText {
-  width: 220px;
+  width: 22.91666667vw;
   margin: 0 auto;
-  padding-top: 50px;
+  padding-top: 5.15625vw;
 }
 .imgText img {
   max-width: 100%;
 }
 .imgdes {
   text-align: center;
-  padding-top: 106px;
-  padding-bottom: 90px;
+  padding-top: 11.04166667vw;
+  color: #595757;
+  font-size: 1.25vw;
+  line-height: 2;
 }

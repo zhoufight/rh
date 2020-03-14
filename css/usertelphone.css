@@ -17,65 +17,78 @@
 }
 /*  */
 .usertelphone_box--content {
-  padding: 0 60px;
+  padding: 0 4.6875vw;
   box-sizing: border-box;
+}
+.usertelphone_box--content .list-item {
+  padding-bottom: 6.51041667vw;
 }
 .usertelphone_box--content_left,
 .usertelphone_box--content_right {
-  padding-top: 60px;
+  padding-top: 9.375vw;
   box-sizing: border-box;
 }
-.usertelphone_box--content_itemtitle {
-  font-size: 9px;
+.title {
+  font-size: 0.83333333vw;
   color: #BD9972;
 }
 .usertelphone_box--content_title {
-  font-size: 24px;
+  font-size: 2.08333333vw;
   color: #333;
   padding: 10px 0 20px 0;
 }
-.usertelphone_box--content_left p {
-  line-height: 20px;
-  font-size: 10px;
-  color: #333;
+.txtone {
+  font-size: 1.04166667vw;
+  padding-right: 1.5625vw;
+  line-height: 1.7;
+}
+.txtTwo {
+  padding-top: 1.5625vw;
+}
+.fontSize {
+  font-size: 1.5625vw;
+  color: #666666;
 }
 .usertelphone_box--content_footer {
   padding-top: 42px;
   box-sizing: border-box;
+  line-height: 2;
 }
 .usertelphone_box--content_right-itemtitle {
   color: #333333;
-  font-size: 9px;
-  padding-bottom: 14px;
+  font-size: 0.9375vw;
+  padding-bottom: 1.45833333vw;
 }
 .usertelphone_box--content_right-p {
   line-height: 25px;
-  color: #666666;
-  font-size: 7px;
+  color: #595757;
+  font-size: 0.72916667vw;
 }
 .usertelphone_box--content_tel {
   padding-top: 20px;
   box-sizing: border-box;
 }
 .usertelphone_box--content_teltitle {
-  font-size: 9px;
+  font-size: 0.72916667vw;
   color: #595757;
   padding-bottom: 5px;
   box-sizing: border-box;
 }
 .usertelphone_box--content_tel-p {
   line-height: 25px;
-  color: #666;
-  font-size: 7px;
+  color: #595757;
+  font-size: 0.72916667vw;
 }
 /*  */
 .usertelphone_box--info {
-  padding: 0 25px;
+  padding: 0 2.60416667vw 2.1875vw;
   box-sizing: border-box;
 }
+.usertelphone_box--info .container-fluid {
+  padding: 0;
+}
 .usertelphone_box--info_left {
-  margin-top: 60px;
-  padding: 30px 34px;
+  padding: 3.07291667vw 3.59375vw 2.03125vw;
   box-sizing: border-box;
   background-color: #333;
   position: relative;
@@ -84,23 +97,46 @@
   color: #FFFFFF;
 }
 .usertelphone_box--info_title {
-  font-size: 20px;
-  padding-bottom: 19px;
+  font-size: 2.08333333vw;
+  padding-bottom: 1.97916667vw;
   box-sizing: border-box;
 }
 .usertelphone_box--info_place {
-  font-size: 12px;
-  padding-bottom: 127px;
+  font-size: 1.25vw;
+  padding-bottom: 13.22916667vw;
+  line-height: 2;
 }
 .usertelphone_box-info_botton {
   color: #9FA0A0;
+}
+.usertelphone_box-info_bottonitem {
+  font-size: 0.9375vw;
 }
 .usertelphone_box-info_bottonitem:first-child {
   padding-bottom: 20px;
 }
 .usertelphone_box--info_right {
   padding-left: 20px;
-  margin-top: 60px;
-  background-color: #666;
   box-sizing: border-box;
+  padding-right: 0;
+}
+.usertelphone_box--info_right img {
+  width: 100%;
+  height: 31.77083333vw;
+}
+.contactIcon {
+  padding-top: 1.25vw;
+}
+.contactIcon .item {
+  margin-right: 8px;
+}
+.contactIcon .item img {
+  width: 40px;
+  height: 40px;
+}
+@media screen and (max-width: 768px) {
+  .usertelphone_box--info_right {
+    padding-left: 0;
+    padding-top: 2.08333333vw;
+  }
 }
