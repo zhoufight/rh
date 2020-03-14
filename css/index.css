@@ -44,6 +44,11 @@
   font-size: 12px;
   cursor: pointer;
 }
+.more:hover{
+  background: #BD9972;
+  color: #fff;
+  border-color: #BD9972;
+}
 .sectionCenter {
   width: 100%;
   font-size: 12px;
@@ -98,6 +103,10 @@
 }
 .cooperativeClient .list .itemIcon img {
   max-width: 100%;
+}
+.cooperativeClient .list .itemIcon:hover{
+  border-color: #BD9972;
+  border-width: 2px;
 }
 .newList {
   padding: 0 5vw;
@@ -159,6 +168,9 @@
 }
 .newList .category ul li .txt a {
   color: #9FA0A0;
+}
+.newList .category ul li:hover .txt a{
+  color: #BD9972;
 }
 .newList .category ul li:nth-child(3n+3) {
   margin-right: 0;

@@ -152,7 +152,7 @@
           </div>
         </div>
         <div class="meunIcon">
-          <div class="toggler" onclick="showMaskMenu()"></i></div>
+          <div class="toggler" onclick="showMaskMenu()"></div>
         </div>
       </div>
     </div>
@@ -170,24 +170,24 @@
     <div class="maskMenuItem flex">
       <div class="left">
         <ul>
-          <li><a href="">About</a></li>
-          <li><a href="">Press</a></li>
-          <li><a href="">Contact</a></li>
-          <li><a href="">Careers</a></li>
-          <li><a href="">Shop</a></li>
-          <li><a href="24.html">24 Hour Assembly</a></li>
-          <li><a href="">Local Works</a></li>
+          <li><a href="">关于</a></li>
+          <li><a href="">按</a></li>
+          <li><a href="">联系</a></li>
+          <li><a href="">招贤纳士</a></li>
+          <li><a href="">店</a></li>
+          <li><a href="24.html">24小时组装</a></li>
+          <li><a href="">本地作品</a></li>
         </ul>
       </div>
       <div class="right">
-        <div class="tit">Connect</div>
+        <div class="tit">链接</div>
         <ul>
-          <li><a href="">Instagram</a></li>
-          <li><a href="">LinkedIn</a></li>
-          <li><a href="">Twitter</a></li>
-          <li><a href="">Pinterest</a></li>
-          <li><a href="">Dribbble</a></li>
-          <li><a href="">Newsletter</a></li>
+          <li><a href="">Instagram的</a></li>
+          <li><a href="">领英</a></li>
+          <li><a href="">维特</a></li>
+          <li><a href="">Pinterest的</a></li>
+          <li><a href="">运球</a></li>
+          <li><a href="">通讯</a></li>
         </ul>
       </div>
     </div>
@@ -280,32 +280,46 @@
               <div class="left">
                 <ul class="flex">
                   <li>
-                    <img src="images/SANZO_Can_05_1012px.jpg" alt="">
-                    <p>度假景区</p>
+                    <a href="" title="度假景区">
+                      <img src="images/SANZO_Can_05_1012px.jpg" alt="">
+                      <p>度假景区</p>
+                    </a>
+                  </li>
+                 <li>
+                    <a href="" title="度假景区">
+                      <img src="images/SANZO_Can_05_1012px.jpg" alt="">
+                      <p>度假景区</p>
+                    </a>
                   </li>
                   <li>
-                    <img src="images/SANZO_Can_05_1012px.jpg" alt="">
-                    <p>度假景区</p>
+                    <a href="" title="度假景区">
+                      <img src="images/SANZO_Can_05_1012px.jpg" alt="">
+                      <p>度假景区</p>
+                    </a>
                   </li>
                   <li>
-                    <img src="images/SANZO_Can_05_1012px.jpg" alt="">
-                    <p>度假景区</p>
+                    <a href="" title="度假景区">
+                      <img src="images/SANZO_Can_05_1012px.jpg" alt="">
+                      <p>度假景区</p>
+                    </a>
                   </li>
                   <li>
-                    <img src="images/SANZO_Can_05_1012px.jpg" alt="">
-                    <p>度假景区</p>
+                    <a href="" title="度假景区">
+                      <img src="images/SANZO_Can_05_1012px.jpg" alt="">
+                      <p>度假景区</p>
+                    </a>
                   </li>
                   <li>
-                    <img src="images/SANZO_Can_05_1012px.jpg" alt="">
-                    <p>度假景区</p>
+                    <a href="" title="度假景区">
+                      <img src="images/SANZO_Can_05_1012px.jpg" alt="">
+                      <p>度假景区</p>
+                    </a>
                   </li>
                   <li>
-                    <img src="images/SANZO_Can_05_1012px.jpg" alt="">
-                    <p>度假景区</p>
-                  </li>
-                  <li>
-                    <img src="images/SANZO_Can_05_1012px.jpg" alt="">
-                    <p>度假景区</p>
+                    <a href="" title="度假景区">
+                      <img src="images/SANZO_Can_05_1012px.jpg" alt="">
+                      <p>度假景区</p>
+                    </a>
                   </li>
                 </ul>
               </div>
@@ -320,17 +334,16 @@
                   <p class="tit_top">人和时代设计</p>
                   <p class="tit_bottom">品牌设计、VI设计、标识设计公司</p>
                 </div>
-                <button class="view float-right">查看</button>
+                <a href="" class="view float-right">查看</a>
               </div>
               <div class="line_bottom clearfix">
                 <div class="left">
-                  <img class="img-fluid" src="./images/news/share.png" alt="">
+                  <a href=""><img class="img-fluid" src="./images/news/share.png" alt=""></a>
                 </div>
                 <div class="right float-right">
-                  <span>
-                    < </span> <span>x
-                      </span>
-                      <span>></span>
+                  <span>  < </span> 
+                  <span> x </span>
+                  <span> > </span>
                 </div>
               </div>
 
@@ -526,7 +539,6 @@
           </div>
         </div>
       </div>
-
     </div>
 
     <div class="wrap">
@@ -739,29 +751,30 @@
     <div class="backtop">
       <div class="icon"><img src="images/backtop.png" alt=""></div>
     </div>
-    <script src="js/jquery-3.4.1.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
-    <script src="lib/bootstrap-4.4.1-dist/js/bootstrap.min.js"></script>
-    <script src="js/common.js"></script>
-    <script>
-      function itemimgList(status = 0, i = '') {
-        if (i === '') {
-          return
-        }
-        let listBox = document.getElementsByClassName('newsdetail_box--itemimg_listitem')
-        let itemList = document.getElementsByClassName('newsdetail_box--itemimg_listitem-tips')
-        if (status === 0) {
-          itemList[i].style.display = 'none'
-          listBox[i].style.cursor = 'none'
-        } else if (status === 1) {
-          itemList[i].style.display = 'block'
-          listBox[i].style.cursor = 'pointer'
-        } else {
-          itemList[i].style.display = 'none'
-          listBox[i].style.cursor = 'none'
-        }
+  </div>
+  <script src="js/jquery-3.4.1.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+  <script src="lib/bootstrap-4.4.1-dist/js/bootstrap.min.js"></script>
+  <script src="js/common.js"></script>
+  <script>
+    function itemimgList(status = 0, i = '') {
+      if (i === '') {
+        return
       }
-    </script>
+      let listBox = document.getElementsByClassName('newsdetail_box--itemimg_listitem')
+      let itemList = document.getElementsByClassName('newsdetail_box--itemimg_listitem-tips')
+      if (status === 0) {
+        itemList[i].style.display = 'none'
+        listBox[i].style.cursor = 'none'
+      } else if (status === 1) {
+        itemList[i].style.display = 'block'
+        listBox[i].style.cursor = 'pointer'
+      } else {
+        itemList[i].style.display = 'none'
+        listBox[i].style.cursor = 'none'
+      }
+    }
+  </script>
 </body>
 
 </html>
