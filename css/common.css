@@ -431,6 +431,7 @@ img {
   border: 2px solid #959494;
   background-color: #ffff;
   color: #959495;
+  font-size: 1.25vw;
 }
 .very_more:hover a {
   color: #BD9972;
