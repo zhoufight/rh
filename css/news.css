@@ -47,6 +47,9 @@
   margin-left: 0;
   margin-right: 5.20833333vw;
 }
+.wrap {
+  padding-top: 5.20833333vw;
+}
 @media screen and (max-width: 768px) {
   .newList .category .des .read_detail3 {
     padding-top: 25px;
