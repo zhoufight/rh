@@ -24,25 +24,27 @@
 }
 
 .user_box--content {
-    padding: 60px 40px;
+    padding: 161*@vw 121*@vw 133*@vw 121*@vw;
     box-sizing: border-box;
 }
 
 .user_box--content_title {
     color: #BD9972;
     padding-bottom: 13px;
+    font-size: 16*@vw;
 }
 
 .user_box--content_itemtitle {
     color: #333333;
-    font-size: 20px;
-    padding-bottom: 24px;
+    font-size: 40*@vw;
+    padding-bottom: 49*@vw;
 }
 
 .user_box--content p {
-    font-size: 9px;
-    line-height: 20px;
+    font-size: 18*@vw;
+    line-height: 2;
     box-sizing: border-box;
+    width: 804*@vw;
 }
 
 
@@ -53,8 +55,11 @@
 /* 图片 */
 
 .user_box--company {
-    padding: 40px 60px;
+    padding: 123*@vw 210*@vw 83*@vw 210*@vw;
     box-sizing: border-box;
+    .user_box--info_itemtitle{
+        font-size: 18*@vw;
+    }
 }
 
 .user_box--company_imgbox {
@@ -85,4 +90,10 @@
 .ourservice{
     padding-bottom: 1vw;
     border-bottom: 1px solid #BD9972;
+}
+
+@media screen and (max-width:768px) {
+    .user_box--content p{
+        width: 100%;
+    }
 }

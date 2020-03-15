@@ -92,6 +92,7 @@
   box-sizing: border-box;
   background-color: #333;
   position: relative;
+  max-height: 31.77083333vw;
 }
 .usertelphone_box-info_top {
   color: #FFFFFF;
@@ -103,7 +104,7 @@
 }
 .usertelphone_box--info_place {
   font-size: 1.25vw;
-  padding-bottom: 13.22916667vw;
+  padding-bottom: 10.625vw;
   line-height: 2;
 }
 .usertelphone_box-info_botton {
