@@ -184,8 +184,8 @@
   padding-left: 8px;
 }
 .content .section .caseWrap .right img {
-  width: 32px;
-  height: 30px;
+  width: 2.08333333vw;
+  height: 2.08333333vw;
 }
 @media screen and (max-width: 767px) {
   .cd-vertical-nav {
@@ -200,6 +200,10 @@
   }
   .content .section .caseWrap .left ul li p {
     font-size: 0.8vw;
+  }
+  .content .section .caseWrap .right img {
+    width: 20px;
+    height: 20px;
   }
 }
 @media screen and (max-width: 550px) {
