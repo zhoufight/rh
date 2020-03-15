@@ -15,28 +15,36 @@ dt {
 }
 .design_navigation .navSub {
   justify-content: flex-end;
+  padding-bottom: 1.5625vw;
+}
+.design_navigation .navSub .subMenuWrap {
+  margin-right: -7.8125vw;
+  padding-right: 10.41666667vw;
+}
+.design_navigation .navSub .weCanDo {
+  justify-content: center;
 }
 .design_navigation .navSub .weCanDo .itemMenu {
   margin-left: 10vw;
 }
 .design_navigation .navSub .weCanDo .itemMenu dl dt {
-  padding-bottom: 10px;
+  padding-bottom: 1.09375vw;
   border-bottom: 1px solid #EEEEEE;
 }
 .design_navigation .navSub .weCanDo .itemMenu dl dt .tit {
   color: #BD9972;
-  font-size: 12px;
+  font-size: 1.04166667vw;
 }
 .design_navigation .navSub .weCanDo .itemMenu dl dt .tit_sub {
-  font-size: 10px;
+  font-size: 0.83333333vw;
   color: #9DA1A6;
-  font-weight: normal;
 }
 .design_navigation .navSub .weCanDo .itemMenu dl dd {
-  padding-top: 10px;
+  padding-top: 0.83333333vw;
+  font-size: 0.83333333vw;
 }
 .design_navigation .navSub .weCanDo .itemMenu dl dd a {
-  color: #000000;
+  color: #333333;
 }
 .design_navigation .navSub .weCanDo .itemMenu dl .active a {
   color: #BD9972;
@@ -49,16 +57,20 @@ dt {
   color: #BD9972;
 }
 .design_navigation .navSub .btnWrap {
-  padding-right: 0.8vw;
+  padding-right: 2.86458333vw;
   margin-top: -7px;
+  margin-left: 1.97916667vw;
   cursor: pointer;
 }
 .design_navigation .navSub .btnWrap span {
   color: #BD9972;
-  font-size: 12px;
+  font-size: 1.04166667vw;
+  padding-right: 2.44791667vw;
+  vertical-align: middle;
 }
 .design_navigation .navSub .btnWrap img {
   width: 20px;
+  vertical-align: middle;
 }
 @media screen and (max-width: 768px) {
   .design_navigation {

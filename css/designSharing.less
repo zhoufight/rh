@@ -1,5 +1,7 @@
 @charset "utf-8";
 @fontColor:#BD9972;
+@vw:0.0520833333333333vw;  // vw 单位按1920计算
+
 body{
   padding-top: 14vw;
 }
@@ -14,38 +16,43 @@ dt{
   z-index: 99;
   padding-top: 10px;
   // background-color: #fff;
-  
   .navSub{
     justify-content: flex-end;
+    padding-bottom: 30*@vw;
+    .subMenuWrap{
+      margin-right: -150*@vw;
+      padding-right: 200*@vw;
+    }
     .weCanDo {
+      justify-content: center;
+      
       .itemMenu {
         margin-left: 10vw;
-  
+
         dl {
           dt {
-            padding-bottom: 10px;
+            padding-bottom: 21*@vw;
             border-bottom: 1px solid #EEEEEE;
-  
+
             .tit {
               color: #BD9972;
-              font-size: 12px;
+              font-size: 20*@vw;
             }
-  
+
             .tit_sub {
-              font-size: 10px;
+              font-size: 16*@vw;
               color: #9DA1A6;
-              font-weight: normal;
             }
           }
-  
+
           dd {
-            padding-top: 10px;
-  
+            padding-top: 16*@vw;
+            font-size: 16*@vw;
             a {
-              color: #000000;
+              color: #333333;
             }
           }
-  
+
           .active {
             a {
               color: #BD9972;
@@ -54,7 +61,7 @@ dt{
               background-repeat: no-repeat;
               padding-left: 14px;
             }
-  
+
             .color {
               color: #BD9972;
             }
@@ -63,15 +70,19 @@ dt{
       }
     }
     .btnWrap{
-      padding-right: 0.8vw;
+      padding-right: 55*@vw;
       margin-top: -7px;
+      margin-left: 38*@vw;
       cursor: pointer;
       span{
         color: @fontColor;
-        font-size: 12px;
+        font-size: 20*@vw; 
+        padding-right: 47*@vw;
+        vertical-align: middle; 
       }
       img{
         width: 20px;
+        vertical-align: middle;
       }
     }
   }
