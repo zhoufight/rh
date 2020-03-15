@@ -258,10 +258,115 @@
 
 @charset "utf-8";
 @vw:0.0520833333333333vw;
+@fontSize18:0.9vw;
+@fontSize48:2.5vw;
+@fontSize36:2vw;
+@fontSize24:1.3vw;
+@fontSize30:1.6vw;
 
-.newsdetail_box--place{
-    margin-right: 50*@vw;
+.newsdetail_box--content_sidebar{
+    margin-right: 55*@vw;
 }
-.newList{
-    padding: 0;
+
+// 新闻内柔
+.newsdetail_box{
+    .newsdetail_box--place{
+        margin-right: 50*@vw;   
+        padding: 0;
+    }
+    .newsdetail_box--container{
+        .newList{
+            padding: 0;
+
+            .container-fluid{
+                padding-left: 0;
+                padding-right: 0;
+                .row{
+                    margin-right: -86*@vw;
+                }
+                .list-item{
+           
+                }
+                .col-md-6{
+                  padding: 0;
+                }
+                .imgIcon{
+                  padding-left: 0;
+                  padding-right: 0;              
+                  img{           
+                
+                    vertical-align: middle;
+                  }
+                }
+                .picture_3{
+                    padding-top: 20px;
+                }
+                .pdl{
+                    padding: 0;
+                }         
+                .category{
+                    padding-left: 0;
+                    padding-right: 0;
+                    margin-left:100*@vw;
+                    
+                  .tit{
+                    // color: #666666;
+                    // font-size:@fontSize24;
+                  
+                    span{
+                     
+                    }
+                  }
+                  .des{
+                    .des_tit{
+                    
+                    }
+                    .des_content{
+                    
+                    }
+                    .des_btn{
+                   
+                      a{
+                      
+                        
+                      }
+                    }
+                  }
+                  ul{
+                  
+                    // border: 1px solid #000;
+                    li{
+                       margin-right: 50*@vw;
+                       &:nth-child(3n){
+                        margin-right:0;
+                       }
+                      }
+                     
+                    
+                      }
+                      .txt{
+                       
+                        // width: 155px; 
+                        a{
+                         
+                          }
+                        }
+                    }
+                .design_appreciation{
+                    margin-left: 0;
+                    margin-right: 100*@vw;
+                }
+                
+            }
+                 
+            }
+               
+    }
+}
+        
+        
+@media screen and (max-width:768px) {
+    .newList .category .des .read_detail3{
+        padding-top:25px;
+    }
 }

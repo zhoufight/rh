@@ -256,9 +256,6 @@ img {
   font-size: 18px;
   line-height: 30px;
 }
-.carousel {
-  margin-top: 2.60416667vw;
-}
 .carousel .carousel-indicators li {
   box-sizing: content-box;
   -ms-flex: 0 1 auto;
@@ -582,9 +579,12 @@ img {
 }
 /*新闻资讯，设计分享导航start*/
 .newsdetail_box--content_nav {
+  font-size: 0.9375vw;
+  padding-left: 1.04166667vw;
   box-sizing: border-box;
   border-right: 1px solid #999999;
   padding-right: 0;
+  padding-left: 1.82291667vw;
 }
 .newsdetail_box--content_nav .active {
   border-right: 1px solid #000000;
@@ -607,8 +607,8 @@ img {
   color: #BD9972;
 }
 .newsdetail_box--content_sidebar {
-  height: 10vh;
-  margin-right: 18px;
+  height: 10.41666667vw;
+  margin-right: 1.04166667vw;
   box-sizing: border-box;
   position: relative;
   padding-right: 0;
@@ -897,6 +897,12 @@ div.newsdetail_box--info .cross_line .line_bottom .right span:nth-child(2) {
 }
 /*新闻详情媒体查询 start*/
 @media screen and (max-width: 767px) {
+  .newsdetail_box--content_nav {
+    border-right: none;
+  }
+  .newsdetail_box--content_nav .active {
+    border-right: none;
+  }
   .newsdetail_box--container {
     padding: 0;
   }
