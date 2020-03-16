@@ -292,7 +292,7 @@ img {
 .images .container-fluid .row .item {
   width: 23.25vw;
   height: 23.25vw;
-  margin-bottom: 0.26041667vw;
+  margin-bottom: 0.36458333vw;
   transition: transform 0.8s;
   box-sizing: border-box;
 }
@@ -676,12 +676,12 @@ img {
   font-size: 0.9375vw;
   padding-left: 1.04166667vw;
   box-sizing: border-box;
-  border-right: 1px solid #999999;
+  border-right: 1px solid #E5E5E5;
   padding-right: 0;
   padding-left: 1.82291667vw;
 }
 .newsdetail_box--content_nav .active {
-  border-right: 1px solid #000000;
+  border-right: 3px solid #000000;
   margin-right: -1px;
 }
 .newsdetail_box--content_nav .active a {
@@ -754,6 +754,7 @@ img {
 .newsdetail_box--list_title {
   border-bottom: 1px solid #EEEEEE;
   box-sizing: border-box;
+  padding-bottom: 7px;
 }
 .newsdetail_box--list_title:hover {
   color: #bd9972;
@@ -788,6 +789,9 @@ img {
   overflow: hidden;
   text-overflow: ellipsis;
 }
+.newsdetail_box--list_content {
+  margin-top: 20px;
+}
 newsdetail_box--list_content .newsdetail_box--list_content-item {
   line-height: 40px;
   box-sizing: border-box;
@@ -796,8 +800,13 @@ newsdetail_box--list_content .newsdetail_box--list_content-item {
 .item--text_tips {
   color: #BD9972;
 }
+.newsWrap {
+  margin-top: 20px;
+}
 .newsWrap .column {
   text-align: left;
+  white-space: nowrap;
+  text-overflow: ellipsis;
 }
 .newsWrap .column p {
   margin: 0.5vw 0;
@@ -805,9 +814,10 @@ newsdetail_box--list_content .newsdetail_box--list_content-item {
 }
 .newsWrap .column p:nth-of-type(2) {
   text-align: center;
+  margin-left: 1.5625vw;
 }
 .newsWrap .column p:nth-of-type(3) {
-  text-align: right;
+  margin-left: 3.64583333vw;
 }
 .newsWrap .column p a {
   color: #666666;
@@ -817,6 +827,13 @@ newsdetail_box--list_content .newsdetail_box--list_content-item {
 }
 .newsWrap .column p .active {
   color: #bd9972;
+}
+.relevant_tags .column {
+  display: flex;
+  box-sizing: border-box;
+}
+.relevant_tags .column p {
+  flex: 1;
 }
 div.newsdetail_box--info {
   border-right: 1px solid #eeeeee;
@@ -919,6 +936,9 @@ div.newsdetail_box--info .cross_line .line_bottom .right span {
   display: inline-block;
   width: 30px;
   height: 30px;
+}
+div.newsdetail_box--info .cross_line .line_bottom .right span:nth-child(2) {
+  margin: 0 2vw;
 }
 .related_cases {
   font-size: 0.9375vw;

@@ -375,7 +375,7 @@ img {
        
         width: 23.25vw;
         height: 23.25vw;
-        margin-bottom: 5*@vw;
+        margin-bottom: 7*@vw;
         transition: transform 0.8s;
         box-sizing: border-box;
         &:hover .box .box-content .arrow .arrow_up{
@@ -866,12 +866,12 @@ img {
   font-size: 18*@vw;
   padding-left: 20*@vw;
   box-sizing: border-box;
-  border-right: 1px solid #999999;
+  border-right: 1px solid #E5E5E5;
   padding-right: 0;
   padding-left: 35*@vw;
   .active{
    
-      border-right: 1px solid #000000;
+      border-right: 3px solid #000000;  
       margin-right: -1px;
       a{
           color: @colorOne;
@@ -970,7 +970,7 @@ img {
 .newsdetail_box--list_title {
   border-bottom: 1px solid #EEEEEE;
   box-sizing: border-box;
-
+  padding-bottom: 7px;
   &:hover {
       color: #bd9972;
   }
@@ -1011,10 +1011,11 @@ img {
   text-overflow: ellipsis;
  
 }
-
+.newsdetail_box--list_content{
+  margin-top: 20px;
+}
 
 newsdetail_box--list_content .newsdetail_box--list_content-item {
-
   line-height: 40px;
   box-sizing: border-box;
 }
@@ -1026,18 +1027,31 @@ newsdetail_box--list_content .newsdetail_box--list_content-item {
 
 //新闻资讯 News
 .newsWrap {
+  margin-top: 20px;
+  // &::after{   
+  //     content: '';
+  //     width: 30%;
+  //     // border:1px solid transparent;    
+  // }
   .column {
      
       text-align: left;
-
+      white-space: nowrap;
+      // overflow: hidden;
+      text-overflow: ellipsis;
       p {
           margin: 0.5vw 0;
           flex: 1;
           &:nth-of-type(2){
             text-align: center;
+            // margin-right: 60*@vw;
+           margin-left: 30*@vw;
+            
           }
           &:nth-of-type(3){
-            text-align: right;
+            // text-align: right;
+           margin-left: 70*@vw;
+          
           }
           a {
               color: #666666;
@@ -1053,6 +1067,17 @@ newsdetail_box--list_content .newsdetail_box--list_content-item {
   }
 }
 
+// // 相关标签
+.relevant_tags{
+  
+  .column{
+    display: flex;
+    box-sizing: border-box;
+    p{
+     flex: 1;
+    }
+  }
+}
 
 div.newsdetail_box--info {
   border-right: 1px solid rgba(238, 238, 238, 1);
@@ -1191,7 +1216,7 @@ div.newsdetail_box--info {
               // margin-top: -2vw;
 
               span:nth-child(2) {
-                  // margin: 0 2vw;
+                  margin: 0 2vw;
               }
 
           }

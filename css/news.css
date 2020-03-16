@@ -47,6 +47,9 @@
   margin-left: 0;
   margin-right: 5.20833333vw;
 }
+div.newsdetail_box--info .cross_line {
+  padding: 0 10.41666667vw;
+}
 .wrap {
   padding-top: 5.20833333vw;
 }

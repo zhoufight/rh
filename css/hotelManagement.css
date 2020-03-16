@@ -69,7 +69,7 @@
 }
 .txt .bigText {
   font-size: 2.08333333vw;
-  padding: 8.59375vw 6.35416667vw 0;
+  padding: 8.59375vw 5.46875vw 0;
 }
 .txt .smallTxt {
   text-align: left;
@@ -78,6 +78,9 @@
   padding-right: 9vw;
   padding-left: 8vw;
   justify-content: flex-end;
+}
+.txt .smallTxt .desTxt {
+  line-height: 2;
 }
 .imgText {
   width: 22.91666667vw;
