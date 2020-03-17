@@ -706,6 +706,7 @@ img {
   box-sizing: border-box;
   position: relative;
   padding-right: 0;
+  margin-top: 10px;
 }
 /*新闻资讯，设计分享导航end*/
 /* 新闻详情 start*/
