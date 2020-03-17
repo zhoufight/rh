@@ -627,8 +627,8 @@ img {
 }
 .backtop {
   position: fixed;
-  right: 10px;
-  bottom: 20px;
+  right: 2.60416667vw;
+  bottom: 4.32291667vw;
   display: none;
 }
 .backtop .icon {
