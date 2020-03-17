@@ -37,23 +37,27 @@
 .usergood_box--content_itemtitle {
     color: #333333;
     font-size: 40*@vw;
+    font-weight:300;
 }
 
 .usergood_box--content_text p {
     /* width: 50%; */
-    padding-right: 2%;
     margin-left: -15px;
     font-size: 18*@vw;
     line-height: 1.5;
     box-sizing: border-box;
+    // padding-right: 62*@vw;
+}
+.usergood_box--content_text .tit{
+    padding-right: 62*@vw;
 }
 .usergood_box--content_text p:nth-child(2){
-    padding-left: 80*@vw;
+    padding-left: 20*@vw;
 }
 .usergood_box--info {
     padding: 122*@vw  122*@vw 144*@vw 122*@vw;
     box-sizing: border-box;
-    background-color: #333333;
+    background-color: #231F20;
 }
 
 .usergood_box--info_firsttitle {
@@ -89,11 +93,12 @@
 
 .usergood_box--info_list-title {
     font-size: 48*@vw;
-    color: #fff;
+    color: #CCCCCC;
     line-height: 60px;
     box-sizing: border-box;
     position: relative;
     padding: 18*@vw 0;
+    font-weight: 300;
 }
 
 .usergood_box--active::before {
@@ -153,8 +158,12 @@
     font-size: 18*@vw;
     color: #ccc;
     p{
-        line-height: 1.5;
+        line-height: 2;
     }
+}
+
+.usergood_box--infoitem  .row{
+    margin-right: -120*@vw;
 }
 
 .usergood_box--infoitem_itemlist-p {
@@ -193,14 +202,14 @@
     display: flex;
     align-items: center;
     box-sizing: border-box;
-    margin-bottom: 2px;
+    margin-bottom: 6px;
 
 }
 
 .usergood_box--imgitem img {
     width: calc((100% - 31%) / 5);
     max-width: 100%;
-    margin-left: 2px;
+    margin-left: 4px;
     vertical-align: middle;
     box-sizing: border-box;
     cursor: pointer;

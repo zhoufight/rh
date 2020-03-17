@@ -312,7 +312,7 @@
                   .tit{
                     // color: #666666;
                     // font-size:@fontSize24;
-                  
+                    padding-bottom: 2vw;
                     span{
                      
                     }
@@ -325,7 +325,8 @@
                     
                     }
                     .des_btn{
-                   
+                      padding-top: 1vw;
+                      padding-bottom: 1vw;
                       a{
                       
                         
@@ -336,6 +337,7 @@
                   
                     // border: 1px solid #000;
                     li{
+                      margin-bottom: 0.8vw;
                        margin-right: 50*@vw;
                        &:nth-child(3n){
                         margin-right:0;
@@ -364,7 +366,7 @@
     }
 }
 div.newsdetail_box--info .cross_line{
-  padding: 0 200*@vw;
+  padding: 0 140*@vw;
 }
         
 .wrap{
@@ -373,5 +375,14 @@ div.newsdetail_box--info .cross_line{
 @media screen and (max-width:768px) {
     .newList .category .des .read_detail3{
         padding-top:25px;
+    }
+    .newsdetail_box .newsdetail_box--container .newList .container-fluid .design_appreciation{
+      margin: 0;
+      padding-left: 15px;
+    }
+    .newsdetail_box .newsdetail_box--container .newList .container-fluid .category .des {
+      .textMulit{
+        display: block;
+      }
     }
 }
