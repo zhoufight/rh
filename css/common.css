@@ -565,6 +565,7 @@ img {
 }
 .footer .left .tit a {
   color: #ffffff;
+  margin-right: 16px;
 }
 .footer .left .copyright {
   padding-top: 4.27083333vw;
