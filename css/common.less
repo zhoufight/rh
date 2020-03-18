@@ -399,7 +399,7 @@ img {
           transition-delay: 0s;
         }
         &:hover .box-content::before{
-          background-color: rgba(0, 0, 0, 0.2);
+          background-color: rgba(0, 0, 0, 0.5);
           -webkit-transform: scale(1.05);
           -o-transform: scale(1.05);
           transform: scale(1.05);
@@ -587,6 +587,7 @@ img {
           li {
             width: 100%;
             color: #666666;
+            // color: #9FA0A0;
             font-size: 16*@vw;
             position: relative;
             padding-bottom: 15*@vw;
@@ -605,8 +606,9 @@ img {
               display: inline-block;
               width: 6px;
               height: 6px;
-              background: #666666;
+              background: #9FA0A0;
               border-radius: 50%;
+             
             }
             a{
               
@@ -637,7 +639,7 @@ img {
       .item.newWrap {
         display: flex;
         box-sizing: border-box;
-        background-color: rgba(255, 254, 255, 1);
+        background-color: rgb(239, 239, 239);
         overflow: hidden;
       }
     }
@@ -676,22 +678,27 @@ img {
   border-top: 100*@vw solid rgba(255, 254, 255, 1);
   border-left: 210*@vw solid rgba(255, 254, 255, 1);
   padding-bottom: 100*@vw;
-
+  padding-right: 210*@vw;
   .container-fluid {
     background-color: #fff;
-
+    padding-left: 0;
+    padding-right: 0;
     .text {
       font-size: 16px;
       color: rgba(189, 153, 114, 1);
       padding-bottom: 82*@vw;
-      margin-left: -15px;
+     
     }
 
     .row {
-      line-height: 40px;
-      a{
-        color: #666666;
-      }
+      line-height: 50px;
+      margin-left: 0;
+      margin-right: 0;
+      
+        a{
+          color: #666666;
+        }
+         
     }
   }
 } 
@@ -1640,7 +1647,7 @@ div.newsdetail_box--info .caseWrap .left ul li:hover p,
 
 // 我们能做什么 ， 酒店管理 折叠面板　stat 
 .user_box--info {
-  background-color: #333333;
+  background-color: #231F20;
   padding: 122*@vw;
   box-sizing: border-box;
 }
@@ -1664,7 +1671,7 @@ div.newsdetail_box--info .caseWrap .left ul li:hover p,
   // height: 60px;
   line-height: 60px;
   font-size: 48*@vw;
-  color: #fff;
+  color: #CCCCCC;
   border-bottom: 1px solid #BD9972;
   box-sizing: border-box;
   position: relative;
@@ -1729,6 +1736,7 @@ div.newsdetail_box--info .caseWrap .left ul li:hover p,
   margin-left: -5px;
   padding-left: 10*@vw;
   margin-bottom: 8*@vw;
+  font-family:Source Han Sans SC;
 }
 
 .user_box--infoiitem_p::before {

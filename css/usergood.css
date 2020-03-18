@@ -27,22 +27,25 @@
 .usergood_box--content_itemtitle {
   color: #333333;
   font-size: 2.08333333vw;
+  font-weight: 300;
 }
 .usergood_box--content_text p {
   /* width: 50%; */
-  padding-right: 2%;
   margin-left: -15px;
   font-size: 0.9375vw;
   line-height: 1.5;
   box-sizing: border-box;
 }
+.usergood_box--content_text .tit {
+  padding-right: 3.22916667vw;
+}
 .usergood_box--content_text p:nth-child(2) {
-  padding-left: 4.16666667vw;
+  padding-left: 1.04166667vw;
 }
 .usergood_box--info {
   padding: 6.35416667vw 6.35416667vw 7.5vw 6.35416667vw;
   box-sizing: border-box;
-  background-color: #333333;
+  background-color: #231F20;
 }
 .usergood_box--info_firsttitle {
   color: #BD9972;
@@ -71,11 +74,12 @@
 }
 .usergood_box--info_list-title {
   font-size: 2.5vw;
-  color: #fff;
+  color: #CCCCCC;
   line-height: 60px;
   box-sizing: border-box;
   position: relative;
   padding: 0.9375vw 0;
+  font-weight: 300;
 }
 .usergood_box--active::before {
   position: absolute;
@@ -129,7 +133,10 @@
   color: #ccc;
 }
 .usergood_box--infoitem_itemlist p {
-  line-height: 1.5;
+  line-height: 2;
+}
+.usergood_box--infoitem .row {
+  margin-right: -6.25vw;
 }
 .usergood_box--infoitem_itemlist-p {
   position: relative;
@@ -163,12 +170,12 @@
   display: flex;
   align-items: center;
   box-sizing: border-box;
-  margin-bottom: 2px;
+  margin-bottom: 6px;
 }
 .usergood_box--imgitem img {
   width: calc((100% - 31%) / 5);
   max-width: 100%;
-  margin-left: 2px;
+  margin-left: 4px;
   vertical-align: middle;
   box-sizing: border-box;
   cursor: pointer;

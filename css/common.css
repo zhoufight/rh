@@ -315,7 +315,7 @@ img {
   transition-delay: 0s;
 }
 .images .container-fluid .row .item:hover .box-content::before {
-  background-color: rgba(0, 0, 0, 0.2);
+  background-color: rgba(0, 0, 0, 0.5);
   -webkit-transform: scale(1.05);
   -o-transform: scale(1.05);
   transform: scale(1.05);
@@ -481,7 +481,7 @@ img {
   display: inline-block;
   width: 6px;
   height: 6px;
-  background: #666666;
+  background: #9FA0A0;
   border-radius: 50%;
 }
 .images .container-fluid .row .item .new_list li a {
@@ -505,7 +505,7 @@ img {
 .images .container-fluid .row .item.newWrap {
   display: flex;
   box-sizing: border-box;
-  background-color: #fffeff;
+  background-color: #efefef;
   overflow: hidden;
 }
 /*加载更多very_more */
@@ -534,18 +534,22 @@ img {
   border-top: 5.20833333vw solid #fffeff;
   border-left: 10.9375vw solid #fffeff;
   padding-bottom: 5.20833333vw;
+  padding-right: 10.9375vw;
 }
 .cooperative_client .container-fluid {
   background-color: #fff;
+  padding-left: 0;
+  padding-right: 0;
 }
 .cooperative_client .container-fluid .text {
   font-size: 16px;
   color: #bd9972;
   padding-bottom: 4.27083333vw;
-  margin-left: -15px;
 }
 .cooperative_client .container-fluid .row {
-  line-height: 40px;
+  line-height: 50px;
+  margin-left: 0;
+  margin-right: 0;
 }
 .cooperative_client .container-fluid .row a {
   color: #666666;
@@ -1262,7 +1266,7 @@ div.newsdetail_box--info .caseWrap .left ul li:hover p,
   }
 }
 .user_box--info {
-  background-color: #333333;
+  background-color: #231F20;
   padding: 6.35416667vw;
   box-sizing: border-box;
 }
@@ -1279,7 +1283,7 @@ div.newsdetail_box--info .caseWrap .left ul li:hover p,
 .closeItem .user_box--infoitem_title {
   line-height: 60px;
   font-size: 2.5vw;
-  color: #fff;
+  color: #CCCCCC;
   border-bottom: 1px solid #BD9972;
   box-sizing: border-box;
   position: relative;
@@ -1339,6 +1343,7 @@ div.newsdetail_box--info .caseWrap .left ul li:hover p,
   margin-left: -5px;
   padding-left: 0.52083333vw;
   margin-bottom: 0.41666667vw;
+  font-family: Source Han Sans SC;
 }
 .user_box--infoiitem_p::before {
   position: absolute;

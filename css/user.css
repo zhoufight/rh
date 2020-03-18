@@ -28,12 +28,13 @@
   color: #333333;
   font-size: 2.08333333vw;
   padding-bottom: 2.55208333vw;
+  font-weight: 300;
 }
 .user_box--content p {
   font-size: 0.9375vw;
   line-height: 2;
   box-sizing: border-box;
-  width: 41.875vw;
+  width: 44.79166667vw;
 }
 /* 背景颜色 */
 /* 图片 */
@@ -43,6 +44,9 @@
 }
 .user_box--company .user_box--info_itemtitle {
   font-size: 0.9375vw;
+}
+.user_box--company .user_box--info_itemtitle {
+  margin-left: -4.32291667vw;
 }
 .user_box--company_imgbox {
   /* padding: 20px 30px 0px 30px; */
@@ -68,6 +72,9 @@
 .ourservice {
   padding-bottom: 1vw;
   border-bottom: 1px solid #BD9972;
+}
+.openItem .drownMenu .row {
+  margin-right: -120px;
 }
 @media screen and (max-width: 768px) {
   .user_box--content p {
