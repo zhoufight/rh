@@ -147,7 +147,7 @@ img {
     }
 
     .logo2 {
-      width: 15vw;
+      width: 400*@vw;
     }
 
     .meun {
@@ -155,7 +155,7 @@ img {
       padding-right: 6.1vw;
       .menuList {
         .item {
-          margin-left: 2vw;
+          margin-left: 63*@vw;
           position: relative;
 
           a {
@@ -237,7 +237,7 @@ img {
 
         .active {
           a {
-            color: #000000;
+            color: #9FA0A0;
           }
         }
 
@@ -248,20 +248,24 @@ img {
       }
 
       .meunIcon {
-        margin-left: 2vw;
+        margin-left: 66*@vw;
 
         .toggler {
-          width: 26px;
-          height: 26px;
+          width: 30px;
+          height: 30px;
           cursor: pointer;
-          background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg'  viewBox='0 0 30 30'%3e%3cpath stroke='%23000000' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+          background: url("../images/toggler.png") no-repeat;
+          background-size: 30px 30px;
+          background-position: center center;
         }
 
         .toggler:hover {
-          width: 26v;
-          height: 26px;
+          width: 30px;
+          height: 30px;
           cursor: pointer;
-          background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg'  viewBox='0 0 30 30'%3e%3cpath stroke='%23bb9970' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+          background: url("../images/toggler_active.png") no-repeat;
+          background-size: 30px 30px;
+          background-position: center center;
         }
       }
     }
@@ -728,6 +732,7 @@ img {
 
       p {
         line-height: 40px;
+        font-size: 16*@vw;
       }
     }
 
@@ -750,6 +755,7 @@ img {
       .list-item {
         justify-content: space-between;
         margin-bottom: 20*@vw;
+        font-size: 14*@vw;
         .list_l {}
 
         .lsit_r {}
@@ -760,7 +766,7 @@ img {
   .centerTwo {
     .contact {
       margin-top: -4px;
-      padding-left: 150 *@vw;
+      padding-left: 120 *@vw;
       .colorOne {
         color: white;
         font-size: 16*@vw;
@@ -769,6 +775,9 @@ img {
       p {
         line-height: 32px;
         font-size: 20*@vw;
+        span.colorOne{
+          font-size: 20*@vw;
+        }
         span.name{
           font-size: 14*@vw;
         }
@@ -794,7 +803,7 @@ img {
 
   .right {
     text-align: center;
-
+    font-size: 14*@vw;
     .qcode {
       padding-top: 4px;
       margin-bottom: 10px;
@@ -1513,8 +1522,8 @@ div.newsdetail_box--info .caseWrap .left ul li:hover p,
   .imgIcon{
     
     img{
-      width: 36.5vw;
-      height: 20.5vw;
+      width: 700*@vw;
+      height: 446*@vw;
       vertical-align: middle;
     }
   }
@@ -1530,6 +1539,7 @@ div.newsdetail_box--info .caseWrap .left ul li:hover p,
       }
     }
     .des{
+      width: 700*@vw;
       .des_tit{
         font-size: 30*@vw;
         padding: 5px 0;
@@ -1556,12 +1566,14 @@ div.newsdetail_box--info .caseWrap .left ul li:hover p,
       justify-content: start;
       flex-wrap: wrap;
       border-top: 1px solid #EEEEEE;
-      padding-top:30px ;
+      padding-top:30px;
+      width: 700*@vw;
+
       // border: 1px solid #000;
       li{
         align-items: center;
         font-size: 14*@vw;
-        width: 192*@vw;
+        width: 204*@vw;
         margin-bottom: 18*@vw;
         margin-right: 38*@vw;
         position: relative;
@@ -1586,7 +1598,7 @@ div.newsdetail_box--info .caseWrap .left ul li:hover p,
           border-radius:50%;
         }
         .txt{
-          padding-left: 5px;
+          padding-left: 12px;
           // width: 155px; 
           a{
             color: #9FA0A0;
@@ -1609,7 +1621,11 @@ div.newsdetail_box--info .caseWrap .left ul li:hover p,
   
   .newList{
     .category{
+      .des{
+        width: 100%;
+      }
       ul{
+        width: 100%;
         li{
           width: 1240*@vw;
           margin-right: 0;
