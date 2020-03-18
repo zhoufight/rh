@@ -7,7 +7,7 @@
 @vw:0.0520833333333333vw;
 
 .tips{
-  padding: 7.2vw 1.6vw 0.1vw  5vw;
+  padding: 9.2vw 1.6vw 0.1vw  5vw;
   font-size: 1.65vw;
   color: #000000;
   font-weight: 300;
@@ -33,7 +33,7 @@
       .active{
         a{
           color: #BD9972;
-          border-bottom: 1px solid #BD9972;
+          // border-bottom: 1px solid #BD9972;
         }
         
       }
@@ -122,12 +122,27 @@ section#grid{
     justify-content: space-between;
     padding: 0 6vw;
     .itemIcon{
-      width: 16vw;
-      margin-bottom: 1vw;
+      width: 290*@vw;
+      height: 150*@vw;
+      border-right: 1px solid #E6E6E6;
+      border-bottom: 1px solid #E6E6E6;
       img{
-        max-width: 100%;
+        width: 290*@vw;
+        height: 150*@vw;
       }
     }
+    div.itemIcon:nth-child(5n+5){
+      border-right: 0;
+    }
+    div.itemIcon:nth-last-child(5),
+    div.itemIcon:nth-last-child(4),
+    div.itemIcon:nth-last-child(3),
+    div.itemIcon:nth-last-child(2),
+    div.itemIcon:nth-last-child(1)
+    {
+      border-bottom: 0;
+    }
+    
   }
 }
 

@@ -1,6 +1,6 @@
 @charset "utf-8";
 .tips {
-  padding: 7.2vw 1.6vw 0.1vw 5vw;
+  padding: 9.2vw 1.6vw 0.1vw 5vw;
   font-size: 1.65vw;
   color: #000000;
   font-weight: 300;
@@ -26,7 +26,6 @@
 }
 .tips .tabWrap .tabMenu .active a {
   color: #BD9972;
-  border-bottom: 1px solid #BD9972;
 }
 .tips .tabWrap .icon {
   width: 1.6vw;
@@ -109,11 +108,24 @@ section#grid {
   padding: 0 6vw;
 }
 .cooperativeClient .list .itemIcon {
-  width: 16vw;
-  margin-bottom: 1vw;
+  width: 15.10416667vw;
+  height: 7.8125vw;
+  border-right: 1px solid #E6E6E6;
+  border-bottom: 1px solid #E6E6E6;
 }
 .cooperativeClient .list .itemIcon img {
-  max-width: 100%;
+  width: 15.10416667vw;
+  height: 7.8125vw;
+}
+.cooperativeClient .list div.itemIcon:nth-child(5n+5) {
+  border-right: 0;
+}
+.cooperativeClient .list div.itemIcon:nth-last-child(5),
+.cooperativeClient .list div.itemIcon:nth-last-child(4),
+.cooperativeClient .list div.itemIcon:nth-last-child(3),
+.cooperativeClient .list div.itemIcon:nth-last-child(2),
+.cooperativeClient .list div.itemIcon:nth-last-child(1) {
+  border-bottom: 0;
 }
 @media screen and (max-width: 640px) {
   .sectionCenter {
