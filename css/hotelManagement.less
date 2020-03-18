@@ -89,12 +89,13 @@
     .bigText{
         font-size: 40*@vw;
         padding:165*@vw 105*@vw 0;
+     
     }
     .smallTxt{
         text-align: left;
         padding-top: 67*@vw;
         font-size: 18*@vw;
-        padding-right: 9vw;
+        padding-right: 286*@vw;
         padding-left: 8vw;
         
         justify-content: flex-end;
@@ -119,4 +120,32 @@
     font-size: 24*@vw;
     line-height: 2;
     // padding: 106px 60px 90px;
+    position: relative;
+    &::before{
+        position: absolute;
+        width: 90%;
+        content: "";
+        left: 5%;
+        bottom: 35%;
+        border-top: 1px solid #E6E6E6 ;
+        
+    }
+}
+
+@media screen and (max-width:768px) {
+    .txt {
+        .bigText{
+            font-size: 20px;
+        }
+        .smallTxt{
+            padding-right: 11.89583333vw;
+            padding-left: 0;
+        }
+    }
+
+    .imgdes{
+        &::before{
+            bottom: 50%;
+        }
+    }
 }

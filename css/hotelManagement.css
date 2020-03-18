@@ -75,7 +75,7 @@
   text-align: left;
   padding-top: 3.48958333vw;
   font-size: 0.9375vw;
-  padding-right: 9vw;
+  padding-right: 14.89583333vw;
   padding-left: 8vw;
   justify-content: flex-end;
 }
@@ -96,4 +96,25 @@
   color: #595757;
   font-size: 1.25vw;
   line-height: 2;
+  position: relative;
+}
+.imgdes::before {
+  position: absolute;
+  width: 90%;
+  content: "";
+  left: 5%;
+  bottom: 35%;
+  border-top: 1px solid #E6E6E6;
+}
+@media screen and (max-width: 768px) {
+  .txt .bigText {
+    font-size: 20px;
+  }
+  .txt .smallTxt {
+    padding-right: 11.89583333vw;
+    padding-left: 0;
+  }
+  .imgdes::before {
+    bottom: 50%;
+  }
 }

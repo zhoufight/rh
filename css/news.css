@@ -24,6 +24,7 @@
   padding-right: 0;
 }
 .newsdetail_box .newsdetail_box--container .newList .container-fluid .imgIcon img {
+  height: 400px;
   vertical-align: middle;
 }
 .newsdetail_box .newsdetail_box--container .newList .container-fluid .picture_3 {
@@ -43,6 +44,9 @@
 .newsdetail_box .newsdetail_box--container .newList .container-fluid .category .des .des_btn {
   padding-top: 1vw;
   padding-bottom: 1vw;
+}
+.newsdetail_box .newsdetail_box--container .newList .container-fluid .category ul {
+  padding-top: 20px;
 }
 .newsdetail_box .newsdetail_box--container .newList .container-fluid .category ul li {
   margin-bottom: 0.8vw;

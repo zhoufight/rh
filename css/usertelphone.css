@@ -34,15 +34,18 @@
 }
 .usertelphone_box--content_title {
   font-size: 2.08333333vw;
-  color: #333;
+  color: #333333;
   padding: 10px 0 20px 0;
+  font-weight: 300;
 }
 .txtone {
   font-size: 1.04166667vw;
-  padding-right: 1.5625vw;
+  padding-right: 10px;
   line-height: 1.7;
 }
 .txtTwo {
+  color: #333333;
+  font-size: 1.04166667vw;
   padding-top: 1.5625vw;
 }
 .fontSize {
@@ -134,6 +137,9 @@
 .contactIcon .item img {
   width: 40px;
   height: 40px;
+}
+.usertelphone_box--content .text_right {
+  padding-left: 9.89583333vw;
 }
 @media screen and (max-width: 768px) {
   .usertelphone_box--info_right {
