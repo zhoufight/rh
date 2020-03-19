@@ -34,7 +34,7 @@
   margin-bottom: 1.97916667vw;
 }
 .cd-vertical-nav .subNav ul li a {
-  color: #ffffff;
+  color: #9FA0A0;
 }
 .cd-vertical-nav .subNav ul li a.active {
   color: #ffffff;
@@ -131,6 +131,9 @@
   font-size: 1.45833333vw;
   line-height: 1.72;
   clear: both;
+}
+.content .section .ourBrand .brands p {
+  cursor: pointer;
 }
 .content .section .ourBrand .brands .fontStyle {
   color: #ffffff;

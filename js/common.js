@@ -47,6 +47,12 @@ $(document).ready(function() {
     //将当前窗口的内容区滚动高度改为0，即顶部
     $("html,body").animate({ scrollTop: 0 }, "fast");
   });
+
+  $(".weCanDo .itemMenu dd").hover(function(){
+    $(this).addClass("active");
+  },function(){
+    $(this).removeClass("active");
+  });
 });
 
 // 显示弹层菜单

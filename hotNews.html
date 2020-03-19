@@ -15,12 +15,13 @@
 </head>
 
 <body>
-  <!-- 导航 -->
-  <nav class="navWrap">
+ 
+   <!-- 导航 -->
+   <nav class="navWrap">
     <div class="navBarWrap flex">
-      <div class="brand logo2"><img src="images/logo.png" alt="" srcset=""></div>
+      <div class="brand"><img src="images/pc_logo.png" alt="" srcset=""></div>
       <div class="meun flex">
-        <div class="menuWrap hide">
+        <div class="menuWrap">
           <div class="menuList flex">
             <div class="item menuItem active"><a href="index.html">首页</a></div>
             <div class="item menuItem"><a href="case.html">案例</a></div>
@@ -157,14 +158,12 @@
       </div>
     </div>
   </nav>
-
+  
   <div class="maskMenu hide">
     <div class="menuClose" onclick="hideMaskMenu()">
-      <svg class="bi bi-x text-close" viewBox="0 0 20 20" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-        <path fill-rule="evenodd" d="M5.646 5.646a.5.5 0 000 .708l8 8a.5.5 0 00.708-.708l-8-8a.5.5 0 00-.708 0z"
-          clip-rule="evenodd" />
-        <path fill-rule="evenodd" d="M14.354 5.646a.5.5 0 010 .708l-8 8a.5.5 0 01-.708-.708l8-8a.5.5 0 01.708 0z"
-          clip-rule="evenodd" />
+      <svg class="bi bi-x text-close"  viewBox="0 0 20 20" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+        <path fill-rule="evenodd" d="M5.646 5.646a.5.5 0 000 .708l8 8a.5.5 0 00.708-.708l-8-8a.5.5 0 00-.708 0z" clip-rule="evenodd"/>
+        <path fill-rule="evenodd" d="M14.354 5.646a.5.5 0 010 .708l-8 8a.5.5 0 01-.708-.708l8-8a.5.5 0 01.708 0z" clip-rule="evenodd"/>
       </svg>
     </div>
     <div class="maskMenuItem flex">
@@ -279,9 +278,10 @@
   
  </div>
 
+
 <div class="container-fluid">
   <div class="row new_list">
-    <div class="col-md-4">
+    <div class="col-12 col-md-4">
       <div class="lists">
         <div class="title">
           <p class="">推荐设计分享</p>
@@ -343,7 +343,7 @@
         </div>
       </div>
     </div>
-    <div class="col-md-4">
+    <div class="col-12 col-md-4">
       <div class="lists">
         <div class="title">
           <p class="">推荐设计分享</p>
@@ -405,7 +405,7 @@
         </div>
       </div>
     </div>
-    <div class="col-md-4">
+    <div class="col-12 col-md-4">
       <div class="lists">
         <div class="title">
           <p class="">推荐设计分享</p>
@@ -778,7 +778,7 @@
   <script src="js/jquery-3.4.1.min.js"></script>
   <script src="js/common.js"></script>
   <script>
-    navScroll();
+    // navScroll();
     $(document).ready(function(){
       $(".closeItem .user_box--infoitem_title").on("click",function(){
         if ($(this).parent("div.closeItem").hasClass("openItem")) {
