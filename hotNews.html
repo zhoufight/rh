@@ -1,0 +1,797 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <title>温泉新闻</title>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+  <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+  <meta name="description" content="" />
+  <meta name="keywords" content="" />
+  <link rel="shortcut icon" href="./images/favicon.ico" type="image/x-icon">
+  <link href="lib/bootstrap-4.4.1-dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="css/common.css">
+  <link rel="stylesheet" href="css/hotNews.css">
+</head>
+
+<body>
+  <!-- 导航 -->
+  <nav class="navWrap">
+    <div class="navBarWrap flex">
+      <div class="brand logo2"><img src="images/logo.png" alt="" srcset=""></div>
+      <div class="meun flex">
+        <div class="menuWrap hide">
+          <div class="menuList flex">
+            <div class="item menuItem active"><a href="index.html">首页</a></div>
+            <div class="item menuItem"><a href="case.html">案例</a></div>
+            <div class="item menuItem"><a href="usergood.html">我们的优势</a></div>
+            <div class="item  menuItem">
+              <a href="user.html">我们能做什么</a>
+              <div class="subTitleWrap menuItem weCanItem">
+                <!-- 我们能做什么 下拉菜单 -->
+                <div class="weCanDo flex">
+                  <div class="itemMenu">
+                    <dl>
+                      <dt>
+                        <p class="tit">品牌战略咨询</p>
+                        <p class="tit_sub">Brand strategy consulting</p>
+                      </dt>
+                      <dd><a href="">战略规划</a></dd>
+                      <dd class="active"><a href="">定位咨询</a></dd>
+                      <dd><a href="">企业架构梳理</a></dd>
+                      <dd><a href="">理念口号</a></dd>
+                      <dd><a href="">策划命名</a></dd>
+                    </dl>
+                  </div>
+                  <div class="itemMenu">
+                    <dl>
+                      <dt>
+                        <p class="tit">品牌形象设计</p>
+                        <p class="tit_sub">Brand identity design</p>
+                      </dt>
+                      <dd><a href="">标志设计 \ VIS设计</a></dd>
+                      <dd><a href="">导视标牌设计</a></dd>
+                      <dd><a href="">软装设计</a></dd>
+                      <dd><a href="">灯光工程</a></dd>
+                      <dd><a href="">酒店推广物料设计</a></dd>
+                    </dl>
+                  </div>
+                  <div class="itemMenu">
+                    <dl>
+                      <dt>
+                        <p class="tit">导示规划与设计</p>
+                        <p class="tit_sub">Guide planning and design</p>
+                      </dt>
+                      <dd><a href="">城市、小镇公共环境规划</a></dd>
+                      <dd><a href="">旅游度假景区导视</a></dd>
+                      <dd><a href="">商业综合体&大型商场</a></dd>
+                      <dd><a href="">地产导示系统设计</a></dd>
+                      <dd><a href="">星级酒店\温泉\高端会所</a></dd>
+                      <dd><a href="">办公空</a></dd>
+                    </dl>
+                  </div>
+                  <div class="itemMenu">
+                    <dl>
+                      <dt>
+                        <p class="tit">工程制作</p>
+                        <p class="tit_sub">Engineering production</p>
+                      </dt>
+                      <dd><a href="">工程灯光设计&施工</a></dd>
+                      <dd><a href="">导示标识制作、安装</a></dd>
+                      <dd><a href="">宣传物料印刷</a></dd>
+                      <dd><a href="">产品&用品设计与打样</a></dd>
+                      <dd><a href="">纪念礼品设计&制作</a></dd>
+                    </dl>
+                  </div>
+
+                </div>
+              </div>
+            </div>
+            <div class="item menuItem"><a href="usertelphone.html">联系</a></div>
+            <div class="item menuItem">
+              <a href="hotelManagement.html">酒店管理</a>
+              <div class="subTitleWrap menuItem hotel">
+                <div class="weCanDo flex">
+                  <div class="itemMenu">
+                    <dl>
+                      <dt>
+                        <p class="tit">品牌战略咨询</p>
+                        <p class="tit_sub">Brand strategy consulting</p>
+                      </dt>
+                      <dd><a href="">战略规划</a></dd>
+                      <dd class="active"><a href="">定位咨询</a></dd>
+                      <dd><a href="">企业架构梳理</a></dd>
+                      <dd><a href="">理念口号</a></dd>
+                      <dd><a href="">策划命名</a></dd>
+                    </dl>
+                  </div>
+                  <div class="itemMenu">
+                    <dl>
+                      <dt>
+                        <p class="tit">品牌形象设计</p>
+                        <p class="tit_sub">Brand identity design</p>
+                      </dt>
+                      <dd><a href="">标志设计 \ VIS设计</a></dd>
+                      <dd><a href="">导视标牌设计</a></dd>
+                      <dd><a href="">软装设计</a></dd>
+                      <dd><a href="">灯光工程</a></dd>
+                      <dd><a href="">酒店推广物料设计</a></dd>
+                    </dl>
+                  </div>
+                  <div class="itemMenu"> 
+                    <dl>
+                      <dt>
+                        <p class="tit">导示规划与设计</p>
+                        <p class="tit_sub">Guide planning and design</p>
+                      </dt>
+                      <dd><a href="">城市、小镇公共环境规划</a></dd>
+                      <dd><a href="">旅游度假景区导视</a></dd>
+                      <dd><a href="">商业综合体&大型商场</a></dd>
+                      <dd><a href="">地产导示系统设计</a></dd>
+                      <dd><a href="">星级酒店\温泉\高端会所</a></dd>
+                      <dd><a href="">办公空</a></dd>
+                    </dl>
+                  </div>
+                  <div class="itemMenu">
+                    <dl>
+                      <dt>
+                        <p class="tit">工程制作</p>
+                        <p class="tit_sub">Engineering production</p>
+                      </dt>
+                      <dd><a href="">工程灯光设计&施工</a></dd>
+                      <dd><a href="">导示标识制作、安装</a></dd>
+                      <dd><a href="">宣传物料印刷</a></dd>
+                      <dd><a href="">产品&用品设计与打样</a></dd>
+                      <dd><a href="">纪念礼品设计&制作</a></dd>
+                    </dl>
+                  </div>
+
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="meunIcon">
+          <div class="toggler" onclick="showMaskMenu()"></div>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <div class="maskMenu hide">
+    <div class="menuClose" onclick="hideMaskMenu()">
+      <svg class="bi bi-x text-close" viewBox="0 0 20 20" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+        <path fill-rule="evenodd" d="M5.646 5.646a.5.5 0 000 .708l8 8a.5.5 0 00.708-.708l-8-8a.5.5 0 00-.708 0z"
+          clip-rule="evenodd" />
+        <path fill-rule="evenodd" d="M14.354 5.646a.5.5 0 010 .708l-8 8a.5.5 0 01-.708-.708l8-8a.5.5 0 01.708 0z"
+          clip-rule="evenodd" />
+      </svg>
+    </div>
+    <div class="maskMenuItem flex">
+      <div class="left">
+        <ul>
+          <li><a href="">关于</a></li>
+          <li><a href="">按</a></li>
+          <li><a href="">联系</a></li>
+          <li><a href="">招贤纳士</a></li>
+          <li><a href="">店</a></li>
+          <li><a href="24.html">24小时组装</a></li>
+          <li><a href="">本地作品</a></li>
+        </ul>
+      </div>
+      <div class="right">
+        <div class="tit">链接</div>
+        <ul>
+          <li><a href="">Instagram的</a></li>
+          <li><a href="">领英</a></li>
+          <li><a href="">维特</a></li>
+          <li><a href="">Pinterest的</a></li>
+          <li><a href="">运球</a></li>
+          <li><a href="">通讯</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <!-- 导航end -->
+ 
+  <!-- 轮播图 -->
+  <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+    <ol class="carousel-indicators">
+        <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+        <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+        <!-- <li data-target="#carouselExampleIndicators" data-slide-to="2"></li> -->
+    </ol>
+    <div class="carousel-inner">
+        <div class="carousel-item active">
+            <a href=""><img src="./images/case/case_details_1.png" class="d-block w-100" alt="..."></a>
+            
+        </div>
+        <div class="carousel-item">
+            <a href=""><img src="./images/case/case_details_1.png" class="d-block w-100" alt="..."></a>
+            
+        </div>
+
+    </div>
+    <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+    </a>
+    <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+    </a>
+ </div>
+
+ <!-- 新闻列表 start-->
+ <div class="newsdetail_box">
+  <div class="newsdetail_box--place">
+    <span style="white-space: nowrap;">所在位置：<span><a href="./index.html">&nbsp;首页&nbsp;</a></span>><span><a href="">&nbsp;新闻资讯&nbsp;</a></span>
+  </div>
+  <div class="newsdetail_box--container container-fluid"> 
+    <div class="row list-item">
+      <div class="newsdetail_box--content_sidebar row list-item col-md-1">
+        <ul class="newsdetail_box--content_nav col-sm-12 visible-lg-inline-block">
+          <li class="newsdetail_box--content_navitem active"><a class="" href="newdetail.html">新闻资讯</a></li>
+          <li class="newsdetail_box--content_navitem"><a href="">品牌百科</a></li>
+          <li class="newsdetail_box--content_navitem"><a href="designSharing.html">设计分享</a></li>
+        </ul>
+      </div>
+      <div class="row list-item col-md-10">
+        <div class="newList">
+          <div class="container-fluid">
+            <div class="row list-item">
+              <div class="imgIcon col-md-6 picture_1">
+                <img class="img-fluid" src="images/hotNews/img1.png" alt="">
+              </div>
+              <div class="category col-md-6 pdl">
+                <div class="tit">温泉热点 <span>Hot spring focus</span></div>
+                <div class="des">
+                  <div class="des_tit">温泉行业2020年的发展势头是什么？</div>
+                  <div class="des_content textMulit">
+                    温泉旅游集旅游、休闲、健身于一体，正在成为休闲度假旅游的一大热点，休闲度假与健康是当今都市人群所追求的一种新的旅游形式。与观光旅游不同，休闲度假以理性化的休养、放松为主要目的，停留时间较长，消费能力较强，对环境基础设施和食宿娱乐要求较高，对旅游目的地的选择表现出一定的忠诚度。 </div>
+                     <!-- <div class="des_btn"><a href="">阅读详情 + </a></div> -->
+                     <div class="text_bottom"> 在新的消费观念的引导下，既有的温泉产品面临挑战，也为新兴的温泉旅游开发提供了市场机遇。我国温泉资源十分丰富，开发的潜能很大。中国温泉已经实现历…</div>
+                     <div class="des_btn"><a href="">阅读详情 + </a></div>
+                </div>             
+              </div>
+            </div>
+            <div class="row list-item">
+              <div class="category col-md-6 design_appreciation ">
+                <div class="tit">温泉热点 <span>Hot spring focus</span></div>
+                <div class="des">
+                  <div class="des_tit">温泉行业2020年的发展势头是什么？</div>
+                  <div class="des_content textMulit">
+                    温泉旅游集旅游、休闲、健身于一体，正在成为休闲度假旅游的一大热点，休闲度假与健康是当今都市人群所追求的一种新的旅游形式。与观光旅游不同，休闲度假以理性化的休养、放松为主要目的，停留时间较长，消费能力较强，对环境基础设施和食宿娱乐要求较高，对旅游目的地的选择表现出一定的忠诚度。 </div>
+                     <!-- <div class="des_btn"><a href="">阅读详情 + </a></div> -->
+                     <div class="text_bottom"> 在新的消费观念的引导下，既有的温泉产品面临挑战，也为新兴的温泉旅游开发提供了市场机遇。我国温泉资源十分丰富，开发的潜能很大。中国温泉已经实现历…</div>
+                     <div class="des_btn"><a href="">阅读详情 + </a></div>
+                </div>             
+              </div>
+              <div class="imgIcon  col-md-6 pdl">
+                <img class="img-fluid picture_2" src="images/hotNews/img2.png" alt="">
+              </div>
+            </div> 
+        </div>
+        </div>
+    </div> 
+  </div> 
+  </div> 
+  
+ </div>
+
+<div class="container-fluid">
+  <div class="row new_list">
+    <div class="col-md-4">
+      <div class="lists">
+        <div class="title">
+          <p class="">推荐设计分享</p>
+          <p>Recommended Design</p>
+        </div>
+        <div class="content">
+          <div class="text">
+            <a href=""> 
+              <p class="tit">
+                  <span class="new">专业温泉品牌策划服务找什么公司...</span><span>2018/11/02</span>  
+              </p>
+            </a>
+            <a href=""> 
+              <p class="tit">
+                  <span class="new"> 成都温泉设计公司优势是什么？...</span><span>2018/11/02</span>  
+              </p>
+            </a>
+            <a href=""> 
+              <p class="tit">
+                  <span class="new">上海温泉样本设计有这些好处...</span><span>2018/11/02</span>  
+              </p>
+            </a>
+            <a href=""> 
+              <p class="tit">
+                  <span class="new">一套标志logo设计价格是多少？...</span><span>2018/11/02</span>  
+              </p>
+            </a>
+            <a href=""> 
+              <p class="tit">
+                  <span class="new">品牌化已逐渐成为温泉竞争的利器...</span><span>2018/11/02</span>  
+              </p>
+            </a>
+            <a href=""> 
+              <p class="tit">
+                  <span class="new">学习品牌定位策划案例的好处...</span><span>2018/11/02</span>  
+              </p>
+            </a>
+            <a href=""> 
+              <p class="tit">
+                  <span class="new">温泉宣传片拍摄公司应该具备哪些...</span><span>2018/11/02</span>  
+              </p>
+            </a>
+            <a href=""> 
+              <p class="tit">
+                  <span class="new">温泉业vi设计应该遵循什么规则...</span><span>2018/11/02</span>  
+              </p>
+            </a>
+            <a href=""> 
+              <p class="tit">
+                  <span class="new">企业温泉vi设计全套主要的内容是...</span><span>2018/11/02</span>  
+              </p>
+            </a>
+            <a href=""> 
+              <p class="tit">
+                  <span class="new">品牌vi设计怎样才能做得更好...</span><span>2018/11/02</span>  
+              </p>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-4">
+      <div class="lists">
+        <div class="title">
+          <p class="">推荐设计分享</p>
+          <p>Recommended Design</p>
+        </div>
+        <div class="content">
+          <div class="text">
+            <a href=""> 
+              <p class="tit">
+                  <span class="new">专业温泉品牌策划服务找什么公司...</span><span>2018/11/02</span>  
+              </p>
+            </a>
+            <a href=""> 
+              <p class="tit">
+                  <span class="new"> 成都温泉设计公司优势是什么？...</span><span>2018/11/02</span>  
+              </p>
+            </a>
+            <a href=""> 
+              <p class="tit">
+                  <span class="new">上海温泉样本设计有这些好处...</span><span>2018/11/02</span>  
+              </p>
+            </a>
+            <a href=""> 
+              <p class="tit">
+                  <span class="new">一套标志logo设计价格是多少？...</span><span>2018/11/02</span>  
+              </p>
+            </a>
+            <a href=""> 
+              <p class="tit">
+                  <span class="new">品牌化已逐渐成为温泉竞争的利器...</span><span>2018/11/02</span>  
+              </p>
+            </a>
+            <a href=""> 
+              <p class="tit">
+                  <span class="new">学习品牌定位策划案例的好处...</span><span>2018/11/02</span>  
+              </p>
+            </a>
+            <a href=""> 
+              <p class="tit">
+                  <span class="new">温泉宣传片拍摄公司应该具备哪些...</span><span>2018/11/02</span>  
+              </p>
+            </a>
+            <a href=""> 
+              <p class="tit">
+                  <span class="new">温泉业vi设计应该遵循什么规则...</span><span>2018/11/02</span>  
+              </p>
+            </a>
+            <a href=""> 
+              <p class="tit">
+                  <span class="new">企业温泉vi设计全套主要的内容是...</span><span>2018/11/02</span>  
+              </p>
+            </a>
+            <a href=""> 
+              <p class="tit">
+                  <span class="new">品牌vi设计怎样才能做得更好...</span><span>2018/11/02</span>  
+              </p>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-4">
+      <div class="lists">
+        <div class="title">
+          <p class="">推荐设计分享</p>
+          <p>Recommended Design</p>
+        </div>
+        <div class="content">
+          <div class="text">
+            <a href=""> 
+              <p class="tit">
+                  <span class="new">专业温泉品牌策划服务找什么公司...</span><span>2018/11/02</span>  
+              </p>
+            </a>
+            <a href=""> 
+              <p class="tit">
+                  <span class="new"> 成都温泉设计公司优势是什么？...</span><span>2018/11/02</span>  
+              </p>
+            </a>
+            <a href=""> 
+              <p class="tit">
+                  <span class="new">上海温泉样本设计有这些好处...</span><span>2018/11/02</span>  
+              </p>
+            </a>
+            <a href=""> 
+              <p class="tit">
+                  <span class="new">一套标志logo设计价格是多少？...</span><span>2018/11/02</span>  
+              </p>
+            </a>
+            <a href=""> 
+              <p class="tit">
+                  <span class="new">品牌化已逐渐成为温泉竞争的利器...</span><span>2018/11/02</span>  
+              </p>
+            </a>
+            <a href=""> 
+              <p class="tit">
+                  <span class="new">学习品牌定位策划案例的好处...</span><span>2018/11/02</span>  
+              </p>
+            </a>
+            <a href=""> 
+              <p class="tit">
+                  <span class="new">温泉宣传片拍摄公司应该具备哪些...</span><span>2018/11/02</span>  
+              </p>
+            </a>
+            <a href=""> 
+              <p class="tit">
+                  <span class="new">温泉业vi设计应该遵循什么规则...</span><span>2018/11/02</span>  
+              </p>
+            </a>
+            <a href=""> 
+              <p class="tit">
+                  <span class="new">企业温泉vi设计全套主要的内容是...</span><span>2018/11/02</span>  
+              </p>
+            </a>
+            <a href=""> 
+              <p class="tit">
+                  <span class="new">品牌vi设计怎样才能做得更好...</span><span>2018/11/02</span>  
+              </p>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+ <!-- 新闻列表 end-->
+
+<!-- 人和时代设计 -->
+ <div class="newsdetail_box--info">
+  <div class="caseWrap flex">
+    <div class="left">
+        <ul class="flex">
+            <li>
+                <a href="" title="度假景区">
+                    <img src="images/SANZO_Can_05_1012px.jpg" alt="">
+                    <p>度假景区</p>
+                </a>
+            </li>
+            <li>
+                <a href="" title="度假景区">
+                    <img src="images/SANZO_Can_05_1012px.jpg" alt="">
+                    <p>度假景区</p>
+                </a>
+            </li>
+            <li>
+                <a href="" title="度假景区">
+                    <img src="images/SANZO_Can_05_1012px.jpg" alt="">
+                    <p>度假景区</p>
+                </a>
+            </li>
+            <li>
+                <a href="" title="度假景区">
+                    <img src="images/SANZO_Can_05_1012px.jpg" alt="">
+                    <p>度假景区</p>
+                </a>
+            </li>
+            <li>
+                <a href="" title="度假景区">
+                    <img src="images/SANZO_Can_05_1012px.jpg" alt="">
+                    <p>度假景区</p>
+                </a>
+            </li>
+            <li>
+                <a href="" title="度假景区">
+                    <img src="images/SANZO_Can_05_1012px.jpg" alt="">
+                    <p>度假景区</p>
+                </a>
+            </li>
+            <li>
+                <a href="" title="度假景区">
+                    <img src="images/SANZO_Can_05_1012px.jpg" alt="">
+                    <p>度假景区</p>
+                </a>
+            </li>
+        </ul>
+    </div>
+    <div class="right"><a href="case.html"><img src="images/news/item-tips.png" alt=""></a></div>
+
+  </div>
+  <div class="cross_line">
+    <div class="line_top clearfix">
+        <div class="left">
+            <!-- TODO改动html结构---crt改为图片 -->
+            <div class="crt"><img class="img-fluid" src="./images/news/rh_design_logo.png" alt=""></div>
+            <p class="tit_top">人和时代设计</p>
+            <p class="tit_bottom">品牌设计、VI设计、标识设计公司</p>
+        </div>
+        <a href="" class="view float-right">查看</a>
+    </div>
+    <div class="line_bottom clearfix">
+        <div class="left">
+            <a href=""><img class="img-fluid" src="./images/design/share.png" alt=""></a>
+            <span class="tag">相关标签：<a href="">酒店VI设计</a>    &nbsp;&nbsp;    <a href="">酒店标识设计</a>    &nbsp;&nbsp; <a href=""> 酒店标志设计</a>    &nbsp;&nbsp;      新闻类别： <a href="">设计大奖</a>  &nbsp;&nbsp;<a href=""> 酒店新闻 </a>   &nbsp;&nbsp;<a href=""> 饭店新闻 </a> &nbsp;&nbsp; <a href=""> 商业地产 </a> &nbsp;&nbsp;  <a href="">CBD商务区</a>  &nbsp;&nbsp; <a href="">景区品牌</a> &nbsp;&nbsp;   <a href=""> 商场设计</a>  &nbsp;&nbsp; <a href=""> 旅游区标识</a>  &nbsp;&nbsp;  <a href="">度假村标牌</a> &nbsp;&nbsp;<a href=""> 购物中心 </a>  &nbsp;&nbsp;    
+            <a href=""> 城市改造 </a> &nbsp;&nbsp;   <a href="">国宾馆</a>     </span>
+        </div>
+        
+        <div class="right float-right">
+        <!-- TODO  改动结构--添加a标签 -->
+        <span> <a href=""><img src="./images/design/page_left.png" alt=""></a>  </span> 
+        <span> <a href=""><img src="./images/design/page_centre.png" alt=""></a> </span>
+        <span> <a href=""><img src="./images/design/page_right.png" alt=""></a></span>
+        </div>
+    </div>
+
+</div>
+ </div>
+ 
+ <div class="wrap bg">
+  <img class="img-fluid" src="./images/case/warp_bg2.png" alt="">
+</div>
+<!-- 为你推荐 -->
+<div class="related_cases text-center">
+  <p>我们为您推荐的相关案例</p>
+  <p>Related cases we recommend for you</p>
+</div>
+
+  <!-- 图片列表 -->
+  <div class="images">
+    <div class="container-fluid clearfix">
+      <div class="row">
+        <div class="item ">
+          <a class="box" href="case_details.html"">
+              <img class=" listIcon" src="./images/SANZO_Can_05_1012px.jpg">
+            <div class="box-content ">
+              <div class="arrow">
+                <img class="arrow_up" src="other/arrow-up.svg" alt="">
+              </div>
+              <div class="textWrap">
+                <h3 class="title">南宁万丽酒店</h3>
+                <span class="post">GIG国际金融资本中心总建筑面积23万㎡，南宁万丽酒店、超高层国际5A甲级写字楼，总高度213.45米。
+                  金融资本中心及酒店标识设计</span>
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="item">
+          <a class="box" href="case_details.html">
+            <img class="listIcon" src="./images/SANZO_Can_05_1012px.jpg">
+            <div class="box-content ">
+              <div class="arrow">
+                <img class="arrow_up" src="other/arrow-up.svg" alt="">
+              </div>
+              <div class="textWrap">
+                <h3 class="title">南宁万丽酒店</h3>
+                <span class="post">GIG国际金融资本中心总建筑面积23万㎡，南宁万丽酒店、超高层国际5A甲级写字楼，总高度213.45米。
+                  金融资本中心及酒店标识设计</span>
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="item ">
+          <a class="box" href="case_details.html">
+            <img class="listIcon" src="./images/SANZO_Can_05_1012px.jpg">
+            <div class="box-content ">
+              <div class="arrow">
+                <img class="arrow_up" src="other/arrow-up.svg" alt="">
+              </div>
+              <div class="textWrap">
+                <h3 class="title">南宁万丽酒店</h3>
+                <span class="post">GIG国际金融资本中心总建筑面积23万㎡，南宁万丽酒店、超高层国际5A甲级写字楼，总高度213.45米。
+                  金融资本中心及酒店标识设计</span>
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="item">
+          <a class="box" href="case_details.html">
+            <img class="listIcon" src="./images/SANZO_Can_05_1012px.jpg">
+            <div class="box-content ">
+              <div class="arrow">
+                <img class="arrow_up" src="other/arrow-up.svg" alt="">
+              </div>
+              <div class="textWrap">
+                <h3 class="title">南宁万丽酒店</h3>
+                <span class="post">GIG国际金融资本中心总建筑面积23万㎡，南宁万丽酒店、超高层国际5A甲级写字楼，总高度213.45米。
+                  金融资本中心及酒店标识设计</span>
+              </div>
+            </div>
+          </a>
+        </div>
+      </div>
+      <div class="row">
+        <div class="item ">
+          <a class="box" href="case_details.html"">
+              <img class=" listIcon" src="./images/SANZO_Can_05_1012px.jpg">
+            <div class="box-content ">
+              <div class="arrow">
+                <img class="arrow_up" src="other/arrow-up.svg" alt="">
+              </div>
+              <div class="textWrap">
+                <h3 class="title">南宁万丽酒店</h3>
+                <span class="post">GIG国际金融资本中心总建筑面积23万㎡，南宁万丽酒店、超高层国际5A甲级写字楼，总高度213.45米。
+                  金融资本中心及酒店标识设计</span>
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="item">
+          <a class="box" href="case_details.html">
+            <img class="listIcon" src="./images/SANZO_Can_05_1012px.jpg">
+            <div class="box-content ">
+              <div class="arrow">
+                <img class="arrow_up" src="other/arrow-up.svg" alt="">
+              </div>
+              <div class="textWrap">
+                <h3 class="title">南宁万丽酒店</h3>
+                <span class="post">GIG国际金融资本中心总建筑面积23万㎡，南宁万丽酒店、超高层国际5A甲级写字楼，总高度213.45米。
+                  金融资本中心及酒店标识设计</span>
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="item ">
+          <a class="box" href="case_details.html">
+            <img class="listIcon" src="./images/SANZO_Can_05_1012px.jpg">
+            <div class="box-content ">
+              <div class="arrow">
+                <img class="arrow_up" src="other/arrow-up.svg" alt="">
+              </div>
+              <div class="textWrap">
+                <h3 class="title">南宁万丽酒店</h3>
+                <span class="post">GIG国际金融资本中心总建筑面积23万㎡，南宁万丽酒店、超高层国际5A甲级写字楼，总高度213.45米。
+                  金融资本中心及酒店标识设计</span>
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="item">
+          <a class="box" href="case_details.html">
+            <img class="listIcon" src="./images/SANZO_Can_05_1012px.jpg">
+            <div class="box-content ">
+              <div class="arrow">
+                <img class="arrow_up" src="other/arrow-up.svg" alt="">
+              </div>
+              <div class="textWrap">
+                <h3 class="title">南宁万丽酒店</h3>
+                <span class="post">GIG国际金融资本中心总建筑面积23万㎡，南宁万丽酒店、超高层国际5A甲级写字楼，总高度213.45米。
+                  金融资本中心及酒店标识设计</span>
+              </div>
+            </div>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+<!-- 加载更多部分 -->
+<div class="center-block very_more">
+  <a href="#" >VIEW MORE ></a>
+</div>
+
+
+
+  <!-- footer部分 -->
+  <div class="footer">
+    <div class="container-fluid">
+      <div class="row ">
+        <div class="col-md-3">
+          <div class="left">
+            <div class="tit">
+              <a href="">深圳</a>
+              <a href="">北京</a>
+              <a href="">上海</a>
+              <a href="">香港</a>
+              <a href="">新加坡</a>
+            </div>
+            <div class="copyright">
+              <p>网站地图 XML地图 新闻</p>
+              <p>Copyright@1983-2019 CRT group. </p>
+              <p>NanShan District, Shenzhen, China Rhtimes Design. 713.523.3425</p>
+            </div>
+            <div class="num">粤ICP备09027073号</div>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="center">
+            <div class="tit2"> <a href="">友情链接</a></div>
+            <div class="listWrap">
+              <div class="list-item flex ">
+                <div class="list_l flex-item-1"><a href="">品牌规划</a></div>
+                <div class="list_r flex-item-1"><a href="">品牌规划</a></div>
+              </div>
+              <div class="list-item flex ">
+                <div class="list_l flex-item-1"><a href="">酒店设计公司</a></div>
+                <div class="list_r flex-item-1"><a href="">酒店设计公司</a></div>
+              </div>
+              <div class="list-item flex">
+                <div class="list_l flex-item-1"><a href="">酒店VI设计</a></div>
+                <div class="list_r flex-item-1"><a href="">品牌规划</a></div>
+              </div>
+              <div class="list-item flex ">
+                <div class="list_l flex-item-1"><a href="">酒店VI设计</a></div>
+                <div class="list_r flex-item-1"><a href="">酒店设计公司</a></div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+        <div class="col-md-3 pd0">
+          <div class="centerTwo">
+            <div class="contact">
+              <p class="colorOne">咨询电话 Tel</p>
+              <p>+86 <span class="colorOne">755 86193667</span></p>
+              <p>+86 <span class="colorOne">138 2318 5580</span><span class="name">（夏先生）</span></p>
+              <div class="qq">1622982@qq.com</div>
+              <div class="share">
+                <p>分享到</p>
+                <div class="icon flex">
+                  <a href=""><img src="images/qq.png" alt=""></a>
+                  <a href=""><img src="images/sina.png" alt=""></a>
+                  <a href=""><img src="images/weixin.png" alt=""></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="right">
+            <div class="qcode"><img src="images/qcode.png" alt=""></div>
+            <p>微信咨询 夏先生</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- 返回顶部 -->
+  <div class="backtop">
+    <div class="icon"><img src="images/backtop.png" alt=""></div>
+  </div>
+  <script src="js/jquery-3.4.1.min.js"></script>
+  <script src="js/common.js"></script>
+  <script>
+    navScroll();
+    $(document).ready(function(){
+      $(".closeItem .user_box--infoitem_title").on("click",function(){
+        if ($(this).parent("div.closeItem").hasClass("openItem")) {
+          $(this).parent("div.closeItem").removeClass("openItem");
+          
+
+        } else {
+          $(this).parent("div.closeItem").addClass("openItem");
+          $(this).parent("div.closeItem").siblings().removeClass("openItem");
+        }
+      })
+    });
+  </script>
+</body>
+
+</html>

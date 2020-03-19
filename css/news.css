@@ -16,6 +16,9 @@
 .newsdetail_box .newsdetail_box--container .newList .container-fluid .row {
   margin-right: -4.47916667vw;
 }
+.newsdetail_box .newsdetail_box--container .newList .container-fluid .list-item {
+  margin-bottom: 48px;
+}
 .newsdetail_box .newsdetail_box--container .newList .container-fluid .col-md-6 {
   padding: 0;
 }
@@ -25,10 +28,11 @@
 }
 .newsdetail_box .newsdetail_box--container .newList .container-fluid .imgIcon img {
   height: 400px;
+  width: 700px;
   vertical-align: middle;
 }
-.newsdetail_box .newsdetail_box--container .newList .container-fluid .picture_3 {
-  padding-top: 20px;
+.newsdetail_box .newsdetail_box--container .newList .container-fluid .imgIcon .picture_2 {
+  margin-left: 3.64583333vw;
 }
 .newsdetail_box .newsdetail_box--container .newList .container-fluid .pdl {
   padding: 0;
@@ -36,7 +40,11 @@
 .newsdetail_box .newsdetail_box--container .newList .container-fluid .category {
   padding-left: 0;
   padding-right: 0;
-  margin-left: 5.20833333vw;
+}
+.newsdetail_box .newsdetail_box--container .newList .container-fluid .category .tit,
+.newsdetail_box .newsdetail_box--container .newList .container-fluid .category .des,
+.newsdetail_box .newsdetail_box--container .newList .container-fluid .category ul {
+  margin-left: 3.64583333vw;
 }
 .newsdetail_box .newsdetail_box--container .newList .container-fluid .category .tit {
   padding-bottom: 2vw;
@@ -50,14 +58,17 @@
 }
 .newsdetail_box .newsdetail_box--container .newList .container-fluid .category ul li {
   margin-bottom: 0.8vw;
-  margin-right: 2.60416667vw;
 }
 .newsdetail_box .newsdetail_box--container .newList .container-fluid .category ul li:nth-child(3n) {
   margin-right: 0;
 }
-.newsdetail_box .newsdetail_box--container .newList .container-fluid .design_appreciation {
+.newsdetail_box .newsdetail_box--container .newList .container-fluid .category .list {
   margin-left: 0;
-  margin-right: 5.20833333vw;
+}
+.newsdetail_box .newsdetail_box--container .newList .container-fluid .design_appreciation .tit,
+.newsdetail_box .newsdetail_box--container .newList .container-fluid .design_appreciation .des,
+.newsdetail_box .newsdetail_box--container .newList .container-fluid .design_appreciation ul {
+  margin-left: 0;
 }
 div.newsdetail_box--info .cross_line {
   padding: 0 7.29166667vw;
@@ -75,5 +86,11 @@ div.newsdetail_box--info .cross_line {
   }
   .newsdetail_box .newsdetail_box--container .newList .container-fluid .category .des .textMulit {
     display: block;
+  }
+  .newsdetail_box .newsdetail_box--container .newList .container-fluid .imgIcon .picture_2 {
+    margin-left: 0;
+  }
+  .newsdetail_box .newsdetail_box--container .newList .container-fluid {
+    padding-right: 15px;
   }
 }

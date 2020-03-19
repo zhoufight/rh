@@ -1,0 +1,149 @@
+@charset "utf-8";
+.newsdetail_box--content_sidebar {
+  margin-right: 2.86458333vw;
+}
+.newsdetail_box .newsdetail_box--place {
+  margin-right: 2.60416667vw;
+  padding: 0;
+}
+.newsdetail_box .newsdetail_box--container .newList {
+  padding: 0;
+}
+.newsdetail_box .newsdetail_box--container .newList .container-fluid {
+  padding-left: 0;
+  padding-right: 0;
+}
+.newsdetail_box .newsdetail_box--container .newList .container-fluid .row {
+  margin-right: -4.47916667vw;
+}
+.newsdetail_box .newsdetail_box--container .newList .container-fluid .col-md-6 {
+  padding: 0;
+}
+.newsdetail_box .newsdetail_box--container .newList .container-fluid .imgIcon {
+  padding-left: 0;
+  padding-right: 0;
+}
+.newsdetail_box .newsdetail_box--container .newList .container-fluid .imgIcon img {
+  height: 400px;
+  width: 700px;
+  vertical-align: middle;
+}
+.newsdetail_box .newsdetail_box--container .newList .container-fluid .imgIcon .picture_2 {
+  margin-left: 3.64583333vw;
+}
+.newsdetail_box .newsdetail_box--container .newList .container-fluid .pdl {
+  padding: 0;
+}
+.newsdetail_box .newsdetail_box--container .newList .container-fluid .category {
+  padding-left: 0;
+  padding-right: 0;
+}
+.newsdetail_box .newsdetail_box--container .newList .container-fluid .category .tit,
+.newsdetail_box .newsdetail_box--container .newList .container-fluid .category .des,
+.newsdetail_box .newsdetail_box--container .newList .container-fluid .category ul {
+  margin-left: 3.64583333vw;
+}
+.newsdetail_box .newsdetail_box--container .newList .container-fluid .category .tit {
+  padding-bottom: 2vw;
+}
+.newsdetail_box .newsdetail_box--container .newList .container-fluid .category .des .des_content {
+  display: block;
+  text-indent: 36px;
+  overflow: visible;
+  margin-bottom: 3.95833333vw;
+  margin-bottom: 0;
+}
+.newsdetail_box .newsdetail_box--container .newList .container-fluid .category .des .text_bottom {
+  text-indent: 36px;
+  font-size: 0.9375vw;
+  line-height: 2;
+  color: #999999;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #eeeeee;
+}
+.newsdetail_box .newsdetail_box--container .newList .container-fluid .category .des .des_btn {
+  text-align: right;
+  padding-top: 10px;
+  padding-bottom: 0;
+}
+.newsdetail_box .newsdetail_box--container .newList .container-fluid .design_appreciation .tit,
+.newsdetail_box .newsdetail_box--container .newList .container-fluid .design_appreciation .des,
+.newsdetail_box .newsdetail_box--container .newList .container-fluid .design_appreciation ul {
+  margin-left: 0;
+}
+.new_list {
+  margin-bottom: 6.66666667vw;
+}
+.new_list .col-md-4 .lists {
+  display: table;
+  margin: 0 auto;
+}
+.new_list .col-md-4 .lists .title {
+  font-size: 1.3vw;
+  color: #bd9972;
+  margin-bottom: 10px;
+}
+.new_list .col-md-4 .lists .content .text {
+  width: 20.83333333vw;
+  padding-top: 20px;
+  border-top: 1px solid #eeeeee;
+}
+.new_list .col-md-4 .lists .content .text a {
+  color: #666666;
+}
+.new_list .col-md-4 .lists .content .text a:hover {
+  color: #bd9972;
+}
+.new_list .col-md-4 .lists .content .text a .tit {
+  width: 20.83333333vw;
+  display: flex;
+  box-sizing: border-box;
+  justify-content: space-between;
+  line-height: 2;
+  position: relative;
+  text-indent: 20px;
+}
+.new_list .col-md-4 .lists .content .text a .tit::before {
+  position: absolute;
+  left: 2px;
+  top: 50%;
+  transform: translateX(-50%);
+  display: inline-block;
+  content: "";
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  background-color: #E5E5E5;
+}
+.new_list .col-md-4 .lists .content .text a .tit span {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.new_list .col-md-4:first-child {
+  padding-left: 8.64583333vw;
+}
+.new_list .col-md-4:last-of-type {
+  padding-right: 9.89583333vw;
+}
+div.newsdetail_box--info .cross_line {
+  padding: 0 7.29166667vw;
+}
+.line_bottom {
+  position: relative;
+}
+.line_bottom .tag {
+  position: absolute;
+  top: 3.75vw;
+  width: 80%;
+  display: inline-block;
+  margin-left: 70px;
+  font-size: 14px;
+  color: #9fa0a0;
+}
+.line_bottom .tag a {
+  color: #9fa0a0;
+}
+.bg {
+  margin-top: 5.20833333vw;
+}

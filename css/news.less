@@ -286,29 +286,39 @@
                     margin-right: -86*@vw;
                 }
                 .list-item{
-           
+                  margin-bottom: 48px;
                 }
                 .col-md-6{
                   padding: 0;
                 }
                 .imgIcon{
                   padding-left: 0;
-                  padding-right: 0;              
+                  padding-right: 0; 
+                  &:nth-child(2){
+                    // margin-left: 5*@vw;
+                  }             
                   img{           
                     height: 400px;
-                    vertical-align: middle;
+                    width: 700px;
+                    vertical-align: middle;    
+                  }
+                  .picture_2{
+                    margin-left: 70*@vw;
                   }
                 }
-                .picture_3{
-                    padding-top: 20px;
-                }
+                // .picture_3{
+                //     padding-top: 20px;
+                // }
                 .pdl{
                     padding: 0;
                 }         
                 .category{
                     padding-left: 0;
                     padding-right: 0;
-                    margin-left:100*@vw;
+                    // margin-left:100*@vw;
+                   .tit,.des,ul{
+                     margin-left: 70*@vw;
+                   }
                     
                   .tit{
                     // color: #666666;
@@ -339,14 +349,17 @@
                     // border: 1px solid #000;
                     li{
                       margin-bottom: 0.8vw;
-                       margin-right: 50*@vw;
+                     
                        &:nth-child(3n){
                         margin-right:0;
                        }
                       }
                      
                     
-                      }
+                    }
+                  .list{
+                    margin-left: 0;
+                  }
                       .txt{
                        
                         // width: 155px; 
@@ -356,8 +369,10 @@
                         }
                     }
                 .design_appreciation{
-                    margin-left: 0;
-                    margin-right: 100*@vw;
+                  .tit,.des,ul{
+                    margin-left:0;
+                  }
+                   
                 }
                 
             }
@@ -385,5 +400,13 @@ div.newsdetail_box--info .cross_line{
       .textMulit{
         display: block;
       }
+    }
+    .newsdetail_box .newsdetail_box--container .newList .container-fluid .imgIcon .picture_2 {
+      margin-left: 0;
+     
+    }
+    .newsdetail_box .newsdetail_box--container .newList .container-fluid {
+      padding-right: 15px;
+      // padding-left: 15px;
     }
 }
