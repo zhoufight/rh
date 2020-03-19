@@ -6,6 +6,16 @@ $(document).ready(function () {
 		updateNavigation();
 	});
 
+	navigationItems.on('click', function(event){
+			event.preventDefault();
+			smoothScroll($(this.hash));
+	});
+
+	$(".brands p").hover(function(){
+		$(this).addClass("fontStyle");
+	},function(){
+		$(this).removeClass("fontStyle");
+	})
 	
 	function updateNavigation() {
     
@@ -19,5 +29,10 @@ $(document).ready(function () {
 			}
 		});
 	}
-
+	function smoothScroll(target) {
+			$('body,html').animate(
+				{'scrollTop':target.offset().top-125},
+				600
+			);
+	}
  })
