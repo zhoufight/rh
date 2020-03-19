@@ -118,7 +118,7 @@ img {
   padding: 1.2vw 1vw 1.2vw 5.20833333vw;
 }
 .navWrap .navBarWrap .brand {
-  width: 6vw;
+  width: 8.85416667vw;
 }
 .navWrap .navBarWrap .brand img {
   max-width: 100%;
@@ -181,6 +181,7 @@ img {
   display: inline-block;
   background-image: url('data:image/svg+xml,<svg class="bi bi-play-fill text-color" width="1em" height="1em" color="%23BD9972" viewBox="0 0 20 20" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><path d="M13.596 10.697l-6.363 3.692c-.54.313-1.233-.066-1.233-.697V6.308c0-.63.692-1.01 1.233-.696l6.363 3.692a.802.802 0 010 1.393z"/></svg>');
   background-repeat: no-repeat;
+  background-position: left center;
   padding-left: 14px;
 }
 .navWrap .navBarWrap .meun .menuList .item .subTitleWrap .weCanDo .itemMenu dl .active .color {
@@ -561,6 +562,7 @@ img {
   color: #9FA0A0;
   padding: 0 10.41666667vw 6.875vw;
   box-sizing: border-box;
+  height: 26.77083333vw;
 }
 .footer .left,
 .footer .center,
@@ -621,15 +623,21 @@ img {
   padding-top: 3.02083333vw;
   padding-bottom: 4.11458333vw;
 }
+.footer .centerTwo .contact .share p {
+  font-size: 0.83333333vw;
+}
 .footer .centerTwo .contact .share img {
   vertical-align: middle;
-  width: 20px;
-  height: 20px;
+  width: 40px;
+  height: 40px;
   margin-right: 6px;
   margin-top: 5px;
 }
 .footer .right {
   text-align: center;
+  font-size: 0.72916667vw;
+}
+.footer .right p {
   font-size: 0.72916667vw;
 }
 .footer .right .qcode {
@@ -650,8 +658,8 @@ img {
   border-radius: 50%;
 }
 .backtop .icon img {
-  width: 40px;
-  height: 40px;
+  width: 60px;
+  height: 60px;
   vertical-align: middle;
 }
 .textSingle {

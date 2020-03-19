@@ -138,7 +138,7 @@ img {
 
     // flex-direction: column;
     .brand {
-      width: 6vw;
+      width: 170*@vw;
       
       img {
         max-width: 100%;
@@ -210,6 +210,7 @@ img {
                       display: inline-block;
                       background-image: url('data:image/svg+xml,<svg class="bi bi-play-fill text-color" width="1em" height="1em" color="%23BD9972" viewBox="0 0 20 20" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><path d="M13.596 10.697l-6.363 3.692c-.54.313-1.233-.066-1.233-.697V6.308c0-.63.692-1.01 1.233-.696l6.363 3.692a.802.802 0 010 1.393z"/></svg>');
                       background-repeat: no-repeat;
+                      background-position: left center;
                       padding-left: 14px;
                     }
 
@@ -710,7 +711,7 @@ img {
   color: #9FA0A0;
   padding: 0 200*@vw 132*@vw;
   box-sizing: border-box;
-  // height: 514*@vw;
+  height: 514*@vw;
   .left,
   .center,
   .centerTwo,
@@ -789,11 +790,13 @@ img {
       }
 
       .share {
-
+        p{
+          font-size: 16*@vw;
+        }
         img {
           vertical-align: middle;
-          width: 20px;
-          height: 20px;
+          width: 40px;
+          height: 40px;
           margin-right: 6px;
           margin-top: 5px;
         }
@@ -804,6 +807,9 @@ img {
   .right {
     text-align: center;
     font-size: 14*@vw;
+    p{
+      font-size: 14*@vw;
+    }
     .qcode {
       padding-top: 4px;
       margin-bottom: 10px;
@@ -827,8 +833,8 @@ img {
     border-radius: 50%;
 
     img {
-      width: 40px;
-      height: 40px;
+      width: 60px;
+      height: 60px;
       vertical-align: middle;
     }
   }
