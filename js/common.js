@@ -58,11 +58,11 @@ $(document).ready(function() {
 
 // 显示弹层菜单
 function showMaskMenu(param) {
-  $(".design_navigation").fadeOut(500).stop();
+  $(".maskMenu").fadeIn(500);
 }
 //隐藏弹层菜单
 function hideMaskMenu() { 
-  $(".design_navigation"). fadeIn(500).stop();
+  $(".maskMenu").fadeOut(500);
 }
 
 // 导航菜单滚动显示
