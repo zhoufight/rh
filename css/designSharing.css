@@ -10,7 +10,7 @@ dt {
   left: 0;
   top: 10vw;
   right: 0;
-  z-index: 9999;
+  z-index: 1000;
   padding-top: 10px;
 }
 .design_navigation .navSub {
