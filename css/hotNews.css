@@ -56,10 +56,17 @@
 .newsdetail_box .newsdetail_box--container .newList .container-fluid .category .des .text_bottom {
   text-indent: 36px;
   font-size: 0.9375vw;
-  line-height: 2;
+  line-height: 2.2;
   color: #999999;
   padding-bottom: 10px;
   border-bottom: 1px solid #eeeeee;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  /* autoprefixer: off */
+  -webkit-box-orient: vertical;
+  /* autoprefixer: on */
+  -webkit-line-clamp: 2;
 }
 .newsdetail_box .newsdetail_box--container .newList .container-fluid .category .des .des_btn {
   text-align: right;
