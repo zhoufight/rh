@@ -602,7 +602,7 @@ img {
 }
 .footer .centerTwo .contact {
   margin-top: -4px;
-  padding-left: 6.25vw;
+  padding-left: 5.10416667vw;
 }
 .footer .centerTwo .contact .colorOne {
   color: white;
@@ -635,6 +635,7 @@ img {
 .footer .right {
   text-align: center;
   font-size: 0.72916667vw;
+  margin-left: 4.47916667vw;
 }
 .footer .right p {
   font-size: 0.72916667vw;
@@ -833,6 +834,13 @@ newsdetail_box--list_content .newsdetail_box--list_content-item {
   text-align: left;
   white-space: nowrap;
   text-overflow: ellipsis;
+}
+.newsWrap .column:last-of-type::after {
+  content: " ";
+  display: block;
+  flex: 1;
+  height: 0;
+  margin-left: 3.64583333vw;
 }
 .newsWrap .column p {
   margin: 0.5vw 0;

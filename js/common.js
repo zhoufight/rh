@@ -53,7 +53,19 @@ $(document).ready(function() {
   },function(){
     $(this).removeClass("active");
   });
+
 });
+
+$(".backtop").mouseover(function(){
+  $(".img").attr("src","images/backtop_bd.png");
+  // console.log(111111);
+});
+
+$(".backtop").mouseout(function(){
+  $(".img").attr("src","images/backtop.png");
+});
+
+
 
 
 // 显示弹层菜单

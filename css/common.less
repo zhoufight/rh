@@ -713,6 +713,7 @@ img {
 
 /*footter底部*/
 .footer {
+  
   font-size: 16*@vw;
   background-color: #3D3D3D;
   color: #9FA0A0;
@@ -774,7 +775,7 @@ img {
   .centerTwo {
     .contact {
       margin-top: -4px;
-      padding-left: 120 *@vw;
+      padding-left: 98 *@vw;
       .colorOne {
         color: white;
         font-size: 16*@vw;
@@ -814,6 +815,7 @@ img {
   .right {
     text-align: center;
     font-size: 14*@vw;
+    margin-left: 86*@vw;
     p{
       font-size: 14*@vw;
     }
@@ -833,11 +835,13 @@ img {
   right: 50*@vw;
   bottom: 83*@vw;
   display: none;
+ 
 
   .icon {
     cursor: pointer;
     // background-color: #3D3D3D;
     border-radius: 50%;
+    
 
     img {
       width: 60px;
@@ -1074,6 +1078,13 @@ newsdetail_box--list_content .newsdetail_box--list_content-item {
       white-space: nowrap;
       // overflow: hidden;
       text-overflow: ellipsis;
+      &:last-of-type::after{
+        content: " ";
+        display: block;
+        flex: 1;
+        height: 0;
+        margin-left: 70*@vw;
+      }
       p {
           margin: 0.5vw 0;
           flex: 1;
@@ -1084,10 +1095,9 @@ newsdetail_box--list_content .newsdetail_box--list_content-item {
             
           }
           &:nth-of-type(3){
-            // text-align: right;
-           margin-left: 70*@vw;
-          
+           margin-left: 70*@vw;        
           }
+         
           a {
               color: #666666;
 
@@ -1792,6 +1802,9 @@ div.newsdetail_box--info .caseWrap .left ul li:hover p,
   .footer .container-fluid{
     padding: 0;
   }
+  // .footer .right {
+  //   margin-left: 0;
+  // }
 }
 
 
