@@ -158,6 +158,14 @@ section#grid {
   .tips .tabWrap .icon {
     width: 5.6vw;
   }
+  .cooperativeClient .list .itemIcon {
+    width: 13.85416667vw;
+    height: 7.8125vw;
+  }
+  .cooperativeClient .list .itemIcon img {
+    width: 13.85416667vw;
+    height: 7.8125vw;
+  }
 }
 @media screen and (max-width: 320px) {
   .tips {

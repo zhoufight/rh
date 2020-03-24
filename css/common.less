@@ -1653,8 +1653,15 @@ div.newsdetail_box--info .caseWrap .left ul li:hover p,
       ul{
         width: 100%;
         li{
-          width: 1240*@vw;
+          width: 1280*@vw;
           margin-right: 0;
+          &:before{
+            width: 4px;
+            height: 4px;
+          }
+          .txt{
+            padding-left: 6px;
+          }
         }
       }
     }
@@ -1677,6 +1684,7 @@ div.newsdetail_box--info .caseWrap .left ul li:hover p,
   background-color: #231F20;
   padding: 122*@vw;
   box-sizing: border-box;
+  overflow: hidden;
 }
 
 .user_box--info_itemtitle {
@@ -1801,6 +1809,12 @@ div.newsdetail_box--info .caseWrap .left ul li:hover p,
   }
   .footer .container-fluid{
     padding: 0;
+  }
+  .maskMenu .maskMenuItem .left{
+    font-size: 24px;
+  }
+  .very_more a{
+    font-size: 16px;
   }
   // .footer .right {
   //   margin-left: 0;
