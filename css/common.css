@@ -308,6 +308,7 @@ img {
   -webkit-transition-delay: 0.2s;
   -o-transition-delay: 0.2s;
   transition-delay: 0.2s;
+  z-index: 9999;
 }
 .images .container-fluid .row .item:hover .box .box-content .arrow::before {
   height: 100%;
@@ -401,6 +402,7 @@ img {
   -webkit-transform: rotate(45deg);
   -o-transform: rotate(45deg);
   transform: rotate(45deg);
+  z-index: 9999;
 }
 .images .container-fluid .row .item .box .box-content .arrow .arrow_up {
   width: 20px;
@@ -428,6 +430,7 @@ img {
   -webkit-transition-delay: 0.2s;
   -o-transition-delay: 0.2s;
   transition-delay: 0.2s;
+  z-index: 9999;
 }
 .images .container-fluid .row .item .box .box-content .textWrap {
   position: absolute;

@@ -46,6 +46,7 @@
   padding: 6.35416667vw 6.35416667vw 7.5vw 6.35416667vw;
   box-sizing: border-box;
   background-color: #231F20;
+  overflow: hidden;
 }
 .usergood_box--info_firsttitle {
   color: #BD9972;
