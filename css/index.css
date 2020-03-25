@@ -180,7 +180,7 @@ section#grid {
     padding: 7.2vw 1.6vw 1.2vw 2vw;
   }
 }
-@media screen and (min-width: 1260px) and (max-width: 1365px) {
+@media screen and (min-width: 1260px) and (max-width: 1367px) {
   .cooperativeClient .list .itemIcon {
     width: 14.84375vw;
     height: 7.8125vw;
