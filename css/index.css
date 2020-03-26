@@ -108,14 +108,13 @@ section#grid {
   padding: 0 6vw;
 }
 .cooperativeClient .list .itemIcon {
-  width: 15.10416667vw;
+  width: calc(100% / 5);
   height: 7.8125vw;
   border-right: 1px solid #E6E6E6;
   border-bottom: 1px solid #E6E6E6;
 }
 .cooperativeClient .list .itemIcon img {
-  width: 15.10416667vw;
-  height: 7.8125vw;
+  max-width: 100%;
 }
 .cooperativeClient .list div.itemIcon:nth-child(5n+5) {
   border-right: 0;

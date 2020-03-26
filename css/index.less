@@ -122,13 +122,12 @@ section#grid{
     justify-content: space-between;
     padding: 0 6vw;
     .itemIcon{
-      width: 290*@vw;
+      width: calc(100% / 5);
       height: 150*@vw;
       border-right: 1px solid #E6E6E6;
       border-bottom: 1px solid #E6E6E6;
       img{
-        width: 290*@vw;
-        height: 150*@vw;
+       max-width: 100%;
       }
     }
     div.itemIcon:nth-child(5n+5){
