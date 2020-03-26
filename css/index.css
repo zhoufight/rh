@@ -159,12 +159,11 @@ section#grid {
     width: 5.6vw;
   }
   .cooperativeClient .list .itemIcon {
-    width: 14.0625vw;
+    width: calc(100% / 5);
     height: 7.8125vw;
   }
   .cooperativeClient .list .itemIcon img {
-    width: 14.0625vw;
-    height: 7.8125vw;
+    max-width: 100%;
   }
 }
 @media screen and (max-width: 320px) {
