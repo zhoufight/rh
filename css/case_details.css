@@ -56,10 +56,10 @@
   color: #666666;
   padding: 0.83333333vw 0;
 }
-.wrap .middle .cross_line {
+.wrap .cross_line {
   padding: 2.91666667vw 0 4.6875vw;
 }
-.wrap .middle .cross_line a .line_center {
+.wrap .cross_line a .line_center {
   margin: 0 7.29166667vw;
 }
 @media (min-width: 768px) and (max-width: 1350px) {
