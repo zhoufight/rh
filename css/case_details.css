@@ -31,13 +31,15 @@
 }
 .wrap .middle .media .media-body .text {
   width: 31vw;
-  text-indent: 31px;
   font-size: 18px;
   color: #666666;
   line-height: 2;
+  padding-top: 1vw;
 }
-.wrap .middle .media .media-body .text .tit_1 {
-  padding: 1vw 0;
+.wrap .middle .media .media-body .text p {
+  font-size: 18px;
+  color: #666666;
+  line-height: 2;
 }
 .wrap .middle .media .media-body .tit_bottom {
   margin-top: 1vw;
