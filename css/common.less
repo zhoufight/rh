@@ -84,7 +84,7 @@ a:hover {
 body {
   padding-top: 95*@vw;
   font-family: BentonSans;
-
+  -webkit-text-size-adjust: none !important;
 }
 
 /* 清除浮动 */
@@ -378,7 +378,7 @@ img {
       justify-content: space-between;
       transition: transform 0.8s;
       .item {
-       
+        
         width: 23.25vw;
         height: 23.25vw;
         margin-bottom: 7*@vw;
@@ -1324,7 +1324,7 @@ div.newsdetail_box--info {
    
    .images .container-fluid .row .item .new_list li .press{
      padding-left: 10px;
-     
+     padding:6px;
    }
    .cooperative_client{
      border-top:none;
@@ -1355,11 +1355,14 @@ div.newsdetail_box--info {
 
   .images .container-fluid .row .item .new_list {
     text-align: left;
-    line-height: 8vw;
     padding: 25px 0 0 10px;
+  }
+  
+  .images .container-fluid .row .item .box-content::before {
+    background-color: rgba(0, 0, 0, 0.5);
     
   }
-
+  
 }
 
 
@@ -1826,6 +1829,22 @@ div.newsdetail_box--info .caseWrap .left ul li:hover p,
 @media (min-width: 768px)  and  (max-width: 1668x) {
   .images .container-fluid .row .item{
     width: 23.2vw;
+  }
+
+}
+
+//底部
+@media (min-width: 768px)  and  (max-width: 1370px) {
+  .footer{  
+    height: 410px;
+    
+  }
+  .footer .centerTwo .contact{
+    padding-left: 50*@vw;
+  }
+
+  .footer .right{
+    margin-left: 10*@vw;
   }
 
 }
