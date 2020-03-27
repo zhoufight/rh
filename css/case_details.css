@@ -101,4 +101,7 @@
   .wrap .middle .media .media-body .tit_bottom {
     padding: 4vw 0;
   }
+  .wrap .middle .imgs .content .context {
+    font-size: 12px !important;
+  }
 }
