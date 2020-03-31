@@ -12,6 +12,7 @@ dt {
   right: 0;
   z-index: 1000;
   padding-top: 10px;
+  transition: all 0.4s;
 }
 .design_navigation .navSub {
   justify-content: flex-end;

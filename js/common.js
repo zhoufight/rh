@@ -67,7 +67,6 @@ $(".backtop").mouseout(function(){
 
 
 
-
 // 显示弹层菜单
 function showMaskMenu(param) {
   $(".maskMenu").fadeIn(500);
@@ -76,6 +75,16 @@ function showMaskMenu(param) {
 function hideMaskMenu() { 
   $(".maskMenu").fadeOut(500);
 }
+
+
+
+$(".subMenuWrap").mouseover(function(){
+  $(this).fadeOut(500).stop();
+});
+
+$(".subMenuWrap").mouseout(function(){
+    $(this).fadeIn(500).stop();
+});
 
 // 导航菜单滚动显示
 function navScroll(){
