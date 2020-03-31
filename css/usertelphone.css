@@ -128,6 +128,10 @@
   width: 100%;
   height: 31.77083333vw;
 }
+.usertelphone_box--info_right #container {
+  height: 100%;
+  width: 100%;
+}
 .contactIcon {
   padding-top: 1.25vw;
 }
@@ -140,6 +144,10 @@
 }
 .usertelphone_box--content .text_right {
   padding-left: 9.89583333vw;
+}
+.container {
+  width: 100%;
+  height: 31.77083333vw;
 }
 @media screen and (max-width: 768px) {
   .usertelphone_box--info_right {

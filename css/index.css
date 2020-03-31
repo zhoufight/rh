@@ -126,6 +126,9 @@ section#grid {
 .cooperativeClient .list div.itemIcon:nth-last-child(1) {
   border-bottom: 0;
 }
+.carousel .carousel-indicators li {
+  display: none;
+}
 @media screen and (max-width: 640px) {
   .sectionCenter {
     background-size: cover;
