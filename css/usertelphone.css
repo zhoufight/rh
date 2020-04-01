@@ -126,7 +126,7 @@
 }
 .usertelphone_box--info_right img {
   width: 100%;
-  height: 31.77083333vw;
+  height: 610px;
 }
 .usertelphone_box--info_right #container {
   height: 100%;
@@ -145,13 +145,16 @@
 .usertelphone_box--content .text_right {
   padding-left: 9.89583333vw;
 }
-.container {
-  width: 100%;
-  height: 31.77083333vw;
-}
 @media screen and (max-width: 768px) {
   .usertelphone_box--info_right {
     padding-left: 0;
     padding-top: 2.08333333vw;
+  }
+  .usertelphone_box--info_left {
+    max-height: 100%;
+  }
+  .usertelphone_box--info_right #container {
+    height: 180px;
+    width: 100%;
   }
 }

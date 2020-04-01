@@ -1,7 +1,6 @@
 @charset "utf-8";
 .tips {
   padding: 9.2vw 1.6vw 0.1vw 5vw;
-  font-size: 1.65vw;
   color: #000000;
   font-weight: 300;
 }
@@ -11,6 +10,10 @@
 .tips .tips_txt .des {
   padding-bottom: 2vw;
   padding-right: 47vw ;
+}
+.tips .tips_txt p {
+  font-size: 40px;
+  font-weight: 300;
 }
 .tips .tabWrap .tabMenu {
   justify-content: flex-end;
@@ -154,6 +157,9 @@ section#grid {
   }
 }
 @media screen and (max-width: 767px) {
+  .tips .tips_txt p {
+    font-size: 16px;
+  }
   .tips .tabWrap .tabMenu .item {
     margin-left: 1.5vw;
   }
