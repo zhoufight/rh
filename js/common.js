@@ -1,3 +1,4 @@
+var tpl = '/tpl/renhe' ;
 function adaptive() {
   !(function() {
     function e() {
@@ -57,13 +58,14 @@ $(document).ready(function() {
 });
 
 $(".backtop").mouseover(function(){
-  $(".img").attr("src","images/backtop_bd.png");
-  // console.log(111111);
+  $(".img").attr("src",tpl+"/images/backtop_bd.png");
+ 
 });
 
 $(".backtop").mouseout(function(){
-  $(".img").attr("src","images/backtop.png");
+  $(".img").attr("src",tpl+"/images/backtop.png");
 });
+
 
 
 
@@ -76,16 +78,6 @@ function hideMaskMenu() {
   $(".maskMenu").fadeOut(500);
 }
 
-
-
-$(".subMenuWrap").mouseover(function(){
-  $(this).fadeOut(500).stop();
-});
-
-$(".subMenuWrap").mouseout(function(){
-    $(this).fadeIn(500).stop();
-});
-
 // 导航菜单滚动显示
 function navScroll(){
   $(window).scroll(function(){
@@ -94,13 +86,13 @@ function navScroll(){
     if(scroTop > 200){
       $('.menuWrap').addClass('show');
       $('.brand').removeClass('logo2');
-      $('.brand img').attr('src','images/pc_logo.png');
+      $('.brand img').attr('src',tpl+'/images/pc_logo.png');
     }else{
       $('.menuWrap').addClass('hide');
       $('.menuWrap').removeClass('show');
       $('.brand').addClass('logo2');
 
-      $('.brand img').attr('src','images/logo.png');
+      $('.brand img').attr('src',tpl+'/images/logo.png');
     }
  });
 }

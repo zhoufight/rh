@@ -257,7 +257,7 @@
             </div>
           </div>
           <div class="usertelphone_box--info_right col-md-6">
-            <img src="images/good/map.jpg" alt="">
+            <div  id="container" ></div>
           </div>
         </div>
       </div>
@@ -342,10 +342,26 @@
   </div>
   <script src="js/jquery-3.4.1.min.js"></script>
   <script src="lib/bootstrap-4.4.1-dist/js/bootstrap.min.js"></script>
-
-    <script src="js/common.js"></script>
+  <script type="text/javascript" src="https://webapi.amap.com/maps?v=1.4.15&key=46b268ea357e40c59dfce4dd65ec0bf8"></script>
+ 
+  <script src="js/common.js"></script>
+    <!-- <script src="js/usertelphone.js"></script> -->
     <script>
-        navScroll();
+      var marker, map = new AMap.Map("container", {
+        resizeEnable: true,
+        center: [113.930885,22.531746],
+        zoom: 16,
+        lang: "zh_cn" //可选值：en，zh_en, zh_cn
+      });
+      marker = new AMap.Marker({
+        // icon: "//a.amap.com/jsapi_demos/static/demo-center/icons/poi-marker-default.png",
+        // position: [113.930885,22.531746],
+        // offset: new AMap.Pixel(-13, -30)
+        position: new AMap.LngLat(113.930885, 22.531746),   // 经纬度对象，也可以是经纬度构成的一维数组[116.39, 39.9]
+      
+      });
+      marker.setMap(map);
+            navScroll();
     </script>
 </body>
 

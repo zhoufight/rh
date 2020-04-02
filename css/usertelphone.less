@@ -155,7 +155,11 @@
     padding-right: 0;
     img{
         width: 100%;
-        height: 610*@vw;
+        height: 610px;
+    }
+    #container{
+        height: 100%;
+        width: 100%;
     }
 }
 .contactIcon{
@@ -173,9 +177,23 @@
     padding-left: 190*@vw;
 }
 
+// .container{
+//     width: 100%;
+//     height: 610*@vw;
+// }
+
 @media screen and (max-width:768px) {
     .usertelphone_box--info_right {
         padding-left: 0;
         padding-top: 40*@vw;
+    }
+    .usertelphone_box--info_left{
+        max-height: 100%;
+    }
+    .usertelphone_box--info_right{
+        #container{
+            height: 180px;
+            width: 100%;
+        }
     }
 }
