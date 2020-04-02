@@ -5,6 +5,14 @@
 .newsdetail_box--content .text_top .text_link {
   color: #bd9972;
 }
+#carouselExampleIndicators img {
+  height: 500px ;
+}
+@media screen and (max-width: 768px) {
+  #carouselExampleIndicators img {
+    height: 100%;
+  }
+}
 .col-md-3 {
   padding-top: 2vw;
 }

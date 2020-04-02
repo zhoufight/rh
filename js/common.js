@@ -38,7 +38,7 @@ $(document).ready(function() {
     function() {
       $(this)
         .find(".subTitleWrap")
-        
+        .stop()
         .slideUp(200);
     }
   );
@@ -96,3 +96,37 @@ function navScroll(){
     }
  });
 }
+
+
+//新闻，设计详情标签少于3个的情况处理
+function addColumn(classnameParent,classname2) {
+  const parentDiv  =  $(`.${classnameParent} .${classname2}`)
+
+  console.log($(parentDiv[2]).find("div.column").length)
+
+
+  for (let i = 0 ;i< parentDiv.length;i++) {
+    console.log($(parentDiv[i]).find("div.column"))
+    const item = $(parentDiv[i]).find('div.column')
+    for(let j = 0;j<item.length;j++) {
+      const itemP = $(item[j]).find("p")
+      if (itemP.length === 2) {
+        $(item[j]).addClass("column2")
+      }
+    }
+    console.log("item:",item)
+  }
+ 
+  // parentDiv.map((el,index)=>{
+  //        console.log(index)
+  //  const item = $(parentDiv[index]).find('div.column')
+  //  console.log("item:",item)
+  //  item.map((itemx, i)=>{
+  //   const itemP = $(item[i]).find("p")
+  //   console.log(itemP.length)
+  //   if (itemP.length === 2) {
+  //     $(item[i]).addClass("column2")
+  //   }
+  //  })
+  // })
+ }

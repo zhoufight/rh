@@ -135,18 +135,12 @@
 }
 .usergood_box--infoitem_itemlist p {
   line-height: 2;
-}
-.usergood_box--infoitem .row {
-  margin-right: -6.25vw;
-}
-.usergood_box--infoitem_itemlist-p {
   position: relative;
-  line-height: 20px;
 }
-.usergood_box--infoitem_itemlist-p::before {
+.usergood_box--infoitem_itemlist p::before {
   position: absolute;
   content: "";
-  left: -10px;
+  left: -14px;
   top: 0;
   bottom: 0;
   margin: auto;
@@ -156,6 +150,9 @@
   border-radius: 50%;
   box-sizing: border-box;
   background-color: #ccc;
+}
+.usergood_box--infoitem .row {
+  margin-right: -6.25vw;
 }
 .usergood_box--imgs {
   padding: 5.05208333vw 6.25vw 5.88541667vw 6.25vw;
@@ -193,6 +190,9 @@
 .usergood_box-info_content p {
   font-size: 0.9375vw;
   line-height: 1.5;
+}
+usergood_box-info_content {
+  overflow: hidden;
 }
 @media screen and (max-width: 768px) {
   .usergood_box--content_text p {

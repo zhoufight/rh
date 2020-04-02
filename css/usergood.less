@@ -3,6 +3,8 @@
 
 .usergood_box {}
 
+
+
 .usergood_box--header {
     display: flex;
     align-items: center;
@@ -160,6 +162,21 @@
     color: #ccc;
     p{
         line-height: 2;
+        position: relative;
+        &::before {
+            position: absolute;
+            content: "";
+            left: -14px;
+            top: 0;
+            bottom: 0;
+            margin: auto;
+            width: 5px;
+            height: 5px;
+            display: inline-block;
+            border-radius: 50%;
+            box-sizing: border-box;
+            background-color: #ccc;
+        }
     }
 }
 
@@ -167,25 +184,8 @@
     margin-right: -120*@vw;
 }
 
-.usergood_box--infoitem_itemlist-p {
-    position: relative;
-    line-height: 20px;
-}
 
-.usergood_box--infoitem_itemlist-p::before {
-    position: absolute;
-    content: "";
-    left: -10px;
-    top: 0;
-    bottom: 0;
-    margin: auto;
-    width: 5px;
-    height: 5px;
-    display: inline-block;
-    border-radius: 50%;
-    box-sizing: border-box;
-    background-color: #ccc;
-}
+
 
 .usergood_box--imgs {
     padding: 97*@vw 120*@vw 113*@vw 120*@vw;
@@ -228,6 +228,10 @@
         font-size: 18*@vw;
         line-height: 1.5;
     }
+}
+
+usergood_box-info_content{
+    overflow: hidden;
 }
 
 @media screen and (max-width:768px){

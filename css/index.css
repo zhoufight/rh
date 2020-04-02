@@ -27,6 +27,9 @@
   color: #9DA1A6;
   padding-bottom: 2px;
 }
+.tips .tabWrap .tabMenu .item a:hover {
+  color: #BD9972;
+}
 .tips .tabWrap .tabMenu .active a {
   color: #BD9972;
 }
