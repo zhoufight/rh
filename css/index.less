@@ -8,14 +8,18 @@
 
 .tips{
   padding: 9.2vw 1.6vw 0.1vw  5vw;
-  font-size: 1.65vw;
   color: #000000;
   font-weight: 300;
   .tips_txt{
     padding-bottom: 4vw;
+   
     .des{
       padding-bottom: 2vw;
       padding-right:47vw ;
+    }
+    p{
+      font-size: 40px;
+      font-weight: 300;
     }
   }
   .tabWrap{
@@ -65,6 +69,17 @@ section#grid{
   cursor: pointer;
   
 }
+.carousel{
+
+  .carousel-inner{
+    
+    img{
+     
+    }
+  }
+}
+
+
 .sectionCenter{
   width: 100%;
   height: 34vw;
@@ -145,6 +160,10 @@ section#grid{
   }
 }
 
+.carousel .carousel-indicators li{
+  display: none;
+}
+
 @media screen and (max-width:640px) {
   .sectionCenter{
     background-size: cover;
@@ -177,6 +196,11 @@ section#grid{
 }
 @media screen and (max-width:767px) {
   .tips{
+    .tips_txt{
+      p{
+        font-size: 16px;
+      }
+    }
     .tabWrap{
       .tabMenu{
         .item{
