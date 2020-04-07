@@ -605,7 +605,7 @@ img {
 }
 .footer .center .listWrap {
   border-right: 1px solid #666666;
-  margin-right: 80px;
+  margin-right: 6.25vw;
 }
 .footer .center .listWrap .list-item {
   justify-content: space-between;
