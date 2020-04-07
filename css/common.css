@@ -569,7 +569,7 @@ img {
   font-size: 16px;
   background-color: #3D3D3D;
   color: #9FA0A0;
-  padding: 0 10.41666667vw 6.875vw;
+  padding-bottom: 6.875vw;
   box-sizing: border-box;
   height: 514px;
 }
@@ -598,13 +598,14 @@ img {
 }
 .footer .center {
   color: #9FA0A0;
+  margin-left: -2.60416667vw;
 }
 .footer .center .tit2 {
   padding-bottom: 2.55208333vw;
 }
 .footer .center .listWrap {
   border-right: 1px solid #666666;
-  margin-right: 60px;
+  margin-right: 80px;
 }
 .footer .center .listWrap .list-item {
   justify-content: space-between;
@@ -613,7 +614,7 @@ img {
 }
 .footer .centerTwo .contact {
   margin-top: -4px;
-  padding-left: 5.10416667vw;
+  margin-left: 1.04166667vw;
 }
 .footer .centerTwo .contact .colorOne {
   color: white;
@@ -646,7 +647,6 @@ img {
 .footer .right {
   text-align: center;
   font-size: 14px;
-  margin-left: 4.47916667vw;
 }
 .footer .right p {
   font-size: 14px;
@@ -661,18 +661,20 @@ img {
 .footer .col-md-3 {
   padding-top: 0;
 }
+.footer .container-fluid {
+  padding: 0 10.41666667vw;
+}
 .footer .container-fluid .row {
   padding: 0;
   margin: 0;
 }
+.footer .container-fluid .row .col-md-5,
 .footer .container-fluid .row .col-md-4,
 .footer .container-fluid .row .col-md-3,
-.footer .container-fluid .row .col-md-2 {
+.footer .container-fluid .row .col-md-2,
+.footer .container-fluid .row .col-md-1 {
   padding: 0;
   margin: 0;
-}
-.footer .container-fluid .row .col-md-4 {
-  margin-right: 4.16666667vw;
 }
 .backtop {
   position: fixed;
@@ -1476,6 +1478,9 @@ div.newsdetail_box--info .caseWrap .left ul li:hover p,
   .related_cases {
     font-size: 16px;
   }
+  .footer .container-fluid .row {
+    margin: 0 50px;
+  }
 }
 @media (min-width: 768px) and (max-width: 1668x) {
   .images .container-fluid .row .item {
@@ -1485,11 +1490,5 @@ div.newsdetail_box--info .caseWrap .left ul li:hover p,
 @media (min-width: 768px) and (max-width: 1370px) {
   .footer {
     height: 500px;
-  }
-  .footer .centerTwo .contact {
-    padding-left: 2.60416667vw;
-  }
-  .footer .right {
-    margin-left: 0.52083333vw;
   }
 }
