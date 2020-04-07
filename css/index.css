@@ -203,3 +203,8 @@ section#grid {
     padding-right: 36.45833333vw;
   }
 }
+@media (min-width: 768px) and (max-width: 960px) {
+  section#grid {
+    padding: 0 ;
+  }
+}

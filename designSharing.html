@@ -194,8 +194,8 @@
   <!-- 导航end -->
  
   <div class="design_navigation">
-    <div class="navSub flex">
-      <div class="subMenuWrap hide submenuShow">
+    <div class="navSub flex ">
+      <div class="subMenuWrap hide submenuShow ">
         <div class="weCanDo flex ">
           <div class="itemMenu ">
             <dl>
@@ -252,7 +252,7 @@
           </div>
         </div>
       </div>
-      <div class="btnWrap submenuShow ">
+      <div class="btnWrap submenuShow">
         <span>设计分享</span>
         <img class="img-fluid " src="./images/react.png" alt="">
       </div>
@@ -951,7 +951,7 @@
   <div class="footer">
     <div class="container-fluid">
       <div class="row test ">
-        <div class="col-md-4">
+        <div class="col-md-5">
           <div class="left">
             <div class="tit">
               <a href="">深圳</a>
@@ -981,7 +981,7 @@
                 <div class="list_r flex-item-1"><a href="">酒店设计公司</a></div>
               </div>
               <div class="list-item flex">
-                <div class="list_l flex-item-1"><a href="">酒店VI设计</a></div>
+                <div class="list_l flex-item-1"><a href="">酒店导视规划设计</a></div>
                 <div class="list_r flex-item-1"><a href="">品牌规划</a></div>
               </div>
               <div class="list-item flex ">
@@ -1010,7 +1010,7 @@
             </div>
           </div>
         </div>
-        <div class="col-md-2">
+        <div class="col-md-1">
           <div class="right">
             <div class="qcode"><img src="images/qcode.png" alt=""></div>
             <p>微信咨询 夏先生</p>
@@ -1031,11 +1031,15 @@
       $(".submenuShow").hover(function () {
         $(".subMenuWrap").show();
         $(".design_navigation").css("background", "#ffffff").css("transition", "all 1s")
+      
       }, function () {
         $(".subMenuWrap").hide();
-        $(".design_navigation").css("background", "none").css("transition", "all 1.5s")
-      })
-     
+        $(".design_navigation").css("background", "none");
+      });
+
+    
+      
+      
     });
   </script>
 </body>

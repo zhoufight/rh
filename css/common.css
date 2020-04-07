@@ -116,7 +116,9 @@ img {
 .navWrap .navBarWrap {
   justify-content: space-between;
   align-items: center;
-  padding: 1.2vw 1vw 1.2vw 5.20833333vw;
+  padding-top: 1.2vw;
+  padding-right: 1vw;
+  padding-left: 5.20833333vw;
 }
 .navWrap .navBarWrap .brand {
   transition: all 0.5s;
@@ -148,20 +150,21 @@ img {
   right: -15vw;
   margin: auto;
   background-color: #fff;
-  padding-top: 40px;
   padding-bottom: 1.77083333vw;
   display: none;
-  z-index: -1;
+  z-index: 999999;
   cursor: pointer;
 }
 .navWrap .navBarWrap .meun .menuList .item .subTitleWrap .weCanDo {
   justify-content: center;
+  margin-top: 66px;
 }
 .navWrap .navBarWrap .meun .menuList .item .subTitleWrap .weCanDo .itemMenu {
   margin-left: 10vw;
 }
 .navWrap .navBarWrap .meun .menuList .item .subTitleWrap .weCanDo .itemMenu:last-of-type,
-.navWrap .navBarWrap .meun .menuList .item .subTitleWrap .weCanDo .itemMenu:nth-last-child(2) {
+.navWrap .navBarWrap .meun .menuList .item .subTitleWrap .weCanDo .itemMenu:nth-last-child(2),
+.navWrap .navBarWrap .meun .menuList .item .subTitleWrap .weCanDo .itemMenu:nth-last-child(3) {
   width: 200px;
 }
 .navWrap .navBarWrap .meun .menuList .item .subTitleWrap .weCanDo .itemMenu dl dt {
@@ -605,7 +608,7 @@ img {
 }
 .footer .center .listWrap {
   border-right: 1px solid #666666;
-  margin-right: 80px;
+  margin-right: 3.64583333vw;
 }
 .footer .center .listWrap .list-item {
   justify-content: space-between;
