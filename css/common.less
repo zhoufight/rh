@@ -769,15 +769,19 @@ img {
 
     .listWrap {
       border-right: 1px solid rgba(102, 102, 102, 1);
-      ;
-
+      margin-right: 60px;
       .list-item {
         justify-content: space-between;
         margin-bottom: 20*@vw;
         font-size: 14px;
-        .list_l {}
+        // display: inline-block;
+        .list_l {
+        //  margin-right: -26*@vw;
+        }
 
-        .lsit_r {}
+        .lsit_r {
+          
+        }
       }
     }
   }
@@ -842,6 +846,24 @@ img {
 
 .footer .col-md-3{
   padding-top: 0;
+}
+.footer {
+  .container-fluid{
+    // padding: 0;
+    // margin: 0;
+    .row{
+      padding: 0;
+      margin: 0;
+      .col-md-4,.col-md-3,.col-md-2{
+        padding: 0;
+        margin: 0;
+      }
+      .col-md-4{
+        margin-right: 80*@vw;
+      }
+    }
+   
+  }
 }
 
 .backtop {
@@ -1774,6 +1796,7 @@ div.newsdetail_box--info .caseWrap .left ul li:hover p,
   .drownMenu {
       padding-top: 18px;
       overflow: hidden;
+      border-bottom: 1px solid #BD9972;
   }
 }
 .user_box--infoitem_title{
@@ -1920,6 +1943,7 @@ div.newsdetail_box--info .caseWrap .left ul li:hover p,
   .footer .right{
     margin-left: 10*@vw;
   }
-
+  
 }
+
 
