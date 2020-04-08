@@ -134,8 +134,10 @@ img {
   .navBarWrap {
     justify-content: space-between;
     align-items: center;
-    padding: 1.2vw 1vw 1.2vw 100*@vw;
-
+    padding-top: 1.2vw; 
+    padding-right: 1vw;
+    // padding-bottom: 10px;
+    padding-left: 100*@vw;
     // flex-direction: column;
     .brand {
       // width: 170*@vw;
@@ -158,34 +160,40 @@ img {
     .meun {
       align-items: center;
       padding-right: 6.1vw;
+      
       .menuList {
         .item {
+          // width: 100%;
+          height: 60px;
+          line-height: 60px;
           margin-left: 63*@vw;
           position: relative;
-
+          // margin-bottom: 66px;
           a {
             color: #9FA0A0;
           }
 
           .subTitleWrap {
             position: absolute;
-            top: 2vw;
+            top: 58px;
             left: -79vw;
             right: -15vw;
             margin: auto;
             background-color: #fff;
-            padding-top: 40px;
+            // padding-top: 40px;
+            // border-top: 40px solid red;
             padding-bottom: 34*@vw;
             display: none;
-            z-index: -1;
+            z-index: 999999;
 
             .weCanDo {
               justify-content: center;
-              
+              margin-top: 66px;
+              line-height: 30px;
               .itemMenu {
                 margin-left: 10vw;
 
-                &:last-of-type,&:nth-last-child(2){
+                &:last-of-type,&:nth-last-child(2),&:nth-last-child(3){
                   width: 200px;
                 }
                 dl {
@@ -237,13 +245,17 @@ img {
           }
           .weCanItem{
             right: -35.8125vw;
+           
           } 
           .hotel {
             left: -100vw;
 
           }
         }
-
+        .menuItem{      
+          // border: 1px solid red;
+          line-height: 60px;
+        }
         .active {
           a {
             color: #9FA0A0;
@@ -770,7 +782,7 @@ img {
 
     .listWrap {
       border-right: 1px solid rgba(102, 102, 102, 1);
-      margin-right: 120*@vw;
+      margin-right: 136*@vw;
       .list-item {
         justify-content: space-between;
         margin-bottom: 20*@vw;
@@ -1951,5 +1963,6 @@ div.newsdetail_box--info .caseWrap .left ul li:hover p,
   // }
   
 }
+
 
 
