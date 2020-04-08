@@ -154,7 +154,7 @@ img {
   background-color: #fff;
   padding-bottom: 1.77083333vw;
   display: none;
-  z-index: 999999;
+  z-index: -1;
   cursor: pointer;
 }
 .navWrap .navBarWrap .meun .menuList .item .subTitleWrap .weCanDo {
@@ -166,8 +166,7 @@ img {
   margin-left: 10vw;
 }
 .navWrap .navBarWrap .meun .menuList .item .subTitleWrap .weCanDo .itemMenu:last-of-type,
-.navWrap .navBarWrap .meun .menuList .item .subTitleWrap .weCanDo .itemMenu:nth-last-child(2),
-.navWrap .navBarWrap .meun .menuList .item .subTitleWrap .weCanDo .itemMenu:nth-last-child(3) {
+.navWrap .navBarWrap .meun .menuList .item .subTitleWrap .weCanDo .itemMenu:nth-last-child(2) {
   width: 200px;
 }
 .navWrap .navBarWrap .meun .menuList .item .subTitleWrap .weCanDo .itemMenu dl dt {
