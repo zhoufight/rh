@@ -154,7 +154,7 @@ img {
   background-color: #fff;
   padding-bottom: 1.77083333vw;
   display: none;
-  z-index: -1;
+  z-index: 999999;
   cursor: pointer;
 }
 .navWrap .navBarWrap .meun .menuList .item .subTitleWrap .weCanDo {
@@ -166,7 +166,9 @@ img {
   margin-left: 10vw;
 }
 .navWrap .navBarWrap .meun .menuList .item .subTitleWrap .weCanDo .itemMenu:last-of-type,
-.navWrap .navBarWrap .meun .menuList .item .subTitleWrap .weCanDo .itemMenu:nth-last-child(2) {
+.navWrap .navBarWrap .meun .menuList .item .subTitleWrap .weCanDo .itemMenu:nth-last-child(2),
+.navWrap .navBarWrap .meun .menuList .item .subTitleWrap .weCanDo .itemMenu:nth-last-child(3),
+.navWrap .navBarWrap .meun .menuList .item .subTitleWrap .weCanDo .itemMenu:first-child {
   width: 200px;
 }
 .navWrap .navBarWrap .meun .menuList .item .subTitleWrap .weCanDo .itemMenu dl dt {
@@ -606,19 +608,29 @@ img {
 }
 .footer .center {
   color: #9FA0A0;
-  margin-left: -2.60416667vw;
 }
 .footer .center .tit2 {
   padding-bottom: 2.55208333vw;
 }
 .footer .center .listWrap {
+  position: relative;
+  margin-right: 4.16666667vw;
+}
+.footer .center .listWrap::after {
+  content: '';
+  position: absolute;
+  right: 0;
+  top: 0;
   border-right: 1px solid #666666;
-  margin-right: 7.08333333vw;
+  width: 1px;
+  height: 100%;
 }
 .footer .center .listWrap .list-item {
-  justify-content: space-between;
   margin-bottom: 1.04166667vw;
   font-size: 14px;
+}
+.footer .center .listWrap .list-item .list_l {
+  width: 11.5625vw;
 }
 .footer .centerTwo .contact {
   margin-top: -4px;

@@ -184,15 +184,16 @@ img {
             // border-top: 40px solid red;
             padding-bottom: 34*@vw;
             display: none;
-            z-index: -1;
+            z-index: 999999;
 
             .weCanDo {
               justify-content: center;
               margin-top: 66px;
               line-height: 30px;
-              .itemMenu {                margin-left: 10vw;
+              .itemMenu {
+                margin-left: 10vw;
 
-                &:last-of-type,&:nth-last-child(2){
+                &:last-of-type,&:nth-last-child(2),&:nth-last-child(3),&:first-child{
                   width: 200px;
                 }
                 dl {
@@ -774,25 +775,38 @@ img {
 
   .center {
     color: #9FA0A0;
-    margin-left: -50*@vw;
+  
     .tit2 {
       padding-bottom: 49*@vw;
     }
 
     .listWrap {
-      border-right: 1px solid rgba(102, 102, 102, 1);
-      margin-right: 136*@vw;
+      // border-right: 1px solid rgba(102, 102, 102, 1);
+      position: relative;
+      margin-right: 80*@vw;
+      &::after{
+        content: '';
+        position: absolute;
+        right: 0;
+        top: 0;
+        border-right: 1px solid rgba(102, 102, 102, 1);
+        width: 1px;
+        height: 100%;
+      }
+      // margin-right: 136*@vw;
       .list-item {
-        justify-content: space-between;
+        // justify-content: space-between;
         margin-bottom: 20*@vw;
         font-size: 14px;
-        // display: inline-block;
+  
         .list_l {
-        //  margin-right: -26*@vw;
+        // padding-right: 26px;
+          width: 222*@vw;
         }
 
-        .lsit_r {
+        .list_r {
           
+         
         }
       }
     }
