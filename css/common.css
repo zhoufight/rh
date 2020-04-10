@@ -640,6 +640,9 @@ img {
   color: white;
   font-size: 16px;
 }
+.footer .centerTwo .contact .colorOne a {
+  color: white;
+}
 .footer .centerTwo .contact p {
   line-height: 32px;
   font-size: 20px;
@@ -649,6 +652,9 @@ img {
 }
 .footer .centerTwo .contact p span.name {
   font-size: 14px;
+}
+.footer .centerTwo .contact p a {
+  color: white;
 }
 .footer .centerTwo .contact .qq {
   padding-top: 3.02083333vw;
@@ -710,6 +716,7 @@ img {
   width: 60px;
   height: 60px;
   vertical-align: middle;
+  opacity: 50%;
 }
 .textSingle {
   overflow: hidden;
@@ -1047,7 +1054,6 @@ div.newsdetail_box--info .cross_line .line_bottom .right span:nth-child(2) {
     padding: 0 15px;
   }
   .images .container-fluid .row {
-    text-align: center;
     margin-left: 0;
   }
   .images .container-fluid .row .item .new_list li .press {
@@ -1197,7 +1203,7 @@ div.newsdetail_box--info .cross_line .line_bottom .right span:nth-child(2) {
 .content .section .caseWrap .left ul li p {
   color: #fff;
 }
-.footer .center .listWrap .list-item a:hover,
+.footer .center .listWrap,
 .content .section .caseWrap .left ul li:hover p,
 .navWrap .navBarWrap .meun .menuList .item a:hover,
 .navWrap .navBarWrap .meun .menuList .item .subTitleWrap .weCanDo .itemMenu dl dd:hover a,
@@ -1468,6 +1474,16 @@ div.newsdetail_box--info .caseWrap .left ul li:hover p,
   border-radius: 50%;
 }
 @media screen and (max-width: 767px) {
+  .navWrap .navBarWrap {
+    height: 60px;
+    padding-top: 0;
+  }
+  .navWrap .navBarWrap .brand img {
+    height: 36px;
+  }
+  .navWrap .navBarWrap .logo2 img {
+    height: 60px;
+  }
   .images .container-fluid .row .item .box .box-content .arrow {
     display: block;
   }
@@ -1484,10 +1500,16 @@ div.newsdetail_box--info .caseWrap .left ul li:hover p,
     height: 100%;
   }
   .footer .centerTwo .contact {
-    padding-left: 2.60416667vw;
+    margin-left: 0;
   }
   .footer .container-fluid {
     padding: 0;
+  }
+  .footer .right {
+    text-align: left;
+  }
+  .footer .right p {
+    padding-left: 14px;
   }
   .maskMenu .maskMenuItem .left {
     font-size: 24px;

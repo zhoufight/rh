@@ -157,4 +157,45 @@
     height: 180px;
     width: 100%;
   }
+  .usertelphone_box--content_left {
+    padding-left: 30px;
+  }
+  usertelphone_box--content_left {
+    padding-top: 80px;
+  }
+  .fontSize,
+  .txtTwo,
+  .txtone,
+  .usertelphone_box--content_title,
+  .usertelphone_box--content .text_right,
+  .usertelphone_box--info_title,
+  .usertelphone_box--info_place,
+  .usertelphone_box-info_botton,
+  .usertelphone_box--content_right-itemtitle,
+  .usertelphone_box--content_right-p,
+  .usertelphone_box--content_teltitle,
+  .usertelphone_box--content_tel {
+    font-size: 16px !important;
+  }
+  .title {
+    font-size: 16px;
+  }
+  .usertelphone_box--content {
+    padding: 0;
+    margin-top: 60px;
+  }
+  .usertelphone_box--content .text_right {
+    padding-left: 30px;
+    font-size: 14px;
+  }
+  .usertelphone_box--info_left {
+    padding-left: 35px;
+  }
+  .usertelphone_box--content_right {
+    padding-left: 30px;
+  }
+  .usertelphone_box-info_botton p,
+  .usertelphone_box--content_tel-p p {
+    font-size: 14px !important;
+  }
 }

@@ -198,4 +198,51 @@ usergood_box-info_content {
   .usergood_box--content_text p {
     margin-left: -30px;
   }
+  .usergood_box--content_text p {
+    padding-left: 0;
+  }
+  .usergood_box--content {
+    padding: 0;
+    margin-left: 30px;
+    margin-top: 60px;
+  }
+  .usergood_box--content_title,
+  .usergood_box--content_itemtitle,
+  .usergood_box--content_text .tit,
+  usergood_box--content_text,
+  .usergood_box--info_firsttitle,
+  .usergood_box-info_content,
+  .usergood_box--info_secondtitle,
+  .usergood_box--infoitem_itemlist-p,
+  .usergood_box--infoitem_itemlist {
+    font-size: 16px !important;
+  }
+  .usergood_box--content_title p,
+  .usergood_box--content_itemtitle p,
+  .usergood_box--content_text .tit p,
+  usergood_box--content_text p,
+  .usergood_box--info_firsttitle p,
+  .usergood_box-info_content p,
+  .usergood_box--info_secondtitle p,
+  .usergood_box--infoitem_itemlist-p p,
+  .usergood_box--infoitem_itemlist p {
+    font-size: 16px !important;
+  }
+  .usergood_box--content_text {
+    padding-left: 30px;
+  }
+  .usergood_box--content_text p,
+  .usergood_box--content_text div {
+    font-size: 14px;
+  }
+  .usergood_box--content_text .list-item div {
+    margin-left: -30px;
+  }
+  .usergood_box--infoitem .container-fluid {
+    padding-left: 0;
+  }
+  .usergood_box--infoitem_itemtitle,
+  .usergood_box--info_list-title {
+    font-size: 14px;
+  }
 }

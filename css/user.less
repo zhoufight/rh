@@ -1,5 +1,6 @@
 @charset "utf-8";
-@vw:0.0520833333333333vw;  // vw 单位按1920计算
+@vw: 0.0520833333333333vw; // vw 单位按1920计算
+
 
 .user_box {}
 
@@ -46,7 +47,7 @@
     line-height: 2;
     box-sizing: border-box;
     width: 860*@vw;
-   
+
 }
 
 
@@ -59,7 +60,8 @@
 .user_box--company {
     padding: 123*@vw 210*@vw 83*@vw 210*@vw;
     box-sizing: border-box;
-    .user_box--info_itemtitle{
+
+    .user_box--info_itemtitle {
         font-size: 18*@vw;
     }
 }
@@ -93,23 +95,35 @@
 .user_box--company_imgboxitem:last-child {
     border: none;
 }
-.ourservice{
+
+.ourservice {
     padding-bottom: 1vw;
     border-bottom: 1px solid #BD9972;
 }
 
 
-.openItem .drownMenu .row{
+.openItem .drownMenu .row {
     margin-right: -120px;
 }
 
 @media screen and (max-width:768px) {
-    .user_box--content p{
+    .user_box--content p {
         width: 100%;
     }
-}
 
-
-.closeItem .user_box--infoitem_title {
-    font-weight: 300;
+    .user_box {
+        margin-top: 60px;
+    }
+    .closeItem .user_box--infoitem_title {
+        font-weight: 300;
+    }
+    .user_box--content_title,user_box--content_itemtitle,.user_box--content p,
+    .user_box--info_itemtitle ,.user_box--infoitem_list-title p,div,.user_box--info_itemtitle,.user_box--company .user_box--info_itemtitle ,
+    .closeItem .user_box--infoitem_title{
+        font-size: 16px;
+    }
+    .drownMenu p,.user_box--infoitem_list-title{
+        font-size: 14px !important;
+    }
+    
 }

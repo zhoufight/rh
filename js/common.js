@@ -57,16 +57,52 @@ $(document).ready(function() {
 
 });
 
+// 返回顶部
 $(".backtop").mouseover(function(){
-  // $(".img").attr("src",tpl+"/images/backtop_bd.png");
-  $(".img").attr("src","/images/backtop_bd.png");
+  $(".img").attr("src",tpl+"/images/backtop_bd.png");
+  // $(".img").attr("src","/images/backtop_bd.png");
 });
 
 $(".backtop").mouseout(function(){
-  // $(".img").attr("src",tpl+"/images/backtop.png");
-  $(".img").attr("src","/images/backtop.png");
+  $(".img").attr("src",tpl+"/images/backtop.png");
+  // $(".img").attr("src","/images/backtop.png");
+});
+
+// 联系 qq wx sina
+$(".tengxun").mouseover(function(){
+  $(this).attr("src",tpl+"/images/hover_qq.png");
+  // $(this).attr("src","images/hover_qq.png");
+  // console.log(1)
+});
+
+$(".tengxun").mouseout(function(){
+  $(this).attr("src",tpl+"/images/qq.png");
+  // $(this).attr("src","images/qq.png");
 
 });
+
+$(".wx").mouseover(function(){
+  $(this).attr("src",tpl+"/images/hover_wx.png");
+  // $(this).attr("src","images/hover_wx.png");
+
+});
+
+$(".wx").mouseout(function(){
+  $(this).attr("src",tpl+"/images/wx.png");
+  // $(this).attr("src","images/wx.png");
+});
+
+$(".sina").mouseover(function(){
+  $(this).attr("src",tpl+"/images/hover_sina.png");
+  // $(this).attr("src","images/hover_sina.png");
+
+});
+
+$(".sina").mouseout(function(){
+  $(this).attr("src",tpl+"/images/sina.png");
+  // $(this).attr("src","images/sina.png");
+});
+
 
 
 
@@ -88,16 +124,16 @@ function navScroll(){
     if(scroTop > 200){
       $('.menuWrap').addClass('show');
       $('.brand').removeClass('logo2');
-      // $('.brand img').attr('src',tpl+'/images/pc_logo.png');
-      $('.brand img').attr('src','./images/pc_logo.png');
+      $('.brand img').attr('src',tpl+'/images/pc_logo.png');
+      // $('.brand img').attr('src','./images/pc_logo.png');
 
     }else{
       $('.menuWrap').addClass('hide');
       $('.menuWrap').removeClass('show');
       $('.brand').addClass('logo2');
 
-      // $('.brand img').attr('src',tpl+'/images/logo.png');
-      $('.brand img').attr('src','./images/logo.png');
+      $('.brand img').attr('src',tpl+'/images/logo.png');
+      // $('.brand img').attr('src','./images/logo.png');
 
     }
  });
