@@ -608,29 +608,19 @@ img {
 }
 .footer .center {
   color: #9FA0A0;
+  margin-left: -2.60416667vw;
 }
 .footer .center .tit2 {
   padding-bottom: 2.55208333vw;
 }
 .footer .center .listWrap {
-  position: relative;
-  margin-right: 4.16666667vw;
-}
-.footer .center .listWrap::after {
-  content: '';
-  position: absolute;
-  right: 0;
-  top: 0;
   border-right: 1px solid #666666;
-  width: 1px;
-  height: 100%;
+  margin-right: 7.08333333vw;
 }
 .footer .center .listWrap .list-item {
+  justify-content: space-between;
   margin-bottom: 1.04166667vw;
   font-size: 14px;
-}
-.footer .center .listWrap .list-item .list_l {
-  width: 11.5625vw;
 }
 .footer .centerTwo .contact {
   margin-top: -4px;

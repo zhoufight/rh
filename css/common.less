@@ -775,38 +775,25 @@ img {
 
   .center {
     color: #9FA0A0;
-  
+    margin-left: -50*@vw;
     .tit2 {
       padding-bottom: 49*@vw;
     }
 
     .listWrap {
-      // border-right: 1px solid rgba(102, 102, 102, 1);
-      position: relative;
-      margin-right: 80*@vw;
-      &::after{
-        content: '';
-        position: absolute;
-        right: 0;
-        top: 0;
-        border-right: 1px solid rgba(102, 102, 102, 1);
-        width: 1px;
-        height: 100%;
-      }
-      // margin-right: 136*@vw;
+      border-right: 1px solid rgba(102, 102, 102, 1);
+      margin-right: 136*@vw;
       .list-item {
-        // justify-content: space-between;
+        justify-content: space-between;
         margin-bottom: 20*@vw;
         font-size: 14px;
-  
+        // display: inline-block;
         .list_l {
-        // padding-right: 26px;
-          width: 222*@vw;
+        //  margin-right: -26*@vw;
         }
 
-        .list_r {
+        .lsit_r {
           
-         
         }
       }
     }
