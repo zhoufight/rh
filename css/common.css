@@ -1077,6 +1077,9 @@ div.newsdetail_box--info .cross_line .line_bottom .right span:nth-child(2) {
     padding-right: 0;
     padding-left: 0;
   }
+  .cooperativeClient .title p {
+    font-size: 16px;
+  }
   .images .container-fluid .row .item,
   .images .container-fluid .row .item .box .listIcon {
     width: 100vw;
@@ -1117,7 +1120,7 @@ div.newsdetail_box--info .cross_line .line_bottom .right span:nth-child(2) {
 /*新闻详情媒体查询 start*/
 @media screen and (max-width: 767px) {
   .newsdetail_box--content_navitem a {
-    font-size: 12px;
+    font-size: 14px;
   }
   .newsdetail_box--content_nav {
     border-right: none;

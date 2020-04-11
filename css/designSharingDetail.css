@@ -5,13 +5,24 @@
 .newsdetail_box--content .text_top .text_link {
   color: #bd9972;
 }
+.newsdetail_box--content p {
+  font-size: 16px !important;
+}
 #carouselExampleIndicators img {
   height: 500px ;
 }
 @media screen and (max-width: 768px) {
+  .newsdetail_box {
+    margin-top: 60px;
+  }
   #carouselExampleIndicators img {
     height: 100%;
-    margin-top: 60px;
+  }
+  .text_top {
+    font-size: 16px;
+  }
+  .relevant_tags .column {
+    display: block;
   }
 }
 .col-md-3 {
