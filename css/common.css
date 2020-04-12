@@ -1139,6 +1139,7 @@ div.newsdetail_box--info .cross_line .line_bottom .right span:nth-child(2) {
   }
   .newsdetail_box--place {
     padding: 0;
+    display: inline-block;
   }
   .row {
     margin-right: 0;

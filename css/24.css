@@ -208,6 +208,20 @@
     width: 20px;
     height: 20px;
   }
+  .content .section .title,
+  .content .section .des,
+  .content .section .imgText,
+  .content .section .sectionTitle,
+  .content .section .stepWrap .step .con .conTit,
+  .content .section .stepWrap .step .con .conText,
+  .content .section .sectionTitle,
+  .content .section .tip,
+  .brands p {
+    font-size: 16px;
+  }
+  .section .container-fluid .row:nth-child(2) {
+    margin-left: -15px;
+  }
 }
 @media screen and (max-width: 550px) {
   body {
