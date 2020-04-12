@@ -5,7 +5,8 @@
 .newsdetail_box--content .text_top .text_link {
   color: #bd9972;
 }
-.newsdetail_box--content p {
+.newsdetail_box--content p,
+.newsdetail_box--content div {
   font-size: 16px !important;
 }
 #carouselExampleIndicators img {
