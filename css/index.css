@@ -163,21 +163,21 @@ section#grid {
   .tips .tips_txt .des {
     padding-right: 0;
   }
+  .tips {
+    padding: 36px 30px 5px;
+  }
   .tips .tips_txt p {
-    font-size: 16px;
+    font-size: 28px;
     margin-top: 10px;
   }
-  .tips .tabWrap {
-    margin-left: -15px;
-  }
   .tips .tabWrap .tabMenu {
-    font-size: 10px;
+    font-size: 18px;
   }
-  .tips .tabWrap .tabMenu .item {
-    margin-left: 0;
+  .tips .tabWrap .tabMenu .item:nth-child(n+2) {
+    display: none;
   }
   .tips .tabWrap .icon {
-    width: 0;
+    width: 5.6vw;
   }
   .cooperativeClient .list .itemIcon {
     width: calc(100% / 5);

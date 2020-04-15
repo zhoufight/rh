@@ -203,24 +203,26 @@ section#grid{
     padding-right: 0;
   }
   .tips{
+    padding: 36px 30px 5px;
     .tips_txt{
       p{
-        font-size: 16px;
+        font-size: 28px;
         margin-top: 10px;
       }
     }
     .tabWrap{
-      margin-left: -15px;
       .tabMenu{
-       
-        font-size: 10px;
+        font-size: 18px;
         .item{
-         
-          margin-left: 0;    
+          // margin-left: 1.5vw;
+          &:nth-child(n+2){
+            display: none;   
+          }
         }
+
       }
       .icon{
-        width: 0;
+        width: 5.6vw;
       }
     }
   }
@@ -238,6 +240,7 @@ section#grid{
     }
   }
 }
+
 @media screen and (max-width:320px) {
   .tips{
     padding: 7.2vw 1.6vw 0.5vw 2vw;
