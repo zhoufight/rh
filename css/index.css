@@ -160,18 +160,24 @@ section#grid {
   }
 }
 @media screen and (max-width: 767px) {
+  .tips .tips_txt .des {
+    padding-right: 0;
+  }
   .tips .tips_txt p {
     font-size: 16px;
     margin-top: 10px;
+  }
+  .tips .tabWrap {
+    margin-left: -15px;
   }
   .tips .tabWrap .tabMenu {
     font-size: 10px;
   }
   .tips .tabWrap .tabMenu .item {
-    margin-left: 1.5vw;
+    margin-left: 0;
   }
   .tips .tabWrap .icon {
-    width: 5.6vw;
+    width: 0;
   }
   .cooperativeClient .list .itemIcon {
     width: calc(100% / 5);

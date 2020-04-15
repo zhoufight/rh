@@ -619,7 +619,7 @@ img {
 .footer .center .listWrap::after {
   content: '';
   position: absolute;
-  right: -30px;
+  right: 0px;
   top: 0;
   border-right: 1px solid #666666;
   width: 1px;
@@ -665,8 +665,8 @@ img {
 }
 .footer .centerTwo .contact .share img {
   vertical-align: middle;
-  width: 40px;
-  height: 40px;
+  width: 30px;
+  height: 30px;
   margin-right: 6px;
   margin-top: 5px;
 }
@@ -1483,7 +1483,7 @@ div.newsdetail_box--info .caseWrap .left ul li:hover p,
     padding-top: 0;
   }
   .navWrap .navBarWrap .brand img {
-    height: 36px;
+    height: 20px;
   }
   .navWrap .navBarWrap .logo2 img {
     height: 60px;
