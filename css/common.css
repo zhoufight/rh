@@ -1034,12 +1034,6 @@ div.newsdetail_box--info .cross_line .line_bottom .right span:nth-child(2) {
 }
 /*导航*/
 @media screen and (max-width: 768px) {
-  .navWrap .navBarWrap .brand {
-    width: 20vw;
-  }
-  .navWrap .navBarWrap .logo2 {
-    width: 30vw;
-  }
   .navWrap .navBarWrap .meun .menuWrap {
     display: none;
   }
@@ -1479,14 +1473,16 @@ div.newsdetail_box--info .caseWrap .left ul li:hover p,
 }
 @media screen and (max-width: 767px) {
   .navWrap .navBarWrap {
-    height: 60px;
-    padding-top: 0;
+    padding-top: 14px;
+    padding-bottom: 14px;
   }
   .navWrap .navBarWrap .brand img {
-    height: 20px;
+    height: 30px;
+    width: auto;
   }
   .navWrap .navBarWrap .logo2 img {
     height: 60px;
+    width: auto;
   }
   .images .container-fluid .row .item .box .box-content .arrow {
     display: block;
@@ -1502,6 +1498,8 @@ div.newsdetail_box--info .caseWrap .left ul li:hover p,
   }
   .footer {
     height: 100%;
+    padding-top: 60px ;
+    padding-bottom: 80px;
   }
   .footer .centerTwo .contact {
     margin-left: 0;
@@ -1510,7 +1508,8 @@ div.newsdetail_box--info .caseWrap .left ul li:hover p,
     padding: 0;
   }
   .footer .right {
-    text-align: left;
+    text-align: right;
+    position: relative;
   }
   .footer .right p {
     padding-left: 14px;
@@ -1526,6 +1525,53 @@ div.newsdetail_box--info .caseWrap .left ul li:hover p,
   }
   .footer .container-fluid .row {
     margin: 0 50px;
+  }
+  .footer .center {
+    display: none;
+  }
+  .footer .left,
+  .footer .center,
+  .footer .centerTwo,
+  .footer .right {
+    margin-top: 0;
+  }
+  .footer .left .copyright {
+    padding-top: 36px;
+    padding-bottom: 36px;
+  }
+  .footer .left .copyright p {
+    line-height: 1.8;
+  }
+  .footer .centerTwo .contact p span.colorOne,
+  .footer .centerTwo .contact p,
+  .footer .centerTwo .contact .qq {
+    font-size: 16px;
+    line-height: 1.8;
+    padding: 0;
+  }
+  .footer .left .num {
+    padding-top: 10px;
+    padding-bottom: 46px;
+  }
+  .footer .right .qcode img {
+    width: 88px;
+    height: 88px;
+  }
+  .footer .right p {
+    display: none;
+  }
+  .footer .centerTwo .contact .share p {
+    padding-top: 36px;
+  }
+  .footer .right .qcode {
+    position: absolute;
+    top: -88px;
+    right: -26px;
+    padding-top: 0;
+    margin-bottom: 0;
+  }
+  .backtop .img {
+    display: none;
   }
 }
 @media (min-width: 768px) and (max-width: 1668x) {
