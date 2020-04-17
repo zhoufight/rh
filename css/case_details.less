@@ -113,22 +113,29 @@
 }
 
 @media screen  and (max-width: 768px){
+
   .carousel {
     margin-top: 60px;
   }
   .wrap{
+    display: block;
     padding: 0 15px;
   }
   .wrap .middle .media{
     padding: 0;
-    .headline,.tit{
-      text-align: center;
-    }
+    
+      // text-align: center;
+      div,p,h4{
+        font-size: 16px !important;
+        font-weight: normal;
+      }
+     
+    
   }
   .wrap .top{
     // margin: 1vw 0;
-    text-align: left;
-    margin-left: 15px;
+    // text-align: left;
+    // margin-left: 15px;
     font-size: 12px;
   }
   .wrap .middle .media .logo{
@@ -148,9 +155,13 @@
     padding: 4vw 0;
   }
   .wrap .middle .imgs .content .context{
-    font-size: 16px !important;
+    padding: 12px 0;
+    font-size: 12px !important;
   }
   .context{
     font-size: 16px !important;
+  }
+  .wrap_page{
+    display: none;
   }
 }

@@ -186,12 +186,11 @@ section#grid {
   .navWrap .navBarWrap .meun {
     padding-right: 16px;
   }
-  .cooperativeClient .list .itemIcon {
-    width: calc(100% / 5);
-    height: 7.8125vw;
+  .cooperativeClient {
+    display: none;
   }
-  .cooperativeClient .list .itemIcon img {
-    max-width: 100%;
+  .carousel {
+    display: none;
   }
 }
 @media screen and (max-width: 320px) {

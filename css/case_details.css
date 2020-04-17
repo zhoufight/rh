@@ -76,18 +76,19 @@
     margin-top: 60px;
   }
   .wrap {
+    display: block;
     padding: 0 15px;
   }
   .wrap .middle .media {
     padding: 0;
   }
-  .wrap .middle .media .headline,
-  .wrap .middle .media .tit {
-    text-align: center;
+  .wrap .middle .media div,
+  .wrap .middle .media p,
+  .wrap .middle .media h4 {
+    font-size: 16px !important;
+    font-weight: normal;
   }
   .wrap .top {
-    text-align: left;
-    margin-left: 15px;
     font-size: 12px;
   }
   .wrap .middle .media .logo {
@@ -106,9 +107,13 @@
     padding: 4vw 0;
   }
   .wrap .middle .imgs .content .context {
-    font-size: 16px !important;
+    padding: 12px 0;
+    font-size: 12px !important;
   }
   .context {
     font-size: 16px !important;
+  }
+  .wrap_page {
+    display: none;
   }
 }

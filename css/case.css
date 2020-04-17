@@ -22,6 +22,9 @@
     padding: 0;
     line-height: 16px;
     margin-bottom: 2vw;
-    margin-top: 60px;
+    margin-top: 110px;
+  }
+  .wrap {
+    display: none;
   }
 }
