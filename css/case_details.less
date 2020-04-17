@@ -95,7 +95,13 @@
   }
 }
 
-
+@media (min-width:768px ) and (max-width:1920px){
+  .wrap .middle .cross_line{
+    .on_case,.next_case{
+      display: none;
+    }
+  }
+}
 @media (min-width:768px ) and (max-width:1350px){
   .wrap .middle {
    width: 100%;
@@ -122,6 +128,7 @@
     padding: 0 15px;
   }
   .wrap .middle .media{
+    position: relative;
     padding: 0;
     
       // text-align: center;
@@ -134,15 +141,22 @@
   }
   .wrap .top{
     // margin: 1vw 0;
-    // text-align: left;
+    text-align: left;
     // margin-left: 15px;
     font-size: 12px;
   }
   .wrap .middle .media .logo{
-    display: none;
+    position: absolute;
+    top: 30px;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+    padding-right: 0;
+   
   }
   .wrap .middle .media .media-body {
     // margin: 6vw 0;
+    padding-top: 230px;
     width: 100%;
   }
   .wrap .middle .media .media-body .text{
@@ -151,17 +165,66 @@
       padding: 4vw 0;
     }
   }
-  .wrap .middle .media .media-body  .tit_bottom{
+  .wrap .middle .media .media-body .text p{
+    line-height: 30px;
+  }
+  .wrap  .media .media-body  .tit_bottom{
     padding: 4vw 0;
   }
-  .wrap .middle .imgs .content .context{
-    padding: 12px 0;
+  .wrap  .imgs .content .context{
+    padding: 12px 0 !important;
     font-size: 12px !important;
   }
-  .context{
-    font-size: 16px !important;
-  }
+
   .wrap_page{
     display: none;
   }
+
+  .wrap  .cross_line{
+    position: relative;
+    .line_left,.line_right{
+      display: none;
+    }
+    .on_case,.next_case{
+      display: inline-block;
+      font-size: 16px;
+      line-height: 40px;
+      color: #666666;
+    }
+    .on_case{     
+      text-align: left;
+      
+      &::after{
+        position: absolute;
+        display: inline-block;
+        content: "";
+        width: 32px;
+        height: 32px;
+        top: 16px;
+        margin-left: 12px;
+        background: url(../images/left_triangle.png) no-repeat;
+        background-size: 26px 26px;
+
+      }
+    }
+    .next_case{
+     
+      &::before{
+        position: absolute;
+        display: inline-block;
+        content: "";
+        width: 32px;
+        height: 32px;
+        top: 16px;
+        margin-left: -36px;
+        background: url(../images/right_triangle.png) no-repeat ;
+        background-size: 26px 26px;
+      }
+    }
+
+  }
+  .wrap .cross_line a .line_center{
+    margin:  0px 22.291667vw;
+  }
+
 }

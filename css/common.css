@@ -1121,13 +1121,16 @@ div.newsdetail_box--info .cross_line .line_bottom .right span:nth-child(2) {
 /*新闻详情媒体查询 start*/
 @media screen and (max-width: 767px) {
   .newsdetail_box--content_navitem a {
-    font-size: 14px;
+    font-size: 16px;
   }
   .newsdetail_box--content_nav {
+    font-size: 16px;
+    padding-left: 0;
     border-right: none;
   }
   .newsdetail_box--content_nav .active {
     border-right: none;
+    margin-right: 0;
   }
   .newsdetail_box--container {
     padding: 0;
@@ -1139,29 +1142,53 @@ div.newsdetail_box--info .cross_line .line_bottom .right span:nth-child(2) {
     border-right: none;
   }
   .newsdetail_box--place {
+    display: block;
     padding: 0;
-    display: inline-block;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    box-sizing: border-box;
   }
   .row {
     margin-right: 0;
     margin-left: 0;
   }
+  .newsdetail_box--content_sidebar {
+    margin: 18px 0;
+  }
   .newsdetail_box--content_nav li {
     float: left;
-    margin-left: 8vw;
+  }
+  .newsdetail_box--content_navitem {
+    line-height: 30px;
+    padding-right: 30px;
+  }
+  .newsdetail_box--tips {
+    display: none;
+  }
+  .newsdetail_box--content {
+    padding-top: 30px;
+  }
+  .newsdetail_box--keys {
+    display: none;
   }
   div.newsdetail_box--info .caseWrap {
-    margin: 20px 0;
+    display: none;
   }
-  div.newsdetail_box--info .caseWrap .left ul li {
-    margin-left: 4px;
+  div.newsdetail_box--info .cross_line .line_top {
+    display: none;
   }
-  div.newsdetail_box--info .caseWrap .left ul li img {
-    width: 12vw;
-    height: 12vw;
+  div.newsdetail_box--info .cross_line .line_bottom {
+    padding: 30px 0 10px;
   }
-  div.newsdetail_box--info .caseWrap .left ul li p {
-    font-size: 0.8vw;
+  div.newsdetail_box--info .cross_line .line_bottom .left img {
+    margin-top: 0;
+  }
+  div.newsdetail_box--info .cross_line .line_bottom .left {
+    border: none;
+  }
+  .newsdetail_box--list {
+    display: none;
   }
   div.newsdetail_box--info .cross_line .line_top .left {
     line-height: normal;
@@ -1369,6 +1396,9 @@ div.newsdetail_box--info .caseWrap .left ul li:hover p,
   }
   .newList .category ul li:nth-child(odd) {
     padding-right: 6px;
+  }
+  .newList .category ul li:nth-child(2n+1) {
+    display: none;
   }
   .newList .category ul li:before {
     width: 4px;

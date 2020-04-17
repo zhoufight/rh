@@ -9,7 +9,7 @@
 }
 @media screen and (max-width: 768px) {
   .newsdetail_box {
-    margin-top: 100px;
+    margin-top: 60px;
   }
   #carouselExampleIndicators img {
     height: 100%;
@@ -21,5 +21,8 @@
   newsdetail_box--place {
     margin-left: 0;
     margin-right: 0;
+  }
+  .wrap {
+    display: none;
   }
 }

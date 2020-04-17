@@ -79,4 +79,7 @@ dt {
   .images {
     margin-top: 10px;
   }
+  .wrap {
+    display: none;
+  }
 }
