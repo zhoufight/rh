@@ -1463,7 +1463,7 @@ div.newsdetail_box--info {
   }
   
   .images .container-fluid .row .item .box-content::before {
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: rgba(0, 0, 0, 0);
     
   }
   .images .container-fluid .row .item .box .box-content .textWrap{
@@ -1880,6 +1880,7 @@ div.newsdetail_box--info .caseWrap .left ul li:hover p,
 
 //  新闻栏目列表end
 
+
 // 我们能做什么 ， 酒店管理 折叠面板　stat 
 .user_box--info {
   background-color: #231F20;
@@ -1990,8 +1991,94 @@ div.newsdetail_box--info .caseWrap .left ul li:hover p,
   background-color: #CCCCCC;
   border-radius: 50%;
 }
+  .drownMenu {
+    .container-fluid{
+      padding-left: 0;
+      .row{
+        margin-left: 0;
+      }
+    }
+  }
 //折叠面板　end
 
+// 我们能做什么,
+@media screen and (max-width: 767px) {
+  
+  .user_box--content_itemtitle{
+    font-size: 24px !important;
+    font-weight: 400 !important;
+   padding-top: 10px;  
+  }
+  .closeItem .user_box--infoitem_title{
+    font-size: 24px;
+  }
+  .closeItem .user_box--infoitem_title {
+    font-weight: normal;
+  }
+  .user_box--info .user_box--infoitem{
+   
+    // border: 2px solid red;
+  }
+  // .closeItem:nth-child(1){
+  //   border: 1px solid greenyellow;
+  // }
+ 
+  
+  .user_box--infoitem .drownMenu{
+    overflow: visible;
+    padding-top: 0;
+  }
+ 
+  .drownMenu .container-fluid,.col-md-4 ,.col-6{
+    padding-left: 0;
+    padding-right: 0;
+    
+  }
+
+  .user_box--infoitem_list-title{
+    font-size: 18px !important;
+  }
+  .closeItem:nth-last-of-type(3){
+    .drownMenu{
+    //  margin-left: 0 15px;
+    }
+  }
+  .user_box--infoitem_list-title,.openItem .drownMenu .row{
+    margin-left: 0;
+    margin-right: 0;
+  }
+  .user_box--infoiitem_p {
+    font-size: 0.9375vw;
+    color: #CCCCCC;
+    position: relative;
+    line-height: 20px;
+    /* margin-left: -5px; */
+    /* padding-left: 4.520833vw; */
+    /* padding-right: 5px; */
+    margin-bottom: 0.41666667vw;
+    font-family: Source Han Sans SC;
+    text-indent: 2;
+    /* margin-left: -4px; */
+    margin-left: 10px;
+}
+  .user_box--infoiitem_p::before {
+    position: absolute;
+    display: inline-block;
+    content: "";
+    width: 5px;
+    height: 5px;
+    left: -10px;
+    top: 0;
+    /* right: 5px; */
+    bottom: 0;
+    margin: auto;
+    background-color: #CCCCCC;
+    border-radius: 50%;
+    /* margin-right: 5px; */
+    padding-right: 5px;
+}
+  
+}
 
 @media screen and (max-width: 767px) {
   .very_more{
@@ -2018,17 +2105,6 @@ div.newsdetail_box--info .caseWrap .left ul li:hover p,
     // height:60px;
     height: 60px;
     width: auto;
-  }
-  
-  .images .container-fluid .row .item .box .box-content .arrow{display: block;}
-  .images .container-fluid .row .item .box:before {
-    width: 100%;
-    left: 0;
-    opacity: 0.5;
-  }
-  .images .container-fluid .row .item .box .box-content .title,
-  .images .container-fluid .row .item .box .box-content .post{
-    opacity: 1;
   }
   .footer{
     height: 100%;
@@ -2124,15 +2200,116 @@ div.newsdetail_box--info .caseWrap .left ul li:hover p,
     height: 500px;
     
   }
-  // .footer .centerTwo .contact{
-  //   padding-left: 50*@vw;
-  // }
+}
 
-  // .footer .right{
-  //   margin-left: 10*@vw;
-  // }
+// 合作伙伴
+.cooperativeClient{
+  padding: 0  5vw 6.2vw;
+  .title{
+    padding: 4.2vw 0 2.8vw 0;
+    text-align: center;
+    p{
+      font-size: @fontSize48;
+    }
+    .sub_tit{
+      color: #999999;
+      font-size: @fontSize36;
+    }
+  }
+  .list{
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 0 6vw;
+    .itemIcon{
+      width: calc(100% / 5);
+      height: 150*@vw;
+      border-right: 1px solid #E6E6E6;
+      border-bottom: 1px solid #E6E6E6;
+      img{
+       max-width: 100%;
+      }
+    }
+    div.itemIcon:nth-child(5n+5){
+      border-right: 0;
+    }
+    div.itemIcon:nth-last-child(5),
+    div.itemIcon:nth-last-child(4),
+    div.itemIcon:nth-last-child(3),
+    div.itemIcon:nth-last-child(2),
+    div.itemIcon:nth-last-child(1)
+    {
+      border-bottom: 0;
+    }
+    
+  }
+}
+@media screen and (max-width:767px){
+  .cooperativeClient{
+   
+    .title{
+      
+     
+      .client,.sub_tit{
+        display: none;
+      }
+      .sub_tit2{
+        display: block;
+        margin-top: 20px;
+        font-size: 16px;
+      }
+    }
+    .list{
+      padding: 0;
+      .itemIcon{
+        width: calc(100% / 4);
+        height: auto;
+        border-right: 1px solid #E6E6E6;
+        border-bottom: 1px solid #E6E6E6;
+       
+      }
+      div.itemIcon:nth-child(4n+4){
+        border-right: 0;
+      }
+      div.itemIcon:nth-child(5n+5){
+        border-right: 1px solid #E6E6E6;
+      }
+      div.itemIcon:nth-last-child(4),
+      div.itemIcon:nth-last-child(3),
+      div.itemIcon:nth-last-child(2),
+      div.itemIcon:nth-last-child(1)
+      {
+        border-bottom: 0;
+      }
+      div.itemIcon:nth-last-child(1){
+        border-right: 0;
+      }
+      div.itemIcon:nth-last-child(5){
+        border-bottom: 1px solid #E6E6E6;
+      }
+      
+    }
+  }
   
 }
 
 
+@media screen and (min-width:1260px) and (max-width:1600px) {
+  .cooperativeClient{
+    .list{
+      .itemIcon{
+        width: 285*@vw;
+        height: 150*@vw;
+        img{
+          width: 285*@vw;
+          height: 150*@vw;
+        }
+      }
+    }
+  }
+} 
+@media (min-width: 768px)  and  (max-width: 1920px) {
+  .cooperativeClient .title .sub_tit2{
+    display: none;
+  }
+}
 

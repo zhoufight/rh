@@ -198,4 +198,10 @@
   .usertelphone_box--content_tel-p p {
     font-size: 14px !important;
   }
+  .usertelphone_box--content_right {
+    display: none;
+  }
+  .usertelphone_box-info_botton p:first-child {
+    color: #BD9972;
+  }
 }

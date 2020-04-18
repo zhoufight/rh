@@ -1,5 +1,5 @@
 @charset "utf-8";
-@vw:0.0520833333333333vw;  // vw 单位按1920计算
+@vw: 0.0520833333333333vw; // vw 单位按1920计算
 
 .usergood_box {}
 
@@ -39,7 +39,7 @@
 .usergood_box--content_itemtitle {
     color: #333333;
     font-size: 40*@vw;
-    font-weight:300;
+    font-weight: 300;
 }
 
 .usergood_box--content_text p {
@@ -50,14 +50,17 @@
     box-sizing: border-box;
     // padding-right: 62*@vw;
 }
-.usergood_box--content_text .tit{
+
+.usergood_box--content_text .tit {
     padding-right: 62*@vw;
 }
-.usergood_box--content_text p:nth-child(2){
+
+.usergood_box--content_text p:nth-child(2) {
     padding-left: 20*@vw;
 }
+
 .usergood_box--info {
-    padding: 122*@vw  122*@vw 144*@vw 122*@vw;
+    padding: 122*@vw 122*@vw 144*@vw 122*@vw;
     box-sizing: border-box;
     background-color: #231F20;
     overflow: hidden;
@@ -160,9 +163,11 @@
 .usergood_box--infoitem_itemlist {
     font-size: 18*@vw;
     color: #ccc;
-    p{
+
+    p {
         line-height: 2;
         position: relative;
+
         &::before {
             position: absolute;
             content: "";
@@ -180,7 +185,7 @@
     }
 }
 
-.usergood_box--infoitem  .row{
+.usergood_box--infoitem .row {
     margin-right: -120*@vw;
 }
 
@@ -219,55 +224,189 @@
 .usergood_box--imgitem img:first-child {
     width: 31%;
 }
-.list-item{
+
+.list-item {
     font-size: 18*@vw;
 }
-.usergood_box-info_content{
+
+.usergood_box-info_content {
     padding-bottom: 30*@vw;
-    p{
+
+    p {
         font-size: 18*@vw;
         line-height: 1.5;
     }
 }
 
-usergood_box-info_content{
+usergood_box-info_content {
     overflow: hidden;
 }
 
-@media screen and (max-width:768px){
-    .usergood_box--content_text p{
-        margin-left: -30px;
-    }
-    .usergood_box--content_text p{
-        padding-left: 0;
-    }
-    .usergood_box--content {
-        padding: 0;
-        margin-left: 30px;
-        margin-top: 60px;
-    }
-    .usergood_box--content_title,.usergood_box--content_itemtitle,
-    .usergood_box--content_text .tit,usergood_box--content_text,
-    .usergood_box--info_firsttitle,.usergood_box-info_content,
-    .usergood_box--info_secondtitle,.usergood_box--infoitem_itemlist-p,.usergood_box--infoitem_itemlist{
-        font-size: 16px !important;
-        p{
-            font-size: 16px !important;
-        }
-    }
-    .usergood_box--content_text{
-        padding-left: 30px;
-        p,div{font-size: 14px;}
+@media screen and (max-width:768px) {
+    .usergood_box--content_text .tit {
+        padding-right: 0;
     }
 
-    .usergood_box--content_text .list-item div{
-        margin-left: -30px;
+    .usergood_box--content_text p {
+        // margin-left: -30px;
     }
-    .usergood_box--infoitem .container-fluid{
+
+    .usergood_box--content_text p {
         padding-left: 0;
+        margin-left: 0;
     }
-    .usergood_box--infoitem_itemtitle,.usergood_box--info_list-title{
-        font-size: 14px;
+
+    .usergood_box--content_text p:nth-child(2) {
+        padding-left: 0;
+        font-size: 16px;
     }
- 
+
+    .usergood_box--content {
+        padding: 0;
+        margin: 0 24px;
+        margin-top: 68px;
+    }
+
+    .usergood_box--content .container-fluid {
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    .usergood_box--content_title,
+    .usergood_box--content_text .tit,
+    .usergood_box--content_text,
+    .usergood_box--info_firsttitle,
+    .usergood_box-info_content,
+    .usergood_box--info_secondtitle
+     {
+        font-size: 16px !important;
+
+    }
+    
+    .usergood_box--content_text {
+
+        // padding-left: 30px;
+        
+        div {
+            font-size: 14px;
+        }
+    }
+
+    .usergood_box--content_text .list-item div {
+        // margin-left: -30px;
+        margin: 20px 0 36px;
+        font-size: 16px;
+    }
+
+    .usergood_box--infoitem .container-fluid {
+        padding-left: 30px;
+        padding-right: 0;
+        padding-bottom: 30px;
+    }
+
+    .usergood_box--infoitem_itemtitle,
+    .usergood_box--info_list-title {
+        font-size: 24px;
+    }
+
+    .usergood_box--content_itemtitle {
+        font-size: 25px !important;
+        font-weight: 400 !important;
+    }
+
+    .usergood_box--infoitem_itemlist-p,.usergood_box--infoitem_itemlist {
+        font-size: 12px;
+    }
+
+    .usergood_box-info_content p {
+        font-size: 16px;
+
+        &:last-of-type {
+            margin-bottom: 20px;
+        }
+    }
+
+    .usergood_box--infoitem .row {
+        margin-right: 0;
+    }
+
+    .usergood_box--infoitem_itemtitle {
+        margin-left: 0;
+        margin-top: 20px;
+    }
+
+    .usergood_box--infoitem_itemlist p::before {
+        position: absolute;
+        display: inline-block;
+        content: "";
+        width: 5px;
+        height: 5px;
+        left: -10px;
+        top: 0;
+        /* right: 5px; */
+        bottom: 0;
+        margin: auto;
+        background-color: #CCCCCC;
+        border-radius: 50%;
+        /* margin-right: 5px; */
+        padding-right: 5px;
+    }
+    .usergood_box--infoitem_itemlist-p{
+      
+        color: #CCCCCC;
+        position: relative;
+        line-height: 20px;
+        /* margin-left: -5px; */
+        /* padding-left: 4.520833vw; */
+        /* padding-right: 5px; */
+        margin-bottom: 0.41666667vw;
+        font-family: Source Han Sans SC;
+        text-indent: 2;
+        /* margin-left: -4px; */
+        margin-left: 10px;
+    }
+    .usergood_box--imgs{
+        
+        padding: 0;
+        padding-top: 30px;
+        // padding-left: 24px;
+    }
+    .usergood_box--imgs_title{
+        padding-left: 24px;
+    }
+    .usergood_box--imgitem{
+        
+    //    margin: 0 20px;
+    }
+    .usergood_box--imgs_title{
+        font-size: 16px;
+    }
+  
+    .usergood_box--info{
+        padding: 0;
+    }
+    .usergood_box--infoitem{
+        padding: 6.35416667vw 6.35416667vw 7.5vw 6.35416667vw;
+        &:last-of-type{
+            padding: 0;
+        }
+    }
+    .usergood_box--info_secondtitle{
+        padding-left: 24px;
+    }
+    .usergood_box--imgitem{
+        padding-left: 20px;
+        padding-right: 24px;
+    }
+     .closeItem:nth-last-of-type(4){
+    p{
+      padding-bottom: 24px;
+      &:last-of-type{
+        padding-bottom: 0;
+      }
+    }
+  }
+  .usergood_box--info_secondtitle{
+      padding-top: 0;
+  }
 }

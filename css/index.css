@@ -186,12 +186,41 @@ section#grid {
   .navWrap .navBarWrap .meun {
     padding-right: 16px;
   }
-  .cooperativeClient .list .itemIcon {
-    width: calc(100% / 5);
-    height: 7.8125vw;
+  .cooperativeClient .title .client,
+  .cooperativeClient .title .sub_tit {
+    display: none;
   }
-  .cooperativeClient .list .itemIcon img {
-    max-width: 100%;
+  .cooperativeClient .title .sub_tit2 {
+    display: block;
+    margin-top: 20px;
+    font-size: 16px;
+  }
+  .cooperativeClient .list {
+    padding: 0;
+  }
+  .cooperativeClient .list .itemIcon {
+    width: calc(100% / 4);
+    height: auto;
+    border-right: 1px solid #E6E6E6;
+    border-bottom: 1px solid #E6E6E6;
+  }
+  .cooperativeClient .list div.itemIcon:nth-child(4n+4) {
+    border-right: 0;
+  }
+  .cooperativeClient .list div.itemIcon:nth-child(5n+5) {
+    border-right: 1px solid #E6E6E6;
+  }
+  .cooperativeClient .list div.itemIcon:nth-last-child(4),
+  .cooperativeClient .list div.itemIcon:nth-last-child(3),
+  .cooperativeClient .list div.itemIcon:nth-last-child(2),
+  .cooperativeClient .list div.itemIcon:nth-last-child(1) {
+    border-bottom: 0;
+  }
+  .cooperativeClient .list div.itemIcon:nth-last-child(1) {
+    border-right: 0;
+  }
+  .cooperativeClient .list div.itemIcon:nth-last-child(5) {
+    border-bottom: 1px solid #E6E6E6;
   }
 }
 @media screen and (max-width: 320px) {
@@ -223,5 +252,10 @@ section#grid {
 @media (min-width: 768px) and (max-width: 960px) {
   section#grid {
     padding: 0 ;
+  }
+}
+@media (min-width: 768px) and (max-width: 1920px) {
+  .cooperativeClient .title .sub_tit2 {
+    display: none;
   }
 }
