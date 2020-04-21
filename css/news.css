@@ -74,7 +74,7 @@ div.newsdetail_box--info .cross_line {
   padding: 0 7.29166667vw;
 }
 #carouselExampleIndicators img {
-  height: 500px ;
+  height: 500px;
 }
 @media screen and (max-width: 768px) {
   #carouselExampleIndicators img {
@@ -89,10 +89,6 @@ div.newsdetail_box--info .cross_line {
   .newList .category .des .read_detail3 {
     padding-top: 25px;
   }
-  .newsdetail_box .newsdetail_box--container .newList .container-fluid .design_appreciation {
-    margin: 0;
-    padding-left: 15px;
-  }
   .newsdetail_box .newsdetail_box--container .newList .container-fluid .category .des .textMulit {
     display: block;
   }
@@ -101,5 +97,19 @@ div.newsdetail_box--info .cross_line {
   }
   .newsdetail_box .newsdetail_box--container .newList .container-fluid {
     padding-right: 15px;
+  }
+  .newsdetail_box .newsdetail_box--container .newList .container-fluid .category .tit,
+  .newsdetail_box .newsdetail_box--container .newList .container-fluid .category .des,
+  .newsdetail_box .newsdetail_box--container .newList .container-fluid .category ul {
+    margin-left: 0;
+  }
+  .newsdetail_box .newsdetail_box--container .newList .container-fluid .list-item {
+    margin-bottom: 26px;
+  }
+  div.newsdetail_box--info .cross_line .line_bottom {
+    padding-top: 0;
+  }
+  .newList .category ul li {
+    width: 45.666667vw;
   }
 }

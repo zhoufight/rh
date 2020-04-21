@@ -1148,6 +1148,7 @@ div.newsdetail_box--info .cross_line .line_bottom .right span:nth-child(2) {
     overflow: hidden;
     text-overflow: ellipsis;
     box-sizing: border-box;
+    margin-left: 15px;
   }
   .row {
     margin-right: 0;
@@ -1736,7 +1737,9 @@ div.newsdetail_box--info .caseWrap .left ul li:hover p,
   .cooperativeClient .title .sub_tit2 {
     display: block;
     margin-top: 20px;
+    margin-bottom: 10px;
     font-size: 16px;
+    color: #BD9972;
   }
   .cooperativeClient .list {
     padding: 0;

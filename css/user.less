@@ -57,44 +57,44 @@
 
 /* 图片 */
 
-.user_box--company {
-    padding: 123*@vw 210*@vw 83*@vw 210*@vw;
-    box-sizing: border-box;
+// .user_box--company {
+//     padding: 123*@vw 210*@vw 83*@vw 210*@vw;
+//     box-sizing: border-box;
 
-    .user_box--info_itemtitle {
-        font-size: 18*@vw;
-    }
-}
+//     .user_box--info_itemtitle {
+//         font-size: 18*@vw;
+//     }
+// }
 
-.user_box--company  {
-    margin-left: -83*@vw;
-}
+// .user_box--company  {
+//     margin-left: -83*@vw;
+// }
 
-.user_box--company_imgbox {
-    /* padding: 20px 30px 0px 30px; */
-    box-sizing: border-box;
-}
+// .user_box--company_imgbox {
+//     /* padding: 20px 30px 0px 30px; */
+//     box-sizing: border-box;
+// }
 
-.user_box--company_imgboxitem {
-    display: flex;
-    align-items: center;
-    border-bottom: 1px solid #E6E6E6;
-    box-sizing: border-box;
-}
+// .user_box--company_imgboxitem {
+//     display: flex;
+//     align-items: center;
+//     border-bottom: 1px solid #E6E6E6;
+//     box-sizing: border-box;
+// }
 
-.user_box--company_imgboxitem img {
-    width: calc(100% / 5);
-    border-right: 1px solid #E6E6E6;
-    vertical-align: middle;
-}
+// .user_box--company_imgboxitem img {
+//     width: calc(100% / 5);
+//     border-right: 1px solid #E6E6E6;
+//     vertical-align: middle;
+// }
 
-.user_box--company_imgboxitem img:last-child {
-    border: none;
-}
+// .user_box--company_imgboxitem img:last-child {
+//     border: none;
+// }
 
-.user_box--company_imgboxitem:last-child {
-    border: none;
-}
+// .user_box--company_imgboxitem:last-child {
+//     border: none;
+// }
 
 .ourservice {
     padding-bottom: 1vw;
@@ -120,14 +120,14 @@
     }
     
     .user_box--content_title,.user_box--content_itemtitle,.user_box--content p,
-    .user_box--info_itemtitle ,.user_box--infoitem_list-title p,div,.user_box--info_itemtitle,.user_box--company .user_box--info_itemtitle
+    .user_box--info_itemtitle ,.user_box--infoitem_list-title p,div,.user_box--info_itemtitle,.user_box--info_itemtitle
     {
         font-size: 16px;
     }
    
-    .user_box--company{
-       display: none;
-    }
+    // .user_box--company{
+    //    display: none;
+    // }
   
     .user_box--content_itemtitle{
         padding-bottom: 20px;
@@ -148,14 +148,24 @@
       .user_box--info_itemtitle{
           margin-left: 0;
     }
-    .user_box--company_imgbox{
-        padding-top: 30px;
+    .cooperativeClient .title .sub_tit2{
+        text-align: center;
     }
-    
 }
-@media (min-width:768px) and (max-width:1920px) {
-    .cooperativeClient {
-      display: none;
+
+.cooperativeClient {
+    .title{
+        text-align: left;
+        .client,.sub_tit{
+            display: none;
+        }
+        .sub_tit2{
+            display: block;
+            margin-left: 26*@vw;
+            color: #BD9972;
+            font-size: 16px;
+
+        }
     }
-  }
-  
+}
+
