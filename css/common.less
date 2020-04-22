@@ -813,15 +813,18 @@ img {
       }
     }
     .scroll_cont{
-      height: 100%;
+      height: 140px;
+
       overflow: hidden;
     }
     .scroll_bar{
       position: absolute;
-      top:75*@vw;
+      // top:75*@vw;
+
       right:76*@vw;
       width: 1px;
       height: 100%;
+      margin-top: -136px;
       background-color: #666666;
       .scroll_slider {
         position: absolute;
@@ -830,7 +833,7 @@ img {
         width: 1px;
         height: 40px;
         background-color: #FFFFFF;
-        // border-radius:5px;
+        border-radius:4px;
         opacity: .3;
         &:hover{
           opacity: 1;
