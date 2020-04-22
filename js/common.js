@@ -124,16 +124,15 @@ function navScroll(){
     if(scroTop > 200){
       $('.menuWrap').addClass('show');
       $('.brand').removeClass('logo2');
-      // $('.brand img').attr('src',tpl+'/images/pc_logo.png');
-      $('.brand img').attr('src','./images/pc_logo.png');
-      // $('.navWrap .navBarWrap').css("padding-top","10px");
+      $('.brand img').attr('src',tpl+'/images/pc_logo.png');
+      // $('.brand img').attr('src','./images/pc_logo.png');
     }else{
       $('.menuWrap').addClass('hide');
       $('.menuWrap').removeClass('show');
       $('.brand').addClass('logo2');
 
-      // $('.brand img').attr('src',tpl+'/images/logo.png');
-      $('.brand img').attr('src','./images/logo.png');
+      $('.brand img').attr('src',tpl+'/images/logo.png');
+      // $('.brand img').attr('src','./images/logo.png');
 
     }
  });

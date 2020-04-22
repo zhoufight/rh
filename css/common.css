@@ -1321,6 +1321,9 @@ div.newsdetail_box--info .caseWrap .left ul li:hover p,
   font-size: 1.5625vw;
   padding: 5px 0;
 }
+.newList .category .des .des_tit a {
+  color: #212529;
+}
 .newList .category .des .des_content {
   font-size: 0.9375vw;
   line-height: 2;
