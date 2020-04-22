@@ -607,6 +607,8 @@ img {
   padding-top: 30px;
 }
 .footer .center {
+  position: relative;
+  height: 140px;
   color: #9FA0A0;
 }
 .footer .center .tit2 {
@@ -616,21 +618,36 @@ img {
   position: relative;
   margin-right: 4.16666667vw;
 }
-.footer .center .listWrap::after {
-  content: '';
-  position: absolute;
-  right: 0px;
-  top: 0;
-  border-right: 1px solid #666666;
-  width: 1px;
-  height: 100%;
-}
 .footer .center .listWrap .list-item {
   margin-bottom: 1.04166667vw;
   font-size: 14px;
 }
 .footer .center .listWrap .list-item .list_l {
   width: 11.5625vw;
+}
+.footer .center .scroll_cont {
+  height: 100%;
+  overflow: hidden;
+}
+.footer .center .scroll_bar {
+  position: absolute;
+  top: 3.90625vw;
+  right: 3.95833333vw;
+  width: 1px;
+  height: 100%;
+  background-color: #666666;
+}
+.footer .center .scroll_bar .scroll_slider {
+  position: absolute;
+  top: 0;
+  left: 0px;
+  width: 1px;
+  height: 40px;
+  background-color: #FFFFFF;
+  opacity: 0.3;
+}
+.footer .center .scroll_bar .scroll_slider:hover {
+  opacity: 1;
 }
 .footer .centerTwo .contact {
   margin-top: -4px;
