@@ -12,6 +12,7 @@
   <link href="lib/bootstrap-4.4.1-dist/css/bootstrap.min.css" rel="stylesheet" />
   <link rel="stylesheet" href="css/common.css">
   <link rel="stylesheet" href="css/user.css">
+
 </head>
 
 <body>
@@ -285,7 +286,7 @@
               </div>
             </div>
           </div>
-          
+
         </div>
       </div>
       <div class="user_box--infoitem closeItem">
@@ -362,7 +363,7 @@
       </div>
     </div>
 
-   
+
     <!-- TODO新增 移动端-->
     <!-- 合作客户 -->
     <div class="cooperativeClient">
@@ -421,8 +422,8 @@
         <div class="col-md-3">
           <div class="center scroll_wrap">
             <div class="tit2"> <a href="">友情链接</a></div>
-            <div class="listWrap scroll_cont">
-           
+            <div class="listWrap scroll_cont mCustom">
+
               <div class="list-item flex ">
                 <div class="list_l flex-item-1"><a href="">品牌规划</a></div>
                 <div class="list_r flex-item-1"><a href="">品牌规划</a></div>
@@ -496,9 +497,6 @@
                 <div class="list_r flex-item-1"><a href="">酒店设计公司</a></div>
               </div>
             </div>
-            <div class="scroll_bar">
-              <div class="scroll_slider"></div>
-            </div>
           </div>
 
         </div>
@@ -534,20 +532,36 @@
     <div class="icon"><img class="img" src="images/backtop.png" alt=""></div>
   </div>
   <script src="js/jquery-3.4.1.min.js"></script>
+  <script src="js/jquery.mCustomScrollbar.concat.m.js"></script>
   <script src="js/common.js"></script>
+ 
+
   <script>
     navScroll();
-    $(document).ready(function () {
-      $(".closeItem .user_box--infoitem_title").on("click", function () {
-        console.log($(this).parent("div.closeItem").hasClass("openItem"))
-        if ($(this).parent("div.closeItem").hasClass("openItem")) {
-          $(this).parent("div.closeItem").removeClass("openItem");
-        } else {
-          $(this).parent("div.closeItem").addClass("openItem");
-          $(this).parent("div.closeItem").siblings().removeClass("openItem");
-        }
-      })
+    // $(document).ready(function () {
+    //   $(".closeItem .user_box--infoitem_title").on("click", function () {
+    //     console.log($(this).parent("div.closeItem").hasClass("openItem"))
+    //     if ($(this).parent("div.closeItem").hasClass("openItem")) {
+    //       $(this).parent("div.closeItem").removeClass("openItem");
+    //     } else {
+    //       $(this).parent("div.closeItem").addClass("openItem");
+    //       $(this).parent("div.closeItem").siblings().removeClass("openItem");
+    //     }
+    //   });
+    // });
+
+    $(document).ready(function () { 
+  //底部滚动
+  $(".mCustom").mCustomScrollbar({
+      scrollButtons: {
+          enable: false,
+          scrollType: "continuous",
+          scrollSpeed: 20,
+          scrollAmount: 40
+      },
+      horizontalScroll: false
     });
+ })
   </script>
 </body>
 

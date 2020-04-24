@@ -229,9 +229,34 @@
               </div>
             </div>
             <div class="contactIcon flex">
-              <div class="item"> <a href=""><img class="sina" src="images/sina.png" alt="" srcset=""></a></div>
-              <div class="item"> <a href=""><img class="tengxun" src="images/qq.png" alt="" srcset=""></a></div>
-              <div class="item"> <a href=""><img class="wx" src="images/wx.png" alt="" srcset=""></a></div>
+              <div class="item">
+                 <a href="javascript:void(0)"  class="shareWx"
+                 tabindex="0" 
+                 title="扫一扫" 
+                 data-toggle="popover" 
+                 data-placement="bottom"
+                 data-content='<img src="images/qcode.png" alt=""/>' >
+                 <img class="phone" src="images/phone.png" alt="" srcset=""></a>
+                </div>
+              <div class="item"> 
+                <a href="javascript:void(0)" 
+                tabindex="0" 
+                title="扫一扫" 
+                data-toggle="popover" 
+                data-placement="bottom"
+                data-content='<img src="images/qcode.png" alt=""/>'
+                ><img class="bjnews" src="images/bjnews.png" alt=""></a>
+              </div>
+              <div class="item"> 
+                <a href="javascript:void(0)"
+                tabindex="0" 
+                title="扫一扫" 
+                data-toggle="popover" 
+                data-placement="bottom"
+                data-content='<img src="images/qcode.png" alt=""/>'
+                >
+                  <img class="tikTok" src="images/tikTok.png" alt="" srcset=""></a>
+                </div>
             </div>
           </div>
         </div>
@@ -263,7 +288,6 @@
       </div>
     </div>
   </div>
-
   <!-- footer部分 -->
   <div class="footer">
     <div class="container-fluid">
@@ -402,14 +426,16 @@
   </div>
   <script src="js/jquery-3.4.1.min.js"></script>
   <script src="lib/bootstrap-4.4.1-dist/js/bootstrap.min.js"></script>
+  <script src="lib/bootstrap-4.4.1-dist/js/bootstrap.bundle.js"></script>
   <script type="text/javascript" src="https://webapi.amap.com/maps?v=1.4.15&key=46b268ea357e40c59dfce4dd65ec0bf8"></script>
  
   <script src="js/common.js"></script>
     <!-- <script src="js/usertelphone.js"></script> -->
     <script>
       var marker, map = new AMap.Map("container", {
-        resizeEnable: true,
-        center: [113.930885,22.531746],
+        zoomEnable:false, //禁止缩放
+        center: [113.930885,22.531746], //地标
+        mapStyle: 'amap://styles/light', //设置地图的显示样式
         zoom: 16,
         lang: "zh_cn" //可选值：en，zh_en, zh_cn
       });
@@ -421,7 +447,8 @@
       
       });
       marker.setMap(map);
-            navScroll();
+      map.setMapStyle('amap://styles/light');
+            navScroll();    
     </script>
 </body>
 

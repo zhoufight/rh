@@ -125,7 +125,7 @@
     font-size: 16px !important;
   }
   .imgdes {
-    font-size: 14px !important;
+    font-size: 12px !important;
   }
   .txt .smallTxt .desTxt {
     margin-left: 22px;
@@ -138,5 +138,16 @@
   }
   .user_box--infoitem_list-title {
     font-size: 18px;
+  }
+  .imgText {
+    padding-top: 40px;
+  }
+  .imgdes {
+    padding-top: 56px;
+  }
+  .imgdes::before {
+    width: 99%;
+    left: 0;
+    bottom: 52%;
   }
 }

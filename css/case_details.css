@@ -59,6 +59,10 @@
 .wrap .cross_line {
   padding: 2.91666667vw 0 4.6875vw;
 }
+.wrap .cross_line a .line_left,
+.wrap .cross_line a .line_right {
+  margin-top: 14px;
+}
 .wrap .cross_line a .line_center {
   margin: 0 7.29166667vw;
 }
@@ -78,6 +82,9 @@
   }
 }
 @media screen and (max-width: 768px) {
+  .menu {
+    padding-right: 0;
+  }
   .carousel {
     margin-top: 60px;
   }
@@ -99,6 +106,7 @@
     display: none;
   }
   .wrap .middle .media .logo {
+    height: 180px;
     padding-right: 0;
     padding-top: 60px;
     margin: 0 auto;
@@ -130,16 +138,9 @@
   .wrap .cross_line {
     position: relative;
   }
-  .wrap .cross_line .line_left,
-  .wrap .cross_line .line_right {
-    display: none;
-  }
   .wrap .cross_line .on_case,
   .wrap .cross_line .next_case {
-    display: inline-block;
-    font-size: 16px;
-    line-height: 40px;
-    color: #666666;
+    display: none;
   }
   .wrap .cross_line .on_case {
     text-align: left;
@@ -166,9 +167,6 @@
     background: url(../images/right_triangle.png) no-repeat;
     background-size: 26px 26px;
   }
-  .wrap .cross_line a .line_center {
-    margin: 0px 22.291667vw;
-  }
 }
 .menu .con,
 .menu .case_menu {
@@ -177,49 +175,5 @@
 @media (min-width: 768px) and (max-width: 1920px) {
   .menu {
     display: none;
-  }
-}
-@media screen and (max-width: 768px) {
-  .menu {
-    position: relative;
-    right: 0;
-    margin-top: 20px;
-    color: #BD9972;
-  }
-  .menu .item {
-    position: absolute;
-    right: 0;
-    margin-right: 50px;
-    float: right;
-    line-height: 30px;
-    color: #BD9972;
-    font-size: 20px;
-  }
-  .menu .icon {
-    position: absolute;
-    right: 0;
-    margin-right: 16px;
-    width: 30px;
-    max-height: 34px;
-    z-index: 999;
-  }
-  .menu .case_nav {
-    display: none;
-    text-align: right;
-    z-index: 999;
-  }
-  .menu .case_nav .tag {
-    display: inline-block;
-    line-height: 32px;
-    margin-right: 18px;
-  }
-  .menu .case_nav .tag:nth-child(1),
-  .menu .case_nav .tag:nth-child(2),
-  .menu .case_nav .tag:nth-child(3) {
-    margin-right: 16px;
-    margin-top: 40px;
-  }
-  .menu .case_nav .tag a {
-    color: #9FA0A0;
   }
 }

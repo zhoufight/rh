@@ -885,9 +885,6 @@
                 <div class="list_r flex-item-1"><a href="">酒店设计公司</a></div>
               </div>
             </div>
-            <div class="scroll_bar">
-              <div class="scroll_slider"></div>
-            </div>
           </div>
 
         </div>
@@ -900,13 +897,23 @@
               <div class="qq">1622982@qq.com</div>
               <div class="share">
                 <p>分享到</p>
+                <!-- TODO修改 添加弹出二维码-->
                 <div class="icon flex">
-                  <a href=""><img class="tengxun" src="images/qq.png" alt=""></a>
-                  <a href=""><img class="sina" src="images/sina.png" alt=""></a>
-                  <a href=""><img class="wx" src="images/wx.png" alt=""></a>
-                </div>
+                  <a href="" class="shareSina"><img class="sina" src="images/sina.png" alt=""></a>
+                  <a href="tencent://message/?uin=1622982&Site=uemo&Menu=yes"   ><img class="tengxun" src="images/qq.png" alt=""></a>
+                  <a href="javascript:void(0)" 
+                  class="shareWx"
+                  tabindex="0" 
+                  title="扫一扫" 
+                  data-toggle="popover" 
+                  data-placement="bottom"
+                  data-content='<img src="images/qcode.png" alt=""/>'
+                  >
+                    <img class="wx" src="images/wx.png" alt="">
+                  </a>
               </div>
             </div>
+            </div>  
           </div>
         </div>
         <div class="col-md-1">
@@ -930,8 +937,14 @@
     integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
   </script>
   <script src="lib/bootstrap-4.4.1-dist/js/bootstrap.min.js"></script>
+  <!-- TODO 引入新js -->
+  <script src="lib/bootstrap-4.4.1-dist/js/bootstrap.bundle.js"></script>
   <script src="js/common.js"></script>
   <script src="js/index.js"></script>
+  <script>
+    
+
+  </script>
 </body>
 
 </html>

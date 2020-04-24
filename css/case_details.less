@@ -101,7 +101,10 @@
     padding: 56*@vw 0 90*@vw;
 
     a {
-
+      .line_left,
+      .line_right{
+        margin-top: 14px;
+      }
       .line_center {
         // padding: 0 7vw;
         margin: 0 140*@vw;
@@ -142,6 +145,10 @@
 
 @media screen and (max-width: 768px) {
 
+  .menu{
+   padding-right: 0;
+  }
+
   .carousel {
     margin-top: 60px;
   }
@@ -173,6 +180,7 @@
   }
 
   .wrap .middle .media .logo {
+    height: 180px;
     padding-right: 0;
     padding-top: 60px;
     margin: 0 auto;
@@ -213,17 +221,18 @@
   .wrap .cross_line {
     position: relative;
 
-    .line_left,
-    .line_right {
-      display: none;
-    }
+    // .line_left,
+    // .line_right {
+    //   display: none;
+    // }
 
     .on_case,
     .next_case {
-      display: inline-block;
-      font-size: 16px;
-      line-height: 40px;
-      color: #666666;
+      // display: inline-block;
+      // font-size: 16px;
+      // line-height: 40px;
+      // color: #666666;
+      display: none;
     }
 
     .on_case {
@@ -260,9 +269,7 @@
 
   }
 
-  .wrap .cross_line a .line_center {
-    margin: 0px 22.291667vw;
-  }
+ 
 
 }
 
@@ -283,51 +290,3 @@
   }
 }
 
-@media screen and (max-width: 768px) {
-  .menu {
-    position: relative;
-    right: 0;
-    margin-top: 20px;
-    color: #BD9972;
-    .item {
-      position: absolute;
-      right: 0;
-      margin-right: 50px;
-      float: right;
-      line-height: 30px;
-      color: #BD9972;
-      font-size: 20px;
-    }
-
-    .icon {
-      position: absolute;
-      right: 0;
-      margin-right: 16px;
-      width: 30px;
-      max-height: 34px;
-      // padding-bottom: 4px;
-      z-index: 999;
-    }
-
-    .case_nav {
-      display: none;     
-      text-align: right;
-      z-index: 999;
-      // background-color: red;
-      .tag{
-        display: inline-block;
-        line-height: 32px;
-        margin-right: 18px;
-        &:nth-child(1), &:nth-child(2) ,&:nth-child(3){
-          margin-right: 16px;
-          margin-top: 40px;
-        }
-        a {
-          color: #9FA0A0;
-         
-        }
-      }
-      
-    }
-  }
-}

@@ -69,7 +69,7 @@ dt {
   vertical-align: middle;
 }
 .design_navigation .navSub .btnWrap img {
-  width: 20px;
+  width: 30px;
   vertical-align: middle;
 }
 @media screen and (max-width: 768px) {
@@ -77,14 +77,24 @@ dt {
     display: none;
   }
   .images {
-    margin-top: 10px;
+    margin-top: 50px;
   }
   .wrap {
     display: none;
   }
+  .menu {
+    margin-top: 60px;
+  }
+  .menu .case_nav .title:first-child {
+    margin-top: 44px;
+  }
+  .menu .case_nav .tag {
+    margin-top: 0 !important;
+  }
 }
 @media (min-width: 768px) and (max-width: 1920px) {
-  .cooperativeClient {
+  .cooperativeClient,
+  .menu {
     display: none;
   }
 }

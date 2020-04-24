@@ -306,13 +306,14 @@
         </div>
       </div>
       <!-- 分割线 -->
+      <!-- TODO 改结构 -->
       <div class="cross_line">
         <div class="d-flex justify-content-center">
           <a href=""><img class="line_left img-fluid" src="./images/case/cross_line1.png" alt=""></a>
-          <a href=""><span class="on_case">上一案例</span></a>
+          <!-- <a href=""><span class="on_case">上一案例</span></a> -->
           <a href=""><img class="line_center img-fluid" src="./images/case/cross_line2.png" alt=""></a>
           <a href=""><img class="line_right img-fluid" src="./images/case/cross_line3.png" alt=""></a>
-          <a href=""><span class=" next_case">下一案例</span></a>
+          <!-- <a href=""><span class=" next_case">下一案例</span></a> -->
         </div>
       </div>
       <div class="wrap_page">
@@ -669,24 +670,24 @@
   <script src="lib/bootstrap-4.4.1-dist/js/bootstrap.min.js"></script>
   <script src="js/common.js"></script>
   <script>
-    $(".icon").click(function () {
+    // $(".icon").click(function () {
 
-      $(this).siblings("ul").slideToggle(600).parent().siblings("").find("ul");
+    //   $(this).siblings("ul").slideToggle(600).parent().siblings("").find("ul");
 
-    })
+    // })
 
-    $(document).click(function () {
+    // $(document).click(function () {
     
-    var icon = $(".icon").siblings("ul").slideUp(300);
+    // var icon = $(".icon").siblings("ul").slideUp(300);
   
-     console.log(icon);
-    })
+    //  console.log(icon);
+    // })
 
-    $(".icon").click(function (event) {
+    // $(".icon").click(function (event) {
 
-      event.stopPropagation();
+    //   event.stopPropagation();
 
-    })
+    // })
 
   </script>
 </body>
