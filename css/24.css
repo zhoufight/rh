@@ -195,6 +195,9 @@ body {
   height: 2.08333333vw;
 }
 @media screen and (max-width: 767px) {
+  .caseWrap {
+    display: none;
+  }
   .cd-vertical-nav {
     display: none;
   }

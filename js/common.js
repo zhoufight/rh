@@ -293,8 +293,23 @@ $(".icon").click(function (event) {
 /*
 轮播图时间
 */
-// $(document).ready(function(){
-//   $('.carousel').carousel({
-//     interval: 2400
-//     })
-// })
+$(document).ready(function(){
+ $('.carousel').carousel({
+    interval: 2400
+     })
+ })
+
+
+  //底部滚动
+    $(document).ready(function () { 
+  //底部滚动
+  $(".listWrap").mCustomScrollbar({
+      scrollButtons: {
+          enable: false,
+          scrollType: "continuous",
+          scrollSpeed: 20,
+          scrollAmount: 40
+      },
+      horizontalScroll: false
+    });
+ })

@@ -13,6 +13,7 @@
   <link rel="stylesheet" href="css/common.css">
   <link rel="stylesheet" href="css/hotelManagement.css">
   <link rel="stylesheet" href="css/designSharing.css">
+  <link rel="stylesheet" href="css/jquery.mCustomScrollbar.css">
 </head>
 
 <body>
@@ -263,7 +264,7 @@
 
    <!-- 移动端设计导航 -->
    <div class="menu clearfix">
-    <a class="item" href="">推荐案例</a>
+    <a class="item" href="">设计分享</a>
     <img class="icon" src="images/react.png" alt="">
     <ul class="case_nav ">
       <p class="title">行业标识分享</p>
@@ -774,7 +775,7 @@
   </div>
   <!-- 加载更多部分 -->
   <div class="center-block very_more">
-    <a href="#" >VIEW MORE ></a>
+    <a href="#" >点击查看更多案例 +</a>
   </div> 
   <div class="wrap">
     <img class="img-fluid" src="./images/case/warp_bg1.png" alt="">
@@ -1157,9 +1158,6 @@
                 <div class="list_r flex-item-1"><a href="">酒店设计公司</a></div>
               </div>
             </div>
-            <div class="scroll_bar">
-              <div class="scroll_slider"></div>
-            </div>
           </div>
 
         </div>
@@ -1172,13 +1170,23 @@
               <div class="qq">1622982@qq.com</div>
               <div class="share">
                 <p>分享到</p>
+                <!-- TODO修改 添加弹出二维码-->
                 <div class="icon flex">
-                  <a href=""><img class="tengxun" src="images/qq.png" alt=""></a>
-                  <a href=""><img class="sina" src="images/sina.png" alt=""></a>
-                  <a href=""><img class="wx" src="images/wx.png" alt=""></a>
-                </div>
+                  <a href="" class="shareSina"><img class="sina" src="images/sina.png" alt=""></a>
+                  <a href="tencent://message/?uin=1622982&Site=uemo&Menu=yes"   ><img class="tengxun" src="images/qq.png" alt=""></a>
+                  <a href="javascript:void(0)" 
+                  class="shareWx"
+                  tabindex="0" 
+                  title="扫一扫" 
+                  data-toggle="popover" 
+                  data-placement="bottom"
+                  data-content='<img src="images/qcode.png" alt=""/>'
+                  >
+                    <img class="wx" src="images/wx.png" alt="">
+                  </a>
               </div>
             </div>
+            </div>  
           </div>
         </div>
         <div class="col-md-1">
@@ -1195,6 +1203,8 @@
     <div class="icon"><img class="img" src="images/backtop.png" alt=""></div>
   </div>
   <script src="js/jquery-3.4.1.min.js"></script>
+  <script src="lib/bootstrap-4.4.1-dist/js/bootstrap.bundle.js"></script>
+  <script src="js/jquery.mCustomScrollbar.concat.m.js"></script>
   <script src="js/common.js"></script>
   <script>
     navScroll();

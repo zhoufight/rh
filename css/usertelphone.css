@@ -55,7 +55,7 @@
 .usertelphone_box--content_footer {
   padding-top: 42px;
   box-sizing: border-box;
-  line-height: 2;
+  line-height: 2 !important;
 }
 .usertelphone_box--content_right-itemtitle {
   color: #333333;
@@ -66,7 +66,7 @@
 .usertelphone_box--content_tel-p {
   font-size: 0.72916667vw;
   color: #595757;
-  line-height: 2;
+  line-height: 2 !important;
 }
 .usertelphone_box--content_tel {
   padding-top: 20px;
@@ -204,4 +204,8 @@
   .usertelphone_box-info_botton p:first-child {
     color: #BD9972;
   }
+}
+.qrCode {
+  width: 130px;
+  height: auto;
 }

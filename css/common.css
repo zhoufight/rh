@@ -635,11 +635,6 @@ img {
 .footer .center .listWrap .list-item .list_l {
   width: 11.5625vw;
 }
-.footer .center .listWrap .mCustomScrollBox .mCSB_scrollTools .mCSB_dragger .mCSB_dragger_bar {
-  background: #ababab;
-  width: 1px;
-  height: 140px;
-}
 .footer .center .scroll_cont {
   height: 140px;
   overflow: hidden;

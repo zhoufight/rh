@@ -12,6 +12,7 @@
   <link href="lib/bootstrap-4.4.1-dist/css/bootstrap.min.css" rel="stylesheet" />
   <link rel="stylesheet" href="css/common.css">
   <link rel="stylesheet" href="css/usertelphone.css">
+  <link rel="stylesheet" href="css/jquery.mCustomScrollbar.css">
 </head>
 
 <body>
@@ -235,8 +236,9 @@
                  title="扫一扫" 
                  data-toggle="popover" 
                  data-placement="bottom"
-                 data-content='<img src="images/qcode.png" alt=""/>' >
+                 data-content='<img class="qrCode" src="images/phone-code.jpg" alt=""/>' >
                  <img class="phone" src="images/phone.png" alt="" srcset=""></a>
+                 
                 </div>
               <div class="item"> 
                 <a href="javascript:void(0)" 
@@ -244,7 +246,7 @@
                 title="扫一扫" 
                 data-toggle="popover" 
                 data-placement="bottom"
-                data-content='<img src="images/qcode.png" alt=""/>'
+                data-content='<img  class="qrCode" src="images/official-code.jpg" alt=""/>'
                 ><img class="bjnews" src="images/bjnews.png" alt=""></a>
               </div>
               <div class="item"> 
@@ -253,7 +255,7 @@
                 title="扫一扫" 
                 data-toggle="popover" 
                 data-placement="bottom"
-                data-content='<img src="images/qcode.png" alt=""/>'
+                data-content='<img class="qrCode" src="images/tiktok-code.jpg" alt=""/>'
                 >
                   <img class="tikTok" src="images/tikTok.png" alt="" srcset=""></a>
                 </div>
@@ -387,9 +389,6 @@
                 <div class="list_r flex-item-1"><a href="">酒店设计公司</a></div>
               </div>
             </div>
-            <div class="scroll_bar">
-              <div class="scroll_slider"></div>
-            </div>
           </div>
 
         </div>
@@ -402,13 +401,23 @@
               <div class="qq">1622982@qq.com</div>
               <div class="share">
                 <p>分享到</p>
+                <!-- TODO修改 添加弹出二维码-->
                 <div class="icon flex">
-                  <a href=""><img class="tengxun" src="images/qq.png" alt=""></a>
-                  <a href=""><img class="sina" src="images/sina.png" alt=""></a>
-                  <a href=""><img class="wx" src="images/wx.png" alt=""></a>
-                </div>
+                  <a href="" class="shareSina"><img class="sina" src="images/sina.png" alt=""></a>
+                  <a href="tencent://message/?uin=1622982&Site=uemo&Menu=yes"   ><img class="tengxun" src="images/qq.png" alt=""></a>
+                  <a href="javascript:void(0)" 
+                  class="shareWx"
+                  tabindex="0" 
+                  title="扫一扫" 
+                  data-toggle="popover" 
+                  data-placement="bottom"
+                  data-content='<img src="images/qcode.png" alt=""/>'
+                  >
+                    <img class="wx" src="images/wx.png" alt="">
+                  </a>
               </div>
             </div>
+            </div>  
           </div>
         </div>
         <div class="col-md-1">
@@ -428,7 +437,7 @@
   <script src="lib/bootstrap-4.4.1-dist/js/bootstrap.min.js"></script>
   <script src="lib/bootstrap-4.4.1-dist/js/bootstrap.bundle.js"></script>
   <script type="text/javascript" src="https://webapi.amap.com/maps?v=1.4.15&key=46b268ea357e40c59dfce4dd65ec0bf8"></script>
- 
+  <script src="js/jquery.mCustomScrollbar.concat.m.js"></script>
   <script src="js/common.js"></script>
     <!-- <script src="js/usertelphone.js"></script> -->
     <script>
