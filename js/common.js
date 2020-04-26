@@ -314,7 +314,3 @@ $(document).ready(function(){
     });
  })
 
-//  移动设备上的浏览器,优化点击事件
- $(function() {
-  FastClick.attach(document.body);
-});
