@@ -281,23 +281,23 @@ img {
 .maskMenu .maskMenuItem .right ul li a {
   font-size: 18px;
 }
-.carousel .carousel-indicators li {
-  box-sizing: content-box;
-  -ms-flex: 0 1 auto;
-  flex: 0 1 auto;
-  width: 8px;
-  height: 8px;
-  margin-right: 3px;
-  margin-left: 3px;
-  text-indent: -999px;
-  cursor: pointer;
-  background-color: #ffab00;
-  border-radius: 50%;
-  transition: 0.3s ease;
-}
 .carousel .carousel-control-next,
 .carousel .carousel-control-prev {
   display: none;
+}
+.carousel ol.carousel-indicators li {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%  ;
+  background-color: #231f20;
+  opacity: 0.1;
+  transition: 0.3s ease;
+}
+.carousel ol.carousel-indicators li.active {
+  width: 8px;
+  height: 8px;
+  background-color: #ffab00;
+  opacity: 1 !important;
 }
 /*案例图片列表*/
 .images {

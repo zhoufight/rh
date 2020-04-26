@@ -290,14 +290,6 @@ $(".icon").click(function (event) {
 
 })
 
-/*
-轮播图时间
-*/
-$(document).ready(function(){
- $('.carousel').carousel({
-    interval: 2400
-     })
- })
 
 
   //底部滚动
@@ -314,3 +306,7 @@ $(document).ready(function(){
     });
  })
 
+ //  移动设备上的浏览器,优化点击事件
+$(function() {
+  FastClick.attach(document.body);
+});

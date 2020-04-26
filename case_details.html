@@ -551,7 +551,7 @@
           <div class="center scroll_wrap">
             <div class="tit2"> <a href="">友情链接</a></div>
             <div class="listWrap scroll_cont">
-           
+
               <div class="list-item flex ">
                 <div class="list_l flex-item-1"><a href="">品牌规划</a></div>
                 <div class="list_r flex-item-1"><a href="">品牌规划</a></div>
@@ -640,20 +640,15 @@
                 <!-- TODO修改 添加弹出二维码-->
                 <div class="icon flex">
                   <a href="" class="shareSina"><img class="sina" src="images/sina.png" alt=""></a>
-                  <a href="tencent://message/?uin=1622982&Site=uemo&Menu=yes"   ><img class="tengxun" src="images/qq.png" alt=""></a>
-                  <a href="javascript:void(0)" 
-                  class="shareWx"
-                  tabindex="0" 
-                  title="扫一扫" 
-                  data-toggle="popover" 
-                  data-placement="bottom"
-                  data-content='<img src="images/qcode.png" alt=""/>'
-                  >
+                  <a href="tencent://message/?uin=1622982&Site=uemo&Menu=yes"><img class="tengxun" src="images/qq.png"
+                      alt=""></a>
+                  <a href="javascript:void(0)" class="shareWx" tabindex="0" title="扫一扫" data-toggle="popover"
+                    data-placement="bottom" data-content='<img src="images/qcode.png" alt=""/>'>
                     <img class="wx" src="images/wx.png" alt="">
                   </a>
+                </div>
               </div>
             </div>
-            </div>  
           </div>
         </div>
         <div class="col-md-1">
@@ -679,26 +674,16 @@
   <script src="lib/bootstrap-4.4.1-dist/js/bootstrap.bundle.js"></script>
   <script src="js/jquery.mCustomScrollbar.concat.m.js"></script>
   <script src="js/common.js"></script>
+  <script src="js/fastclick.js"></script>
   <script>
-    // $(".icon").click(function () {
-
-    //   $(this).siblings("ul").slideToggle(600).parent().siblings("").find("ul");
-
-    // })
-
-    // $(document).click(function () {
-    
-    // var icon = $(".icon").siblings("ul").slideUp(300);
-  
-    //  console.log(icon);
-    // })
-
-    // $(".icon").click(function (event) {
-
-    //   event.stopPropagation();
-
-    // })
-
+    /*
+轮播图时间
+*/
+    $(document).ready(function () {
+      $('.carousel').carousel({
+        interval: 1000
+      })
+    })
   </script>
 </body>
 

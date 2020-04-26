@@ -13,6 +13,11 @@
     <link rel="stylesheet" href="css/common.css">
     <link rel="stylesheet" href="css/news.css">
     <link rel="stylesheet" href="css/jquery.mCustomScrollbar.css">
+  <style>
+
+
+  </style>
+    
 </head>
 
 <body>
@@ -194,7 +199,7 @@
   <!-- 导航end -->
   
    <!-- 轮播图 -->
-   <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+   <div id="carouselExampleIndicators" class="carousel slide " data-ride="carousel">
     <ol class="carousel-indicators">
       <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
       <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
@@ -483,13 +488,13 @@
       </div>
       <div class="line_bottom clearfix">
           <div class="left">
-              <a href=""><img class="img-fluid" src="./images/design/share.png" alt=""></a>
+              <a href=""><img class="share  img-fluid" src="./images/design/share.png" alt=""></a>
           </div>
           <div class="right float-right">
           <!-- TODO  改动结构--添加a标签 -->
-          <span> <a href=""><img src="./images/design/page_left.png" alt=""></a>  </span> 
-          <span> <a href=""><img src="./images/design/page_centre.png" alt=""></a> </span>
-          <span> <a href=""><img src="./images/design/page_right.png" alt=""></a></span>
+          <span> <a href=""><img class="page_left"  src="./images/design/page_left.png" alt=""></a>  </span> 
+          <span> <a href=""><img class="page_center"  src="./images/design/page_center.png" alt=""></a> </span>
+          <span> <a href=""><img class="page_right" src="./images/design/page_right.png" alt=""></a></span>
           </div>
       </div>
 
@@ -791,7 +796,7 @@
   <script src="lib/bootstrap-4.4.1-dist/js/bootstrap.bundle.js"></script>
   <script src="js/jquery.mCustomScrollbar.concat.m.js"></script>
   <script src="js/common.js"></script>
-  
+  <script src="js/fastclick.js" ></script>
   <script>
       function itemimgList(status = 0, i = '') {
           if (i === '') {
@@ -810,6 +815,13 @@
               listBox[i].style.cursor = 'none'
           }
       }
+         
+    // 轮播图时间
+    $(document).ready(function () {
+      $('.carousel').carousel({
+        interval: 1000
+      })
+    })
   </script>
 </body>
 

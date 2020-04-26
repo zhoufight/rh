@@ -832,6 +832,7 @@
     <script src="js/common.js"></script>
     <script src="lib/bootstrap-4.4.1-dist/js/bootstrap.bundle.js"></script>
     <script src="js/jquery.mCustomScrollbar.concat.m.js"></script>
+    <script src="js/fastclick.js" ></script>
     <script>
         function itemimgList(status = 0, i = '') {
             if (i === '') {
@@ -851,11 +852,15 @@
             }
         }
         
-
-      
         addColumn("newsWrap");
         addColumn("newsWrap2");
 
+           // 轮播图时间
+    $(document).ready(function () {
+      $('.carousel').carousel({
+        interval: 1000
+      })
+    })
        
          
     </script>

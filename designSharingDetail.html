@@ -897,6 +897,7 @@
   <script src="lib/bootstrap-4.4.1-dist/js/bootstrap.bundle.js"></script>
   <script src="js/jquery.mCustomScrollbar.concat.m.js"></script>
   <script src="js/common.js"></script>
+  <script src="js/fastclick.js" ></script>
   <script>
     function itemimgList(status = 0, i = '') {
       if (i === '') {
@@ -918,8 +919,12 @@
     $(document).ready(function () { 
       addColumn("newsdetail_box--listitem","newsWrap");
       // addColumn("newsdetail_box--listitem","newsWrap2");
+      $('.carousel').carousel({
+        interval: 1000,
+      })
      })
 
+   
   </script>
 </body>
 

@@ -945,10 +945,18 @@
   <script src="js/jquery.mCustomScrollbar.concat.m.js"></script>
   <script src="js/fastclick.js" ></script>
   <script>
-//  移动设备上的浏览器,优化点击事件
-$(function() {
-  FastClick.attach(document.body);
-});
+        /*
+轮播图时间
+*/
+    $(document).ready(function () {
+      $('.carousel').carousel({
+        interval: 1000
+      }),
+      $('html').one('touchstart',function(){
+        audio.play();
+      })
+    })
+
   </script>
 </body>
 
