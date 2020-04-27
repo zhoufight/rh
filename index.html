@@ -946,23 +946,33 @@
   <script src="js/fastclick.js" ></script>
   <script type="text/javascript" src="https://res.wx.qq.com/open/js/jweixin-1.2.0.js"></script>
   <script>
-        /*
-轮播图时间
-*/
-    $(document).ready(function () {
-      $('.carousel').carousel({
-        interval: 1000
-      })
-      document.addEventListener('WeixinJSBridgeReady', function () {
-        $('video').play();
-      }, false);
+  /*
+  轮播图时间
+  */
+  $(document).ready(function () {
+    $('.carousel').carousel({
+      interval: 1000
     })
+    const video = $('video');
+    if (window.WeixinJSBridge) {
+      WeixinJSBridge.invoke('getNetworkType', {}, function (e) {
+        video.play();
+      }, false);
+    } else {
+      document.addEventListener("WeixinJSBridgeReady", function () {
+        WeixinJSBridge.invoke('getNetworkType', {}, function (e) {
+          video.play();
+        });
+      }, false);
+    }
+    video.play();
+  })
 
 
-//  移动设备上的浏览器,优化点击事件
-$(function() {
-  FastClick.attach(document.body);
-});
+  //  移动设备上的浏览器,优化点击事件
+  $(function () {
+    FastClick.attach(document.body);
+  });
   </script>
 </body>
 
