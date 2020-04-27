@@ -944,6 +944,7 @@
   <!-- TODO 引入新js -->
   <script src="js/jquery.mCustomScrollbar.concat.m.js"></script>
   <script src="js/fastclick.js" ></script>
+  <script type="text/javascript" src="https://res.wx.qq.com/open/js/jweixin-1.2.0.js"></script>
   <script>
         /*
 轮播图时间
@@ -951,10 +952,10 @@
     $(document).ready(function () {
       $('.carousel').carousel({
         interval: 1000
-      }),
-      $('html').one('touchstart',function(){
-        audio.play();
       })
+      document.addEventListener('WeixinJSBridgeReady', function () {
+        $('video').play();
+      }, false);
     })
 
 
