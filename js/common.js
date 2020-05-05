@@ -45,12 +45,16 @@ $(document).ready(function () {
   );
 
   //为返回顶部元素添加点击事件
-  $(".backtop").click(function () {
+  $(".backtop .icon").click(function () {
+    console.log(111)
     //将当前窗口的内容区滚动高度改为0，即顶部
     $("html,body").animate({
       scrollTop: 0
     }, "fast");
+    
   });
+
+  
 
   $(".weCanDo .itemMenu dd").hover(function () {
     $(this).addClass("active");
@@ -61,15 +65,15 @@ $(document).ready(function () {
 });
 
 
-// // 返回顶部
+// 返回顶部
 // $(".backtop").mouseover(function(){
 //   // $(".img").attr("src",tpl+"/images/backtop_bd.png");
-//   $(".img").attr("src","/images/backtop_bd.png");
+//   $(".img").attr("src","images/backtop_bd.png");
 // });
 
 // $(".backtop").mouseout(function(){
 //   // $(".img").attr("src",tpl+"/images/backtop.png");
-//   $(".img").attr("src","/images/backtop.png");
+//   $(".img").attr("src","images/backtop.png");
 // });
 
 $(".backtop").hover(function () {
