@@ -221,9 +221,14 @@ body {
   .content .section .stepWrap .step .con .conTit,
   .content .section .stepWrap .step .con .conText,
   .content .section .sectionTitle,
-  .content .section .tip,
-  .brands p {
+  .content .section .tip {
     font-size: 16px;
+  }
+  .brands p {
+    font-size: 14px;
+  }
+  .col-md-6 {
+    padding: 0;
   }
 }
 @media screen and (max-width: 550px) {
