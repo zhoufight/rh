@@ -1,4 +1,5 @@
 var tpl = '/tpl/renhe';
+// var tpl = '.';
 
 function adaptive() {
   !(function () {
@@ -62,182 +63,114 @@ $(document).ready(function () {
     $(this).removeClass("active");
   });
 
+
+  // 返回顶部
+$(".backtop").mouseover(function(){
+  $(".img").attr("src",tpl+"/images/backtop_bd.png");
+  // $(".img").attr("src","images/backtop_bd.png");
 });
 
-
-// 返回顶部
-// $(".backtop").mouseover(function(){
-//   // $(".img").attr("src",tpl+"/images/backtop_bd.png");
-//   $(".img").attr("src","images/backtop_bd.png");
-// });
-
-// $(".backtop").mouseout(function(){
-//   // $(".img").attr("src",tpl+"/images/backtop.png");
-//   $(".img").attr("src","images/backtop.png");
-// });
-
-$(".backtop").hover(function () {
-  $(".img").attr("src", "./images/backtop_bd.png");
-}, function () {
-  $(".img").attr("src", "./images/backtop.png");
+$(".backtop").mouseout(function(){
+  $(".img").attr("src",tpl+"/images/backtop.png");
+  // $(".img").attr("src","images/backtop.png");
 });
+
+// $(".backtop").hover(function () {
+//   $(".img").attr("src", "./images/backtop_bd.png");
+// }, function () {
+//   $(".img").attr("src", "./images/backtop.png");
+// });
 
 
 // 联系 qq wx sina
 $(".tengxun").hover(function () {
-  // $(this).attr("src",tpl+"/images/hover_qq.png");
-  $(this).attr("src", "images/hover_qq.png");
+  $(this).attr("src",tpl+"/images/hover_qq.png");
+  // $(this).attr("src", "images/hover_qq.png");
 }, function () {
-  //   // $(this).attr("src",tpl+"/images/qq.png");
-  $(this).attr("src", "images/qq.png");
+  $(this).attr("src",tpl+"/images/qq.png");
+  // $(this).attr("src", "images/qq.png");
 });
 
 $(".wx").hover(function () {
-  // $(this).attr("src",tpl+"/images/hover_wx.png");
-  $(this).attr("src", "images/hover_wx.png");
+  $(this).attr("src",tpl+"/images/hover_wx.png");
+  // $(this).attr("src", "images/hover_wx.png");
 }, function () {
-  // $(this).attr("src",tpl+"/images/wx.png");
-  $(this).attr("src", "images/wx.png");
+  $(this).attr("src",tpl+"/images/wx.png");
+  // $(this).attr("src", "images/wx.png");
 });
 
 $(".sina").hover(function () {
-  // $(this).attr("src",tpl+"/images/hover_sina.png");
-  $(this).attr("src", "images/hover_sina.png");
+  $(this).attr("src",tpl+"/images/hover_sina.png");
+  // $(this).attr("src", "images/hover_sina.png");
 }, function () {
-  // $(this).attr("src",tpl+"/images/sina.png");
-  $(this).attr("src", "images/sina.png");
+  $(this).attr("src",tpl+"/images/sina.png");
+  // $(this).attr("src", "images/sina.png");
 });
 
 
 // 联系我们 --人和时代·国际三个小图
 $(".phone").hover(function () {
-  // $(this).attr("src",tpl+"/images/phone_hover.png");
-  $(this).attr("src", "images/phone_hover.png");
+  $(this).attr("src",tpl+"/images/phone_hover.png");
+  // $(this).attr("src", "images/phone_hover.png");
 }, function () {
-  // $(this).attr("src",tpl+"/images/phone.png");
-  $(this).attr("src", "images/phone.png");
+  $(this).attr("src",tpl+"/images/phone.png");
+  // $(this).attr("src", "images/phone.png");
 });
 
 $(".bjnews").hover(function () {
-  // $(this).attr("src",tpl+"/images/bjnews_hover.png");
-  $(this).attr("src", "images/bjnews_hover.png");
+  $(this).attr("src",tpl+"/images/bjnews_hover.png");
+  // $(this).attr("src", "images/bjnews_hover.png");
 }, function () {
-  // $(this).attr("src",tpl+"/images/bjnews.png");
-  $(this).attr("src", "images/bjnews.png");
+  $(this).attr("src",tpl+"/images/bjnews.png");
+  // $(this).attr("src", "images/bjnews.png");
 });
 
 $(".tikTok").hover(function () {
-  // $(this).attr("src",tpl+"/images/tikTok_hover.png");
-  $(this).attr("src", "images/tikTok_hover.png");
+  $(this).attr("src",tpl+"/images/tikTok_hover.png");
+  // $(this).attr("src", "images/tikTok_hover.png");
 }, function () {
-  // $(this).attr("src",tpl+"/images/tikTok.png");
-  $(this).attr("src", "images/tikTok.png");
+  $(this).attr("src",tpl+"/images/tikTok.png");
+  // $(this).attr("src", "images/tikTok.png");
 });
 
 // 新闻，设计详情--分享，分页
 $(".share").hover(function () {
-  // $(this).attr("src",tpl+"/images/design/share_hover.png");
-  $(this).attr("src", "images/design/share_hover.png");
+  $(this).attr("src",tpl+"/images/design/share_hover.png");
+  // $(this).attr("src", "images/design/share_hover.png");
 }, function () {
-  // $(this).attr("src",tpl+"/images/design/share.png");
-  $(this).attr("src", "images/design/share.png");
+  $(this).attr("src",tpl+"/images/design/share.png");
+  // $(this).attr("src", "images/design/share.png");
 });
 
 $(".page_left").hover(function () {
-  // $(this).attr("src",tpl+"/images/design/left_hover.png");
-  $(this).attr("src", "images/design/left_hover.png");
+  $(this).attr("src",tpl+"/images/design/left_hover.png");
+  // $(this).attr("src", "images/design/left_hover.png");
 }, function () {
-  // $(this).attr("src",tpl+"/images/page_left.png");
-  $(this).attr("src", "images/design/page_left.png");
+  $(this).attr("src",tpl+"/images/design/page_left.png");
+  // $(this).attr("src", "images/design/page_left.png");
 });
 
 $(".page_center").hover(function () {
-  // $(this).attr("src",tpl+"/images/design/center_hover.png");
-  $(this).attr("src", "images/design/center_hover.png");
+  $(this).attr("src",tpl+"/images/design/center_hover.png");
+  // $(this).attr("src", "images/design/center_hover.png");
 }, function () {
-  // $(this).attr("src",tpl+"/images/design/page_center.png");
-  $(this).attr("src", "images/design/page_center.png");
+  $(this).attr("src",tpl+"/images/design/page_center.png");
+  // $(this).attr("src", "images/design/page_center.png");
 });
 
 $(".page_right").hover(function () {
-  // $(this).attr("src",tpl+"/images/design/right_hover.png");
-  $(this).attr("src", "images/design/right_hover.png");
+  $(this).attr("src",tpl+"/images/design/right_hover.png");
+  // $(this).attr("src", "images/design/right_hover.png");
 }, function () {
-  // $(this).attr("src",tpl+"/images/design/page_right.png");
-  $(this).attr("src", "images/design/page_right.png");
+  $(this).attr("src",tpl+"/images/design/page_right.png");
+  // $(this).attr("src", "images/design/page_right.png");
 });
-
-// 显示弹层菜单
-function showMaskMenu(param) {
-  $(".maskMenu").fadeIn(500);
-}
-//隐藏弹层菜单
-function hideMaskMenu() {
-  $(".maskMenu").fadeOut(500);
-}
-
-// 导航菜单滚动显示
-function navScroll() {
-  $(window).scroll(function () {
-    var scroTop = $(window).scrollTop();
-
-    if (scroTop > 200) {
-      $('.menuWrap').addClass('show');
-      $('.brand').removeClass('logo2');
-      // $('.brand img').attr('src',tpl+'/images/pc_logo.png');
-      $('.brand img').attr('src', './images/pc_logo.png');
-    } else {
-      $('.menuWrap').addClass('hide');
-      $('.menuWrap').removeClass('show');
-      $('.brand').addClass('logo2');
-
-      // $('.brand img').attr('src',tpl+'/images/logo.png');
-      $('.brand img').attr('src', './images/logo.png');
-
-    }
-  });
-}
 
 //弹出二维码
 $('[data-toggle="popover"]').popover({
   trigger: 'focus', // 这个是定义鼠标事件，等于data-trigger="focus"
   html: true // 关键在这里， 这样修改之后，我们的data-content里面就可以写html代码啦
   })
-
-
-//新闻，设计详情标签少于3个的情况处理
-function addColumn(classnameParent, classname2) {
-  const parentDiv = $(`.${classnameParent} .${classname2}`)
-
-  console.log($(parentDiv[2]).find("div.column").length)
-
-
-  for (let i = 0; i < parentDiv.length; i++) {
-    console.log($(parentDiv[i]).find("div.column"))
-    const item = $(parentDiv[i]).find('div.column')
-    for (let j = 0; j < item.length; j++) {
-      const itemP = $(item[j]).find("p")
-      if (itemP.length === 2) {
-        $(item[j]).addClass("column2")
-      }
-    }
-    console.log("item:", item)
-  }
-
-  // parentDiv.map((el,index)=>{
-  //        console.log(index)
-  //  const item = $(parentDiv[index]).find('div.column')
-  //  console.log("item:",item)
-  //  item.map((itemx, i)=>{
-  //   const itemP = $(item[i]).find("p")
-  //   console.log(itemP.length)
-  //   if (itemP.length === 2) {
-  //     $(item[i]).addClass("column2")
-  //   }
-  //  })
-  // })
-}
-
 
 
 //分享到微博,微信
@@ -296,6 +229,82 @@ $(".icon").click(function (event) {
 
 
 
+
+});
+
+
+
+
+// 显示弹层菜单
+function showMaskMenu(param) {
+  $(".maskMenu").fadeIn(500);
+}
+//隐藏弹层菜单
+function hideMaskMenu() {
+  $(".maskMenu").fadeOut(500);
+}
+
+// 导航菜单滚动显示
+function navScroll() {
+  $(window).scroll(function () {
+    var scroTop = $(window).scrollTop();
+
+    if (scroTop > 200) {
+      $('.menuWrap').addClass('show');
+      $('.brand').removeClass('logo2');
+      $('.brand img').attr('src',tpl+'/images/pc_logo.png');
+      // $('.brand img').attr('src', './images/pc_logo.png');
+    } else {
+      $('.menuWrap').addClass('hide');
+      $('.menuWrap').removeClass('show');
+      $('.brand').addClass('logo2');
+
+      $('.brand img').attr('src',tpl+'/images/logo.png');
+      // $('.brand img').attr('src', './images/logo.png');
+
+    }
+  });
+}
+
+
+
+//新闻，设计详情标签少于3个的情况处理
+function addColumn(classnameParent, classname2) {
+  const parentDiv = $(`.${classnameParent} .${classname2}`)
+
+  console.log($(parentDiv[2]).find("div.column").length)
+
+
+  for (let i = 0; i < parentDiv.length; i++) {
+    console.log($(parentDiv[i]).find("div.column"))
+    const item = $(parentDiv[i]).find('div.column')
+    for (let j = 0; j < item.length; j++) {
+      const itemP = $(item[j]).find("p")
+      if (itemP.length === 2) {
+        $(item[j]).addClass("column2")
+      }
+    }
+    console.log("item:", item)
+  }
+
+  // parentDiv.map((el,index)=>{
+  //        console.log(index)
+  //  const item = $(parentDiv[index]).find('div.column')
+  //  console.log("item:",item)
+  //  item.map((itemx, i)=>{
+  //   const itemP = $(item[i]).find("p")
+  //   console.log(itemP.length)
+  //   if (itemP.length === 2) {
+  //     $(item[i]).addClass("column2")
+  //   }
+  //  })
+  // })
+}
+
+
+
+
+
   //底部滚动
     $(document).ready(function () { 
   //底部滚动
@@ -308,9 +317,13 @@ $(".icon").click(function (event) {
       },
       horizontalScroll: false
     });
+     //新闻详情，设计详情分享
+    $(".share").click(function(){
+      $(".share-items").slideToggle(600);
+    })
  })
 
  //  移动设备上的浏览器,优化点击事件
-$(function() {
-  FastClick.attach(document.body);
-});
+// $(function() {
+//   FastClick.attach(document.body);
+// });
