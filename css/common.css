@@ -1885,3 +1885,12 @@ div.newsdetail_box--info .caseWrap .left ul li:hover p,
     color: #9FA0A0;
   }
 }
+.gray {
+  -webkit-filter: grayscale(100%);
+  -moz-filter: grayscale(100%);
+  -ms-filter: grayscale(100%);
+  -o-filter: grayscale(100%);
+  filter: grayscale(100%);
+  filter: gray;
+  filter: progid:DXImageTransform.Microsoft.BasicImage(grayscale=1);
+}
